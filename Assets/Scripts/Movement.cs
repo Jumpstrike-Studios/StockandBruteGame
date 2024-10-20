@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
-    private float JumpPower = 5f;
+    private float JumpPower = 3.5f;
     private bool doubleJump;
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
@@ -40,6 +40,7 @@ void Update()
 
 
 
+                JumpPower = 7.0f;
             }
             else
             {
@@ -56,6 +57,7 @@ void Update()
                 StockHealthBar.transform.localScale = StockHealthBar.transform.localScale / 2;
                 StockHealthBar.transform.position = oldPosition;
 
+                JumpPower = 3.5f;
             }
         }
 
@@ -82,7 +84,13 @@ void Update()
         //Jump and double jump mechanic
         if (Input.GetKeyDown("space"))
         {
-            if (isGrounded || doubleJump) // Checks if player is grounded then if doubleJump is true
+            if (isGrounded) // Checks if player is grounded then if doubleJump is true
+            {
+                rb.velocity = Vector2.up * JumpPower;
+                doubleJump = !doubleJump;
+                isGrounded = false;
+            }
+            else if (IsStock && doubleJump)
             {
                 rb.velocity = Vector2.up * JumpPower;
                 doubleJump = !doubleJump;
@@ -100,6 +108,7 @@ void Update()
         base.OnCollisionEnter2D(collision);
         if (collision.gameObject.CompareTag("Ground")){
             doubleJump = false;
+            isGrounded = true;
         }
     }
 }
