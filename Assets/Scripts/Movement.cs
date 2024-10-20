@@ -7,11 +7,12 @@ public class Actor_Player : Actor
 {
     private float JumpPower = 5f;
     private bool doubleJump;
-    public Sprite Stock_Sprite;
-    public Sprite Brute_Sprite;
+    public GameObject Stock_Sprite;
+    public GameObject Brute_Sprite;
     public float acceleration;
     public float maxVelocity;
     public float deceleration;
+    private bool IsStock=false;
 
 // Update is called once per frame
 void Update()
@@ -19,13 +20,17 @@ void Update()
         //Change character sprite
          if (Input.GetKeyDown("q"))
         {
-            if (GetComponent<SpriteRenderer>().sprite == Brute_Sprite)
+            if (!IsStock)
             {
-                GetComponent<SpriteRenderer>().sprite = Stock_Sprite;
+                Stock_Sprite.SetActive(true); 
+                Brute_Sprite.SetActive(false);
+                IsStock = true;
             }
             else
             {
-                GetComponent<SpriteRenderer>().sprite = Brute_Sprite;
+                Stock_Sprite.SetActive(false);
+                Brute_Sprite.SetActive(true);
+                IsStock = false;
             }
         }
 
