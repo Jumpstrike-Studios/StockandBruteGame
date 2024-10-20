@@ -14,6 +14,8 @@ public class Actor_Player : Actor
     public float deceleration;
     private bool IsStock=false;
     float accelerationTime;
+    public GameObject StockHealthBar;
+    public GameObject BruteHealthBar;
 
 // Update is called once per frame
 void Update()
@@ -23,15 +25,37 @@ void Update()
         {
             if (!IsStock)
             {
+
+                // Changes sprite to stock
                 Stock_Sprite.SetActive(true); 
                 Brute_Sprite.SetActive(false);
                 IsStock = true;
+
+                Vector3 oldPosition = StockHealthBar.transform.position;
+
+                StockHealthBar.transform.position = BruteHealthBar.transform.position;
+                StockHealthBar.transform.localScale = StockHealthBar.transform.localScale * 2;
+                BruteHealthBar.transform.localScale = BruteHealthBar.transform.localScale / 2;
+                BruteHealthBar.transform.position = oldPosition;
+
+
+
             }
             else
             {
+
+                // Changes sprite to brute
                 Stock_Sprite.SetActive(false);
                 Brute_Sprite.SetActive(true);
                 IsStock = false;
+
+                Vector3 oldPosition = BruteHealthBar.transform.position;
+
+                BruteHealthBar.transform.position = StockHealthBar.transform.position;
+                BruteHealthBar.transform.localScale = BruteHealthBar.transform.localScale * 2;
+                StockHealthBar.transform.localScale = StockHealthBar.transform.localScale / 2;
+                StockHealthBar.transform.position = oldPosition;
+
             }
         }
 
