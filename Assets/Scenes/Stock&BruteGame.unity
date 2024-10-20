@@ -1960,7 +1960,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.1152, y: 1.1767, z: -1}
-  m_LocalScale: {x: 2.8202, y: 2.8202, z: 2.715317}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1978,7 +1978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1535498223}
-  camera_speed: 1
+  cameraSpeed: 3
+  cameraPadding: 0
+  cameraMargin: 0
 --- !u!1 &526227541
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,7 +6214,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1535498225}
-  - component: {fileID: 1535498230}
   - component: {fileID: 1535498224}
   - component: {fileID: 1535498228}
   - component: {fileID: 1535498227}
@@ -6310,6 +6311,8 @@ MonoBehaviour:
   Health: 100
   WalkSpeed: 5
   GravityScale: 1
+  Stock_Sprite: {fileID: -2696974280130830027, guid: 34d4d3151d65f59458f7cdfaf3230ba5, type: 3}
+  Brute_Sprite: {fileID: 3519949656619268454, guid: 0b16403f007dfa64fa136cbc1e8133f2, type: 3}
 --- !u!61 &1535498227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6429,21 +6432,6 @@ BoxCollider2D:
   m_AutoTiling: 1
   m_Size: {x: 0.4, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &1535498230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535498223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e853800d485c8ed4897260288106d653, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1535498224}
-  Stock_Sprite: {fileID: -2696974280130830027, guid: 34d4d3151d65f59458f7cdfaf3230ba5, type: 3}
-  Brute_Sprite: {fileID: 3519949656619268454, guid: 0b16403f007dfa64fa136cbc1e8133f2, type: 3}
 --- !u!1 &1558756246
 GameObject:
   m_ObjectHideFlags: 0

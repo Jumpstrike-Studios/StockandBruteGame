@@ -7,11 +7,24 @@ public class Actor_Player : Actor
 {
     private float JumpPower = 5f;
     private bool doubleJump;
-
+    public Sprite Stock_Sprite;
+    public Sprite Brute_Sprite;
 
 // Update is called once per frame
 void Update()
     {
+        //Change character
+         if (Input.GetKeyDown("q"))
+        {
+            if (GetComponent<SpriteRenderer>().sprite == Brute_Sprite)
+            {
+                GetComponent<SpriteRenderer>().sprite = Stock_Sprite;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().sprite = Brute_Sprite;
+            }
+        }
         if (Input.GetKey("d"))
         {
             Velocity.x = 1;
