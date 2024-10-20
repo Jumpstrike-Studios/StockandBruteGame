@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 34d4d3151d65f59458f7cdfaf3230ba5
+guid: 76cde7fc522a9a7488f23d199dec2727
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2696974280130830027
-    second: Beam_James_Proj_1_0
+      213: -7310187216160194262
+    second: Grass_Block_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beam_James_Proj_1_0
+      name: Grass_Block_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 26
-        height: 30
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 531ef607e2c629ad0800000000000000
-      internalID: -2696974280130830027
+      spriteID: a218b2b357ffc8a90800000000000000
+      internalID: -7310187216160194262
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Beam_James_Proj_1_0: -2696974280130830027
+      Grass_Block_0: -7310187216160194262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
