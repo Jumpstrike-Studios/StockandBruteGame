@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,9 @@ public class Actor_Player : Actor
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
     public float acceleration;
-    public float maxVelocity;
     public float deceleration;
     private bool IsStock=false;
+    float accelerationTime;
 
 // Update is called once per frame
 void Update()
@@ -37,21 +38,23 @@ void Update()
 
         if (Input.GetKey("d"))
         {
+            accelerationTime+= Time.deltaTime*acceleration/2;
             Velocity.x += acceleration * Time.deltaTime;
         }
         else if (Input.GetKey("a"))
         {
+            accelerationTime+= Time.deltaTime*acceleration/2;
             Velocity.x -= acceleration * Time.deltaTime;
         }
         else if (Velocity.x != 0f) 
         {
-             Velocity.x -= deceleration * (Mathf.Sign(Velocity.x)) * Time.deltaTime;
+            accelerationTime-= Time.deltaTime*deceleration;
+            Velocity.x -= deceleration * Mathf.Sign(Velocity.x) * Time.deltaTime;
         }
+        accelerationTime = Mathf.Clamp(accelerationTime, 0f,1f);
+        Velocity.x = Mathf.Clamp(Velocity.x, -1f, 1f);
 
-        // Clamps to max velocity
-        Velocity.x = Mathf.Clamp(Velocity.x, -maxVelocity, maxVelocity);
-
-        rb.velocity = new Vector2(Velocity.x * WalkSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(Velocity.x * WalkSpeed*accelerationTime, rb.velocity.y);
         //Jump and double jump mechanic
         if (Input.GetKeyDown("space"))
         {
