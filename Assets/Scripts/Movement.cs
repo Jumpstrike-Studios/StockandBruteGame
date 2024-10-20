@@ -9,11 +9,14 @@ public class Actor_Player : Actor
     private bool doubleJump;
     public Sprite Stock_Sprite;
     public Sprite Brute_Sprite;
+    public float acceleration;
+    public float maxVelocity;
+    public float deceleration;
 
 // Update is called once per frame
 void Update()
     {
-        //Change character
+        //Change character sprite
          if (Input.GetKeyDown("q"))
         {
             if (GetComponent<SpriteRenderer>().sprite == Brute_Sprite)
@@ -25,17 +28,23 @@ void Update()
                 GetComponent<SpriteRenderer>().sprite = Brute_Sprite;
             }
         }
+
+
         if (Input.GetKey("d"))
         {
-            Velocity.x = 1;
+            Velocity.x += acceleration * Time.deltaTime;
         }
         else if (Input.GetKey("a"))
         {
-            Velocity.x = -1;
+            Velocity.x -= acceleration * Time.deltaTime;
         }
-        else {
-            Velocity.x = 0;
+        else if (Velocity.x != 0f) 
+        {
+             Velocity.x -= deceleration * (Mathf.Sign(Velocity.x)) * Time.deltaTime;
         }
+
+        // Clamps to max velocity
+        Velocity.x = Mathf.Clamp(Velocity.x, -maxVelocity, maxVelocity);
 
         rb.velocity = new Vector2(Velocity.x * WalkSpeed, rb.velocity.y);
         //Jump and double jump mechanic

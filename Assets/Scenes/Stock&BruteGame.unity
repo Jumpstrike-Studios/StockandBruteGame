@@ -6313,6 +6313,9 @@ MonoBehaviour:
   GravityScale: 1
   Stock_Sprite: {fileID: -2696974280130830027, guid: 34d4d3151d65f59458f7cdfaf3230ba5, type: 3}
   Brute_Sprite: {fileID: 3519949656619268454, guid: 0b16403f007dfa64fa136cbc1e8133f2, type: 3}
+  acceleration: 4
+  maxVelocity: 1
+  deceleration: 4
 --- !u!61 &1535498227
 BoxCollider2D:
   m_ObjectHideFlags: 0
