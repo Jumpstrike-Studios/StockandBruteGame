@@ -1,19 +1,34 @@
+using UnityEditor.UI;
 using UnityEngine;
 /// <summary>
 /// The basis of everything that moves and/or is interactable
 /// </summary>
 public class Actor : MonoBehaviour
 {
-    int MaxHealth=100;
-    public bool Invincible{
-        get { return (MaxHealth<0);}
+    public struct ActorVitals
+    {
+        public int MaxHealth;
+        public int Health;
+       public bool Invincible{
+        get { return MaxHealth<0;}
+    
+    }
+    /// <summary>
+    /// When the actor's health reaches 0, the actor will be removed from the scene
+    /// </summary>
+    public bool RemoveOnDeath;
+    public ActorVitals(int BaseHealth)
+    {
+        MaxHealth = BaseHealth;
+        Health = BaseHealth;
+        RemoveOnDeath=true;
+    }
     }
     [Header("General")]
     /// <summary>
     /// The health of the actor. This value sets both the maximum hp and the invincibility flag
     /// </summary>
-    public int Health=100;
-    
+    public ActorVitals Health;
     public float WalkSpeed = 5f;
     [Range(0f,1f)]
     public float GravityScale=1f;
@@ -21,9 +36,9 @@ public class Actor : MonoBehaviour
     protected bool isGrounded;
     protected Rigidbody2D rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
-        MaxHealth = Health;
+        Health=new ActorVitals(100);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -40,6 +55,13 @@ public class Actor : MonoBehaviour
         {
             isGrounded = true;
         
+        }
+    }
+    public void Die()
+    {
+        if(Health.RemoveOnDeath)
+        {
+            Destroy(this);
         }
     }
 }

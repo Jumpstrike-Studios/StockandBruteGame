@@ -17,6 +17,18 @@ public class Actor_Player : Actor
     public GameObject StockHealthBar;
     public GameObject BruteHealthBar;
 
+    public ActorVitals StockHealth;
+    public ActorVitals BruteHealth;
+new public void Start()
+{
+base.Start();
+ StockHealth = new ActorVitals(200);
+ BruteHealth = new ActorVitals(500);
+ Health = BruteHealth;
+ StockHealth.RemoveOnDeath=false;
+ BruteHealth.RemoveOnDeath=false;
+}
+
 // Update is called once per frame
 void Update()
     {
@@ -41,6 +53,7 @@ void Update()
 
 
                 JumpPower = 7.0f;
+                Health = StockHealth;
             }
             else
             {
@@ -58,6 +71,7 @@ void Update()
                 StockHealthBar.transform.position = oldPosition;
 
                 JumpPower = 3.5f;
+                Health = BruteHealth;
             }
         }
 
@@ -103,12 +117,12 @@ void Update()
         }
     }
 
-    new void OnCollisionEnter2D(Collision2D collision)
+    new public void OnCollisionEnter2D(Collision2D collision)
     {
         base.OnCollisionEnter2D(collision);
         if (collision.gameObject.CompareTag("Ground")){
             doubleJump = false;
-            isGrounded = true;
+           
         }
     }
 }
