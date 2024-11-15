@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rnes Tileset_0: 806588571451468233
+      Rnes Tileset_1: 7397661128031949561
+      Rnes Tileset_2: -6002273700959932109
+      Rnes Tileset_3: -3718498324035048359
+      Rnes Tileset_4: -787830661350679016
+      Rnes Tileset_5: -5078478273612940084
+      Rnes Tileset_6: -6370837585711091125
+      Rnes Tileset_7: 6266427792089104729
+      Rnes Tileset_8: -8093956205836997490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
