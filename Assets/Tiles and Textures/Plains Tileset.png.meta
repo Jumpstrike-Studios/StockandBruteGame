@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 89c6d190ed718c04c967a65f60e0f8be
+guid: a0fefe1a401ef6f4986c616434318192
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 806588571451468233
-    second: Rnes Tileset_0
+      213: -1498163072718084060
+    second: Plains Tileset_0
   - first:
-      213: 7397661128031949561
-    second: Rnes Tileset_1
+      213: -8269442781748908663
+    second: Plains Tileset_1
   - first:
-      213: -6002273700959932109
-    second: Rnes Tileset_2
+      213: -8836449392907713953
+    second: Plains Tileset_2
   - first:
-      213: -3718498324035048359
-    second: Rnes Tileset_3
+      213: 566790283739974704
+    second: Plains Tileset_3
   - first:
-      213: -787830661350679016
-    second: Rnes Tileset_4
+      213: 7079846167563867787
+    second: Plains Tileset_4
   - first:
-      213: -5078478273612940084
-    second: Rnes Tileset_5
+      213: 5976257220807392257
+    second: Plains Tileset_5
   - first:
-      213: -6370837585711091125
-    second: Rnes Tileset_6
+      213: 5699947462833805518
+    second: Plains Tileset_6
   - first:
-      213: 6266427792089104729
-    second: Rnes Tileset_7
+      213: 4703243341825723581
+    second: Plains Tileset_7
   - first:
-      213: -8093956205836997490
-    second: Rnes Tileset_8
+      213: 102074359349162477
+    second: Plains Tileset_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,11 +120,50 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rnes Tileset_0
+      name: Plains Tileset_0
       rect:
         serializedVersion: 2
         x: 2
@@ -139,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c921414804913b00800000000000000
-      internalID: 806588571451468233
+      spriteID: 428e70b7f94753be0800000000000000
+      internalID: -1498163072718084060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_1
+      name: Plains Tileset_1
       rect:
         serializedVersion: 2
         x: 2
@@ -161,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f25f09f995c9a660800000000000000
-      internalID: 7397661128031949561
+      spriteID: 98d20777a990d3d80800000000000000
+      internalID: -8269442781748908663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_2
+      name: Plains Tileset_2
       rect:
         serializedVersion: 2
         x: 20
@@ -183,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3313d91ded3a3bca0800000000000000
-      internalID: -6002273700959932109
+      spriteID: f52050c3810ae5580800000000000000
+      internalID: -8836449392907713953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_3
+      name: Plains Tileset_3
       rect:
         serializedVersion: 2
         x: 20
@@ -205,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95c610ac97d356cc0800000000000000
-      internalID: -3718498324035048359
+      spriteID: 03cc67492c4add700800000000000000
+      internalID: 566790283739974704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_4
+      name: Plains Tileset_4
       rect:
         serializedVersion: 2
         x: 38
@@ -227,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81e180700301115f0800000000000000
-      internalID: -787830661350679016
+      spriteID: b861e0a249aa04260800000000000000
+      internalID: 7079846167563867787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_5
+      name: Plains Tileset_5
       rect:
         serializedVersion: 2
         x: 38
@@ -249,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cccf2c5caee9589b0800000000000000
-      internalID: -5078478273612940084
+      spriteID: 10c769c574eefe250800000000000000
+      internalID: 5976257220807392257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_6
+      name: Plains Tileset_6
       rect:
         serializedVersion: 2
         x: 2
-        y: 0
+        y: 1
         width: 18
-        height: 18
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b42bbfd48fc3697a0800000000000000
-      internalID: -6370837585711091125
+      spriteID: ec8199094084a1f40800000000000000
+      internalID: 5699947462833805518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_7
+      name: Plains Tileset_7
       rect:
         serializedVersion: 2
         x: 20
-        y: 0
+        y: 1
         width: 18
-        height: 18
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9514b1e30e2d6f650800000000000000
-      internalID: 6266427792089104729
+      spriteID: dbc4eb986e6454140800000000000000
+      internalID: 4703243341825723581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rnes Tileset_8
+      name: Plains Tileset_8
       rect:
         serializedVersion: 2
         x: 38
-        y: 0
+        y: 1
         width: 18
-        height: 18
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,8 +354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8c6483e6bd7caf80800000000000000
-      internalID: -8093956205836997490
+      spriteID: de1bea9c614aa6100800000000000000
+      internalID: 102074359349162477
       vertices: []
       indices: 
       edges: []
@@ -335,15 +374,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rnes Tileset_0: 806588571451468233
-      Rnes Tileset_1: 7397661128031949561
-      Rnes Tileset_2: -6002273700959932109
-      Rnes Tileset_3: -3718498324035048359
-      Rnes Tileset_4: -787830661350679016
-      Rnes Tileset_5: -5078478273612940084
-      Rnes Tileset_6: -6370837585711091125
-      Rnes Tileset_7: 6266427792089104729
-      Rnes Tileset_8: -8093956205836997490
+      Plains Tileset_0: -1498163072718084060
+      Plains Tileset_1: -8269442781748908663
+      Plains Tileset_2: -8836449392907713953
+      Plains Tileset_3: 566790283739974704
+      Plains Tileset_4: 7079846167563867787
+      Plains Tileset_5: 5976257220807392257
+      Plains Tileset_6: 5699947462833805518
+      Plains Tileset_7: 4703243341825723581
+      Plains Tileset_8: 102074359349162477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
