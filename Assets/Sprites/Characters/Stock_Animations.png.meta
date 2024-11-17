@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 7e2d522b690ee1c418241fa0d5d1b934
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8671053111089360267
+    second: Stock_Animations_0
+  - first:
+      213: -3081979742340536909
+    second: Stock_Animations_1
+  - first:
+      213: -4428092432373632557
+    second: Stock_Animations_2
+  - first:
+      213: -2691104536597901500
+    second: Stock_Animations_3
+  - first:
+      213: 5643485335901643329
+    second: Stock_Animations_4
+  - first:
+      213: 2991358821236570905
+    second: Stock_Animations_5
+  - first:
+      213: -8437895149147104961
+    second: Stock_Animations_6
+  - first:
+      213: 5168689844352031090
+    second: Stock_Animations_7
+  - first:
+      213: 4827476912753951195
+    second: Stock_Animations_8
+  - first:
+      213: -5215140685423757677
+    second: Stock_Animations_9
+  - first:
+      213: 5225393085960904575
+    second: Stock_Animations_10
+  - first:
+      213: 8874983769516967457
+    second: Stock_Animations_11
+  - first:
+      213: -994656751077581338
+    second: Stock_Animations_12
+  - first:
+      213: -1387001814787205833
+    second: Stock_Animations_13
+  - first:
+      213: 8539016754992029611
+    second: Stock_Animations_14
+  - first:
+      213: -3823444882866718413
+    second: Stock_Animations_15
+  - first:
+      213: -4741947746682817426
+    second: Stock_Animations_16
+  - first:
+      213: 7466106836523846228
+    second: Stock_Animations_17
+  - first:
+      213: 1051130697614066604
+    second: Stock_Animations_18
+  - first:
+      213: -3189193180214719134
+    second: Stock_Animations_19
+  - first:
+      213: 3395813862909187394
+    second: Stock_Animations_20
+  - first:
+      213: 4795082791851257924
+    second: Stock_Animations_21
+  - first:
+      213: 1486529045023755499
+    second: Stock_Animations_22
+  - first:
+      213: 6690946660866989160
+    second: Stock_Animations_23
+  - first:
+      213: 7577331089263187394
+    second: Stock_Animations_24
+  - first:
+      213: -9196524497255079595
+    second: Stock_Animations_25
+  - first:
+      213: -2244553047887177332
+    second: Stock_Animations_26
+  - first:
+      213: -263478969197287752
+    second: Stock_Animations_27
+  - first:
+      213: -2648264195154443976
+    second: Stock_Animations_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stock_Animations_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 123
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57219fcf22b3aa780800000000000000
+      internalID: -8671053111089360267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 123
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5a7dcd0cb9a35d0800000000000000
+      internalID: -3081979742340536909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 123
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d136cfc4614c82c0800000000000000
+      internalID: -4428092432373632557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 123
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fc3aa9ea647aad0800000000000000
+      internalID: -2691104536597901500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 123
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1422b853300b15e40800000000000000
+      internalID: 5643485335901643329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 123
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b798fbff0738920800000000000000
+      internalID: 2991358821236570905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 123
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f395817511396ea80800000000000000
+      internalID: -8437895149147104961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 123
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27995ce4700eab740800000000000000
+      internalID: 5168689844352031090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 123
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd14912dca4aef240800000000000000
+      internalID: 4827476912753951195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_9
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 123
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39631a77d2910a7b0800000000000000
+      internalID: -5215140685423757677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_10
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 123
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f5b7c8353548840800000000000000
+      internalID: 5225393085960904575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1268a6977b64a2b70800000000000000
+      internalID: 8874983769516967457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 66
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed939e64f44232f0800000000000000
+      internalID: -994656751077581338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 70
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73559c6b23160cce0800000000000000
+      internalID: -1387001814787205833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 75
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf986c3f7ea08670800000000000000
+      internalID: 8539016754992029611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 79
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339b172f22560fac0800000000000000
+      internalID: -3823444882866718413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 77
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64b187f5a7313eb0800000000000000
+      internalID: -4741947746682817426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 70
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a8e165c90fc9760800000000000000
+      internalID: 7466106836523846228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 67
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca38bc3eccd569e00800000000000000
+      internalID: 1051130697614066604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 67
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d043d13b5bdb3d0800000000000000
+      internalID: -3189193180214719134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 22
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2459c0e67ba502f20800000000000000
+      internalID: 3395813862909187394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 23
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440f1ecc46e8b8240800000000000000
+      internalID: 4795082791851257924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 23
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec01fc5a4631a410800000000000000
+      internalID: 1486529045023755499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 23
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c1014b9840bdc50800000000000000
+      internalID: 6690946660866989160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_24
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 24
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c55e01ba76182960800000000000000
+      internalID: 7577331089263187394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_25
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 24
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551eeece1b16f5080800000000000000
+      internalID: -9196524497255079595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 25
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c891a2525eeb9d0e0800000000000000
+      internalID: -2244553047887177332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 25
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6a533064fe75cf0800000000000000
+      internalID: -263478969197287752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stock_Animations_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 25
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8310f60eeb97f3bd0800000000000000
+      internalID: -2648264195154443976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stock_Animations_0: -8671053111089360267
+      Stock_Animations_1: -3081979742340536909
+      Stock_Animations_10: 5225393085960904575
+      Stock_Animations_11: 8874983769516967457
+      Stock_Animations_12: -994656751077581338
+      Stock_Animations_13: -1387001814787205833
+      Stock_Animations_14: 8539016754992029611
+      Stock_Animations_15: -3823444882866718413
+      Stock_Animations_16: -4741947746682817426
+      Stock_Animations_17: 7466106836523846228
+      Stock_Animations_18: 1051130697614066604
+      Stock_Animations_19: -3189193180214719134
+      Stock_Animations_2: -4428092432373632557
+      Stock_Animations_20: 3395813862909187394
+      Stock_Animations_21: 4795082791851257924
+      Stock_Animations_22: 1486529045023755499
+      Stock_Animations_23: 6690946660866989160
+      Stock_Animations_24: 7577331089263187394
+      Stock_Animations_25: -9196524497255079595
+      Stock_Animations_26: -2244553047887177332
+      Stock_Animations_27: -263478969197287752
+      Stock_Animations_28: -2648264195154443976
+      Stock_Animations_3: -2691104536597901500
+      Stock_Animations_4: 5643485335901643329
+      Stock_Animations_5: 2991358821236570905
+      Stock_Animations_6: -8437895149147104961
+      Stock_Animations_7: 5168689844352031090
+      Stock_Animations_8: 4827476912753951195
+      Stock_Animations_9: -5215140685423757677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

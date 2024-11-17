@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: d41cc1c8b5499554089d136bdd229f50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7725835987351192408
+    second: Brute_Animations_0
+  - first:
+      213: 6971582187989623871
+    second: Brute_Animations_1
+  - first:
+      213: 2378477993737153457
+    second: Brute_Animations_2
+  - first:
+      213: 1429462241891644252
+    second: Brute_Animations_3
+  - first:
+      213: -9135899470592817282
+    second: Brute_Animations_4
+  - first:
+      213: 3120372428487435232
+    second: Brute_Animations_5
+  - first:
+      213: -6232752695088554041
+    second: Brute_Animations_6
+  - first:
+      213: 8863427859956359062
+    second: Brute_Animations_7
+  - first:
+      213: -8794445718179746825
+    second: Brute_Animations_8
+  - first:
+      213: -6300626956274851496
+    second: Brute_Animations_9
+  - first:
+      213: 8546763140976168988
+    second: Brute_Animations_10
+  - first:
+      213: 1096185527860708208
+    second: Brute_Animations_11
+  - first:
+      213: 413398913610954900
+    second: Brute_Animations_12
+  - first:
+      213: 6386371687189037391
+    second: Brute_Animations_13
+  - first:
+      213: 8270506535584341785
+    second: Brute_Animations_14
+  - first:
+      213: 1248014215388105779
+    second: Brute_Animations_15
+  - first:
+      213: -1885229952360592533
+    second: Brute_Animations_16
+  - first:
+      213: 7377705421013172629
+    second: Brute_Animations_17
+  - first:
+      213: -6470092404479400358
+    second: Brute_Animations_18
+  - first:
+      213: 7072930435328591868
+    second: Brute_Animations_19
+  - first:
+      213: -3948891504163637202
+    second: Brute_Animations_20
+  - first:
+      213: -4507558646668388969
+    second: Brute_Animations_21
+  - first:
+      213: 5548380290260123872
+    second: Brute_Animations_22
+  - first:
+      213: -7561695055162586250
+    second: Brute_Animations_23
+  - first:
+      213: -3057913396247917993
+    second: Brute_Animations_24
+  - first:
+      213: 8087931008591851537
+    second: Brute_Animations_25
+  - first:
+      213: -9120152791485067026
+    second: Brute_Animations_26
+  - first:
+      213: -143994912866577278
+    second: Brute_Animations_27
+  - first:
+      213: 3783224312691897732
+    second: Brute_Animations_28
+  - first:
+      213: -1520683683478444482
+    second: Brute_Animations_29
+  - first:
+      213: 3890126486025667560
+    second: Brute_Animations_30
+  - first:
+      213: -4270770063765150480
+    second: Brute_Animations_31
+  - first:
+      213: -1859715969508108643
+    second: Brute_Animations_32
+  - first:
+      213: 3031119465876703649
+    second: Brute_Animations_33
+  - first:
+      213: -6541798955354818719
+    second: Brute_Animations_34
+  - first:
+      213: -7237665598018433090
+    second: Brute_Animations_35
+  - first:
+      213: -6595077367196793106
+    second: Brute_Animations_36
+  - first:
+      213: 6520377385614381899
+    second: Brute_Animations_37
+  - first:
+      213: 4346602290296237975
+    second: Brute_Animations_38
+  - first:
+      213: -1193046600763411348
+    second: Brute_Animations_39
+  - first:
+      213: 7716778397644702414
+    second: Brute_Animations_40
+  - first:
+      213: -810487064165046813
+    second: Brute_Animations_41
+  - first:
+      213: -403063705359595869
+    second: Brute_Animations_42
+  - first:
+      213: -8721575450758076406
+    second: Brute_Animations_43
+  - first:
+      213: 9044605165421713284
+    second: Brute_Animations_44
+  - first:
+      213: -8412259679683350307
+    second: Brute_Animations_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brute_Animations_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 170
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8534ff2b5eea73b60800000000000000
+      internalID: 7725835987351192408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 170
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34ef8d101900c060800000000000000
+      internalID: 6971582187989623871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 170
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb69c2322d020120800000000000000
+      internalID: 2378477993737153457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 170
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53f8cbd55876d310800000000000000
+      internalID: 1429462241891644252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 171
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77c2a7e5d3c63180800000000000000
+      internalID: -9135899470592817282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 171
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3aae6f03acd4b20800000000000000
+      internalID: 3120372428487435232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 171
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf53644270d089a0800000000000000
+      internalID: -6232752695088554041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 171
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fdffc9da8310b70800000000000000
+      internalID: 8863427859956359062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 171
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbe07bd63ad3f580800000000000000
+      internalID: -8794445718179746825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 171
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851acf85a2daf88a0800000000000000
+      internalID: -6300626956274851496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1059454bc33c9670800000000000000
+      internalID: 8546763140976168988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073cf040eee663f00800000000000000
+      internalID: 1096185527860708208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 92
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49830542f10bcb500800000000000000
+      internalID: 413398913610954900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_13
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 100
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41c38a8633f0a850800000000000000
+      internalID: 6386371687189037391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 102
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f1d0600edb6c270800000000000000
+      internalID: 8270506535584341785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 98
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c88de0156d15110800000000000000
+      internalID: 1248014215388105779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 100
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bce91c85156d5e0800000000000000
+      internalID: -1885229952360592533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_17
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 100
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591c6fcddffd26660800000000000000
+      internalID: 7377705421013172629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_18
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 89
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a566d07fc3d9536a0800000000000000
+      internalID: -6470092404479400358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_19
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 89
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf74fc6c1c8182260800000000000000
+      internalID: 7072930435328591868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 21
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28b4cd5918b239c0800000000000000
+      internalID: -3948891504163637202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 21
+        width: 37
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795171dfa4fe171c0800000000000000
+      internalID: -4507558646668388969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0cbb73a7ecffc40800000000000000
+      internalID: 5548380290260123872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bc43139667f0790800000000000000
+      internalID: -7561695055162586250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_24
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a0cb6b7fb1095d0800000000000000
+      internalID: -3057913396247917993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110fbfe866a1e3070800000000000000
+      internalID: 8087931008591851537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_26
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 22
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0de365b55be6180800000000000000
+      internalID: -9120152791485067026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_27
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 22
+        width: 38
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284df11c36d600ef0800000000000000
+      internalID: -143994912866577278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_28
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 22
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4853f9fc776b08430800000000000000
+      internalID: 3783224312691897732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_29
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 22
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36e88e2f3275eae0800000000000000
+      internalID: -1520683683478444482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_30
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 22
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e306e2ad618cf530800000000000000
+      internalID: 3890126486025667560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 22
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4e7e7214d2bb4c0800000000000000
+      internalID: -4270770063765150480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_32
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 23
+        width: 37
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96195ecd26f036e0800000000000000
+      internalID: -1859715969508108643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_33
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 23
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a94a5b3813b01a20800000000000000
+      internalID: 3031119465876703649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_34
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 23
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167fd02928cd635a0800000000000000
+      internalID: -6541798955354818719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_35
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 23
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfcb034c75ae8b90800000000000000
+      internalID: -7237665598018433090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_36
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 23
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee64406a3149974a0800000000000000
+      internalID: -6595077367196793106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 23
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43190f8fa80d7a50800000000000000
+      internalID: 6520377385614381899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_38
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 23
+        width: 38
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fa105f0cb325c30800000000000000
+      internalID: 4346602290296237975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_39
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 23
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6472090072717fe0800000000000000
+      internalID: -1193046600763411348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_40
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec245024111871b60800000000000000
+      internalID: 7716778397644702414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_41
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5a46d2f4290c4f0800000000000000
+      internalID: -810487064165046813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_42
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6403c02b7086af0800000000000000
+      internalID: -403063705359595869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_43
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 22
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a082ccf165db6f680800000000000000
+      internalID: -8721575450758076406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_44
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 22
+        width: 37
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487df924a74e48d70800000000000000
+      internalID: 9044605165421713284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brute_Animations_45
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 22
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0f1223466a14b80800000000000000
+      internalID: -8412259679683350307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brute_Animations_0: 7725835987351192408
+      Brute_Animations_1: 6971582187989623871
+      Brute_Animations_10: 8546763140976168988
+      Brute_Animations_11: 1096185527860708208
+      Brute_Animations_12: 413398913610954900
+      Brute_Animations_13: 6386371687189037391
+      Brute_Animations_14: 8270506535584341785
+      Brute_Animations_15: 1248014215388105779
+      Brute_Animations_16: -1885229952360592533
+      Brute_Animations_17: 7377705421013172629
+      Brute_Animations_18: -6470092404479400358
+      Brute_Animations_19: 7072930435328591868
+      Brute_Animations_2: 2378477993737153457
+      Brute_Animations_20: -3948891504163637202
+      Brute_Animations_21: -4507558646668388969
+      Brute_Animations_22: 5548380290260123872
+      Brute_Animations_23: -7561695055162586250
+      Brute_Animations_24: -3057913396247917993
+      Brute_Animations_25: 8087931008591851537
+      Brute_Animations_26: -9120152791485067026
+      Brute_Animations_27: -143994912866577278
+      Brute_Animations_28: 3783224312691897732
+      Brute_Animations_29: -1520683683478444482
+      Brute_Animations_3: 1429462241891644252
+      Brute_Animations_30: 3890126486025667560
+      Brute_Animations_31: -4270770063765150480
+      Brute_Animations_32: -1859715969508108643
+      Brute_Animations_33: 3031119465876703649
+      Brute_Animations_34: -6541798955354818719
+      Brute_Animations_35: -7237665598018433090
+      Brute_Animations_36: -6595077367196793106
+      Brute_Animations_37: 6520377385614381899
+      Brute_Animations_38: 4346602290296237975
+      Brute_Animations_39: -1193046600763411348
+      Brute_Animations_4: -9135899470592817282
+      Brute_Animations_40: 7716778397644702414
+      Brute_Animations_41: -810487064165046813
+      Brute_Animations_42: -403063705359595869
+      Brute_Animations_43: -8721575450758076406
+      Brute_Animations_44: 9044605165421713284
+      Brute_Animations_45: -8412259679683350307
+      Brute_Animations_5: 3120372428487435232
+      Brute_Animations_6: -6232752695088554041
+      Brute_Animations_7: 8863427859956359062
+      Brute_Animations_8: -8794445718179746825
+      Brute_Animations_9: -6300626956274851496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

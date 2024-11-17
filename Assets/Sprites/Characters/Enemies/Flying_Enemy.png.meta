@@ -1,0 +1,1665 @@
+fileFormatVersion: 2
+guid: 41f8849f30c2f2c418d72ba2cc8b0d07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3266267996593112586
+    second: Flying_Enemy_0
+  - first:
+      213: 669769846977622880
+    second: Flying_Enemy_1
+  - first:
+      213: -2907284670422334342
+    second: Flying_Enemy_2
+  - first:
+      213: 1089768058068308720
+    second: Flying_Enemy_3
+  - first:
+      213: 5742469138538839472
+    second: Flying_Enemy_4
+  - first:
+      213: 8019923143552731754
+    second: Flying_Enemy_5
+  - first:
+      213: 3859711012153430439
+    second: Flying_Enemy_6
+  - first:
+      213: -2078089214933913754
+    second: Flying_Enemy_7
+  - first:
+      213: -4888258435209564544
+    second: Flying_Enemy_8
+  - first:
+      213: -5002501458755700792
+    second: Flying_Enemy_9
+  - first:
+      213: -1564833604836196267
+    second: Flying_Enemy_10
+  - first:
+      213: -6057075698018586423
+    second: Flying_Enemy_11
+  - first:
+      213: 1410214541392893641
+    second: Flying_Enemy_12
+  - first:
+      213: -3462510821303816476
+    second: Flying_Enemy_13
+  - first:
+      213: 481506573991831481
+    second: Flying_Enemy_14
+  - first:
+      213: 4321838966310040802
+    second: Flying_Enemy_15
+  - first:
+      213: 1922380573742468072
+    second: Flying_Enemy_16
+  - first:
+      213: -1409837706047497183
+    second: Flying_Enemy_17
+  - first:
+      213: -3538637877948858579
+    second: Flying_Enemy_18
+  - first:
+      213: -5580374316097991381
+    second: Flying_Enemy_19
+  - first:
+      213: 4658194294777037408
+    second: Flying_Enemy_20
+  - first:
+      213: -5138214944264450295
+    second: Flying_Enemy_21
+  - first:
+      213: 3290524390578364813
+    second: Flying_Enemy_22
+  - first:
+      213: -1271282219383895612
+    second: Flying_Enemy_23
+  - first:
+      213: 4491416515644319752
+    second: Flying_Enemy_24
+  - first:
+      213: 705195158425688157
+    second: Flying_Enemy_25
+  - first:
+      213: 4756049838402620042
+    second: Flying_Enemy_26
+  - first:
+      213: -5650060107291603646
+    second: Flying_Enemy_27
+  - first:
+      213: 1798948126252882478
+    second: Flying_Enemy_28
+  - first:
+      213: 9010701590024017371
+    second: Flying_Enemy_29
+  - first:
+      213: 2061827150995448731
+    second: Flying_Enemy_30
+  - first:
+      213: 1707402334121955032
+    second: Flying_Enemy_31
+  - first:
+      213: 5669093252472482011
+    second: Flying_Enemy_32
+  - first:
+      213: 6811639865814213058
+    second: Flying_Enemy_33
+  - first:
+      213: 5900432163335112151
+    second: Flying_Enemy_34
+  - first:
+      213: 8523381839375117708
+    second: Flying_Enemy_35
+  - first:
+      213: 3048669442991853019
+    second: Flying_Enemy_36
+  - first:
+      213: -6352956830104852289
+    second: Flying_Enemy_37
+  - first:
+      213: 5102699497641061148
+    second: Flying_Enemy_38
+  - first:
+      213: -5611217519028913051
+    second: Flying_Enemy_39
+  - first:
+      213: 5333999185162626376
+    second: Flying_Enemy_40
+  - first:
+      213: -8204579177876789914
+    second: Flying_Enemy_41
+  - first:
+      213: 4681745402563775458
+    second: Flying_Enemy_42
+  - first:
+      213: -2559747320122957460
+    second: Flying_Enemy_43
+  - first:
+      213: 7136166559547332631
+    second: Flying_Enemy_44
+  - first:
+      213: 3473005727224198326
+    second: Flying_Enemy_45
+  - first:
+      213: -2151271098203934736
+    second: Flying_Enemy_46
+  - first:
+      213: 2702856157910822511
+    second: Flying_Enemy_47
+  - first:
+      213: -2834668620723081008
+    second: Flying_Enemy_48
+  - first:
+      213: 8519295635090907070
+    second: Flying_Enemy_49
+  - first:
+      213: 915614252395754720
+    second: Flying_Enemy_50
+  - first:
+      213: 3039644445955296139
+    second: Flying_Enemy_51
+  - first:
+      213: 8480281273714005113
+    second: Flying_Enemy_52
+  - first:
+      213: 4425005925869249488
+    second: Flying_Enemy_53
+  - first:
+      213: 6523725156556337446
+    second: Flying_Enemy_54
+  - first:
+      213: 9044595322134373115
+    second: Flying_Enemy_55
+  - first:
+      213: 8921011727567454720
+    second: Flying_Enemy_56
+  - first:
+      213: 967865866355476121
+    second: Flying_Enemy_57
+  - first:
+      213: 3063763182419825122
+    second: Flying_Enemy_58
+  - first:
+      213: 6023164631279256735
+    second: Flying_Enemy_59
+  - first:
+      213: -1053675943751842651
+    second: Flying_Enemy_60
+  - first:
+      213: 2630147598556726258
+    second: Flying_Enemy_61
+  - first:
+      213: 1998067023768069524
+    second: Flying_Enemy_62
+  - first:
+      213: 1169619651052944364
+    second: Flying_Enemy_63
+  - first:
+      213: -1875439235251771357
+    second: Flying_Enemy_64
+  - first:
+      213: 3466466889221576751
+    second: Flying_Enemy_65
+  - first:
+      213: 6909638201067341037
+    second: Flying_Enemy_66
+  - first:
+      213: 7001263108122458250
+    second: Flying_Enemy_67
+  - first:
+      213: -2571313697289613084
+    second: Flying_Enemy_68
+  - first:
+      213: 5287780784948335875
+    second: Flying_Enemy_69
+  - first:
+      213: -6089110117584878756
+    second: Flying_Enemy_70
+  - first:
+      213: -9217494948465762130
+    second: Flying_Enemy_71
+  - first:
+      213: 7899594158275380811
+    second: Flying_Enemy_72
+  - first:
+      213: -3630067047000598075
+    second: Flying_Enemy_73
+  - first:
+      213: -7615563556073523863
+    second: Flying_Enemy_74
+  - first:
+      213: 3095136119197803689
+    second: Flying_Enemy_75
+  - first:
+      213: 4626081444457719462
+    second: Flying_Enemy_76
+  - first:
+      213: 3385809373149403729
+    second: Flying_Enemy_77
+  - first:
+      213: 2164430671296817085
+    second: Flying_Enemy_78
+  - first:
+      213: -8113347075666228854
+    second: Flying_Enemy_79
+  - first:
+      213: 6411590428546768690
+    second: Flying_Enemy_80
+  - first:
+      213: -8099263523171227334
+    second: Flying_Enemy_81
+  - first:
+      213: -9146401516416274480
+    second: Flying_Enemy_82
+  - first:
+      213: 9022085710927230943
+    second: Flying_Enemy_83
+  - first:
+      213: 692737876491021951
+    second: Flying_Enemy_84
+  - first:
+      213: -2175975148506096559
+    second: Flying_Enemy_85
+  - first:
+      213: -186583577201790434
+    second: Flying_Enemy_86
+  - first:
+      213: -535947961490839579
+    second: Flying_Enemy_87
+  - first:
+      213: 8655987021573172136
+    second: Flying_Enemy_88
+  - first:
+      213: -443561609126090195
+    second: Flying_Enemy_89
+  - first:
+      213: -405923041090230718
+    second: Flying_Enemy_90
+  - first:
+      213: 6333709511137063397
+    second: Flying_Enemy_91
+  - first:
+      213: 6502003108906634952
+    second: Flying_Enemy_92
+  - first:
+      213: -4181409265336010550
+    second: Flying_Enemy_93
+  - first:
+      213: 5626949653606331250
+    second: Flying_Enemy_94
+  - first:
+      213: -4971579639304603189
+    second: Flying_Enemy_95
+  - first:
+      213: -3714464219692839890
+    second: Flying_Enemy_96
+  - first:
+      213: -8096055343491557507
+    second: Flying_Enemy_97
+  - first:
+      213: -4339526236805168231
+    second: Flying_Enemy_98
+  - first:
+      213: -3931994112556342972
+    second: Flying_Enemy_99
+  - first:
+      213: 6002329202157523958
+    second: Flying_Enemy_100
+  - first:
+      213: -9142644656134963434
+    second: Flying_Enemy_101
+  - first:
+      213: -314094349405979807
+    second: Flying_Enemy_102
+  - first:
+      213: 1970158613668665976
+    second: Flying_Enemy_103
+  - first:
+      213: 637213928282459911
+    second: Flying_Enemy_104
+  - first:
+      213: 5160332849944959495
+    second: Flying_Enemy_105
+  - first:
+      213: 7229256624958297262
+    second: Flying_Enemy_106
+  - first:
+      213: 6114551179376850078
+    second: Flying_Enemy_107
+  - first:
+      213: 8924119107292402289
+    second: Flying_Enemy_108
+  - first:
+      213: -4074633782355354463
+    second: Flying_Enemy_109
+  - first:
+      213: -7370997891898312830
+    second: Flying_Enemy_110
+  - first:
+      213: 3807506556146337018
+    second: Flying_Enemy_111
+  - first:
+      213: -870471900063190315
+    second: Flying_Enemy_112
+  - first:
+      213: -6888840953832966424
+    second: Flying_Enemy_113
+  - first:
+      213: -4230538114033343433
+    second: Flying_Enemy_114
+  - first:
+      213: -6623851566503350131
+    second: Flying_Enemy_115
+  - first:
+      213: 5023709650465927482
+    second: Flying_Enemy_116
+  - first:
+      213: 4479248503032330300
+    second: Flying_Enemy_117
+  - first:
+      213: 6613600244940525991
+    second: Flying_Enemy_118
+  - first:
+      213: -7648152174454444714
+    second: Flying_Enemy_119
+  - first:
+      213: -5603790426458399940
+    second: Flying_Enemy_120
+  - first:
+      213: -1539416592971893496
+    second: Flying_Enemy_121
+  - first:
+      213: -4180729260264397916
+    second: Flying_Enemy_122
+  - first:
+      213: 3089104237240431335
+    second: Flying_Enemy_123
+  - first:
+      213: 4696120201508823860
+    second: Flying_Enemy_124
+  - first:
+      213: 2619952870197852623
+    second: Flying_Enemy_125
+  - first:
+      213: 4497136789633056574
+    second: Flying_Enemy_126
+  - first:
+      213: 7874857665494126801
+    second: Flying_Enemy_127
+  - first:
+      213: 3641544760771588303
+    second: Flying_Enemy_128
+  - first:
+      213: 1763012460042093031
+    second: Flying_Enemy_129
+  - first:
+      213: -1683998271887821079
+    second: Flying_Enemy_130
+  - first:
+      213: 697909050601783803
+    second: Flying_Enemy_131
+  - first:
+      213: -3051697554791557635
+    second: Flying_Enemy_132
+  - first:
+      213: 1393277345142082255
+    second: Flying_Enemy_133
+  - first:
+      213: 1928996403654555375
+    second: Flying_Enemy_134
+  - first:
+      213: -4146165694097024959
+    second: Flying_Enemy_135
+  - first:
+      213: 9102736213820368908
+    second: Flying_Enemy_136
+  - first:
+      213: -2914081238434512501
+    second: Flying_Enemy_137
+  - first:
+      213: -3008632086093281866
+    second: Flying_Enemy_138
+  - first:
+      213: -9011112884384449263
+    second: Flying_Enemy_139
+  - first:
+      213: -7533778360779970515
+    second: Flying_Enemy_140
+  - first:
+      213: 6730996576475229707
+    second: Flying_Enemy_141
+  - first:
+      213: -6982441912077054817
+    second: Flying_Enemy_142
+  - first:
+      213: -3811780201106851139
+    second: Flying_Enemy_143
+  - first:
+      213: 7549723313035848530
+    second: Flying_Enemy_144
+  - first:
+      213: 8925867704364149188
+    second: Flying_Enemy_145
+  - first:
+      213: -1807833473296203996
+    second: Flying_Enemy_146
+  - first:
+      213: 9022778485369748848
+    second: Flying_Enemy_147
+  - first:
+      213: -323485977738216557
+    second: Flying_Enemy_148
+  - first:
+      213: -782746209111978483
+    second: Flying_Enemy_149
+  - first:
+      213: 4081430542018245923
+    second: Flying_Enemy_150
+  - first:
+      213: -240570589260369938
+    second: Flying_Enemy_151
+  - first:
+      213: 4735387525697508149
+    second: Flying_Enemy_152
+  - first:
+      213: -6857176003498911021
+    second: Flying_Enemy_153
+  - first:
+      213: 4780574441899565072
+    second: Flying_Enemy_154
+  - first:
+      213: -3323773302466942860
+    second: Flying_Enemy_155
+  - first:
+      213: 1724475843682993419
+    second: Flying_Enemy_156
+  - first:
+      213: -2670400168515661477
+    second: Flying_Enemy_157
+  - first:
+      213: 194507380008140046
+    second: Flying_Enemy_158
+  - first:
+      213: -7411863635255075620
+    second: Flying_Enemy_159
+  - first:
+      213: -6673639488752000240
+    second: Flying_Enemy_160
+  - first:
+      213: 2865200022236326725
+    second: Flying_Enemy_161
+  - first:
+      213: -8085842138467827011
+    second: Flying_Enemy_162
+  - first:
+      213: -1254343306642815686
+    second: Flying_Enemy_163
+  - first:
+      213: -3686618712378575514
+    second: Flying_Enemy_164
+  - first:
+      213: 3663395607603117604
+    second: Flying_Enemy_165
+  - first:
+      213: 2286013582877560899
+    second: Flying_Enemy_166
+  - first:
+      213: -2825741097436271726
+    second: Flying_Enemy_167
+  - first:
+      213: -2571425282630259078
+    second: Flying_Enemy_168
+  - first:
+      213: -4058684336728259006
+    second: Flying_Enemy_169
+  - first:
+      213: 8045519765727331840
+    second: Flying_Enemy_170
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flying_Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 85
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f937d10092eba2d0800000000000000
+      internalID: -3266267996593112586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 85
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0637e5290208b4900800000000000000
+      internalID: 669769846977622880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 85
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74c986eeff37a7d0800000000000000
+      internalID: -2907284670422334342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 85
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f29ab46642af1f00800000000000000
+      internalID: 1089768058068308720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 85
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd3040b14951bf40800000000000000
+      internalID: 5742469138538839472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 85
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a05619b9d7c4f60800000000000000
+      internalID: 8019923143552731754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 85
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1911747b2709530800000000000000
+      internalID: 3859711012153430439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 85
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f2b448ed42923e0800000000000000
+      internalID: -2078089214933913754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 85
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ee60f2ada692cb0800000000000000
+      internalID: -4888258435209564544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 85
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c73e7a7d6b839ab0800000000000000
+      internalID: -5002501458755700792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 85
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55005239028984ae0800000000000000
+      internalID: -1564833604836196267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 85
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c073f19eb1f0fba0800000000000000
+      internalID: -6057075698018586423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 84
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c650dc57a6129310800000000000000
+      internalID: 1410214541392893641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_13
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 82
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee6d31d0c0b2ffc0800000000000000
+      internalID: -3462510821303816476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_14
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 85
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b76ccb8da7aea600800000000000000
+      internalID: 481506573991831481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_15
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 82
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4f95b44a14afb30800000000000000
+      internalID: 4321838966310040802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_16
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 84
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb080552faadaa10800000000000000
+      internalID: 1922380573742468072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_17
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 83
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c561473104f6ce0800000000000000
+      internalID: -1409837706047497183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_18
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 85
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fbd18399b34eec0800000000000000
+      internalID: -3538637877948858579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_19
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 85
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d044720278e82b0800000000000000
+      internalID: -5580374316097991381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_20
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 85
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062cfeae70b35a040800000000000000
+      internalID: 4658194294777037408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f838b4bb461b8b0800000000000000
+      internalID: -5138214944264450295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_22
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 45
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81ae21df7a4aad20800000000000000
+      internalID: 3290524390578364813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_23
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 45
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c94a589e8f7b5ee0800000000000000
+      internalID: -1271282219383895612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_24
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 45
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8086d414687b45e30800000000000000
+      internalID: 4491416515644319752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_25
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 45
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58d943a24b59c900800000000000000
+      internalID: 705195158425688157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_26
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 45
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8aca002122e00240800000000000000
+      internalID: 4756049838402620042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 45
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d47498444f691b0800000000000000
+      internalID: -5650060107291603646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_28
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 45
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a58a22ac527f810800000000000000
+      internalID: 1798948126252882478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_29
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 45
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5dd6afa517c0d70800000000000000
+      internalID: 9010701590024017371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_30
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 45
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93e65baed41d9c10800000000000000
+      internalID: 2061827150995448731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 45
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de030e6069e1b710800000000000000
+      internalID: 1707402334121955032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_32
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 45
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8af28e64aacae40800000000000000
+      internalID: 5669093252472482011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_33
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 45
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1eebb4e5ec78e50800000000000000
+      internalID: 6811639865814213058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_34
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 45
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d501ec6acb82e150800000000000000
+      internalID: 5900432163335112151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 45
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d28f4cf92294670800000000000000
+      internalID: 8523381839375117708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_36
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 45
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd0e13b4bc0f4a20800000000000000
+      internalID: 3048669442991853019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_37
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 46
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb865342c63c5d7a0800000000000000
+      internalID: -6352956830104852289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_38
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 46
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ba578682e60d640800000000000000
+      internalID: 5102699497641061148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_39
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 46
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05702ccf3c2ca0429a3bda6564f9a70
+      internalID: 1935455838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 18
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80edf50b9e46f9840a053d46bc0d7008
+      internalID: -335791486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_41
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 14
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc357a740b072a84797c38083ec72a31
+      internalID: 912901623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_42
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 15
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc1bfaf5e902b24da011c636092babc
+      internalID: 891226192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_43
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 16
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382a9a4b00eda14cacf1284d6edb6cc
+      internalID: 2058433425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying_Enemy_44
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 14
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60104a95d8c4d274eaa0b73d7a545652
+      internalID: -1071203310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Flying_Enemy_0: -3266267996593112586
+      Flying_Enemy_1: 669769846977622880
+      Flying_Enemy_10: -1564833604836196267
+      Flying_Enemy_11: -6057075698018586423
+      Flying_Enemy_12: 1410214541392893641
+      Flying_Enemy_13: -3462510821303816476
+      Flying_Enemy_14: 481506573991831481
+      Flying_Enemy_15: 4321838966310040802
+      Flying_Enemy_16: 1922380573742468072
+      Flying_Enemy_17: -1409837706047497183
+      Flying_Enemy_18: -3538637877948858579
+      Flying_Enemy_19: -5580374316097991381
+      Flying_Enemy_2: -2907284670422334342
+      Flying_Enemy_20: 4658194294777037408
+      Flying_Enemy_21: -5138214944264450295
+      Flying_Enemy_22: 3290524390578364813
+      Flying_Enemy_23: -1271282219383895612
+      Flying_Enemy_24: 4491416515644319752
+      Flying_Enemy_25: 705195158425688157
+      Flying_Enemy_26: 4756049838402620042
+      Flying_Enemy_27: -5650060107291603646
+      Flying_Enemy_28: 1798948126252882478
+      Flying_Enemy_29: 9010701590024017371
+      Flying_Enemy_3: 1089768058068308720
+      Flying_Enemy_30: 2061827150995448731
+      Flying_Enemy_31: 1707402334121955032
+      Flying_Enemy_32: 5669093252472482011
+      Flying_Enemy_33: 6811639865814213058
+      Flying_Enemy_34: 5900432163335112151
+      Flying_Enemy_35: 8523381839375117708
+      Flying_Enemy_36: 3048669442991853019
+      Flying_Enemy_37: -6352956830104852289
+      Flying_Enemy_38: 5102699497641061148
+      Flying_Enemy_39: 1935455838
+      Flying_Enemy_4: 5742469138538839472
+      Flying_Enemy_40: -335791486
+      Flying_Enemy_41: 912901623
+      Flying_Enemy_42: 891226192
+      Flying_Enemy_43: 2058433425
+      Flying_Enemy_44: -1071203310
+      Flying_Enemy_5: 8019923143552731754
+      Flying_Enemy_6: 3859711012153430439
+      Flying_Enemy_7: -2078089214933913754
+      Flying_Enemy_8: -4888258435209564544
+      Flying_Enemy_9: -5002501458755700792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

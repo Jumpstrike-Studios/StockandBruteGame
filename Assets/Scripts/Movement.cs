@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
-    private float JumpPower = 3.5f;
+    public float JumpPower = 3.5f;
     private bool doubleJump;
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
@@ -41,6 +41,9 @@ void Update()
                 // Changes sprite to stock
                 Stock_Sprite.SetActive(true); 
                 Brute_Sprite.SetActive(false);
+                
+                JumpPower = 7.0f;
+                Health = StockHealth;
                 IsStock = true;
 
                 Vector3 oldPosition = StockHealthBar.transform.position;
@@ -52,8 +55,6 @@ void Update()
 
 
 
-                JumpPower = 7.0f;
-                Health = StockHealth;
             }
             else
             {
@@ -61,6 +62,8 @@ void Update()
                 // Changes sprite to brute
                 Stock_Sprite.SetActive(false);
                 Brute_Sprite.SetActive(true);
+                JumpPower = 3.5f;
+                Health = BruteHealth;
                 IsStock = false;
 
                 Vector3 oldPosition = BruteHealthBar.transform.position;
@@ -70,23 +73,26 @@ void Update()
                 StockHealthBar.transform.localScale = StockHealthBar.transform.localScale / 2;
                 StockHealthBar.transform.position = oldPosition;
 
-                JumpPower = 3.5f;
-                Health = BruteHealth;
+               
             }
         }
 
 
         if (Input.GetKey("d"))
         {
-            accelerationTime+= Time.deltaTime*acceleration/2;
-            Velocity.x += acceleration * Time.deltaTime;
+            accelerationTime+= Time.deltaTime*acceleration/3f;
+            Velocity.x += acceleration * Time.deltaTime+accelerationTime/5;
+            Stock_Sprite.GetComponent<SpriteRenderer>().flipX = false;
+            Brute_Sprite.GetComponent<SpriteRenderer>().flipX = false;
         }
-        else if (Input.GetKey("a"))
+        if (Input.GetKey("a"))
         {
-            accelerationTime+= Time.deltaTime*acceleration/2;
-            Velocity.x -= acceleration * Time.deltaTime;
+            accelerationTime+= Time.deltaTime*acceleration/3f;
+            Velocity.x -= acceleration * Time.deltaTime+accelerationTime/5;
+            Stock_Sprite.GetComponent<SpriteRenderer>().flipX = true;
+            Brute_Sprite.GetComponent<SpriteRenderer>().flipX = true;
         }
-        else if (Velocity.x != 0f) 
+        if (!(Input.GetKey("a")||Input.GetKey("d"))||(Input.GetKey("a")&&Input.GetKey("d"))) 
         {
             accelerationTime-= Time.deltaTime*deceleration;
             Velocity.x -= deceleration * Mathf.Sign(Velocity.x) * Time.deltaTime;
@@ -100,13 +106,13 @@ void Update()
         {
             if (isGrounded) // Checks if player is grounded then if doubleJump is true
             {
-                rb.velocity = Vector2.up * JumpPower;
+                rb.velocity = new Vector2(rb.velocity.x,JumpPower);
                 doubleJump = !doubleJump;
                 isGrounded = false;
             }
             else if (IsStock && doubleJump)
             {
-                rb.velocity = Vector2.up * JumpPower;
+                rb.velocity = new Vector2(rb.velocity.x,JumpPower);
                 doubleJump = !doubleJump;
                 isGrounded = false;
             }
