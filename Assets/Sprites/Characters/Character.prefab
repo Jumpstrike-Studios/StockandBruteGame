@@ -279,12 +279,12 @@ GameObject:
   - component: {fileID: 2400309361433209355}
   - component: {fileID: 2971874160138401092}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Puncher
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2400309361433209355
 Transform:
   m_ObjectHideFlags: 0
@@ -486,3 +486,4 @@ MonoBehaviour:
   deceleration: 16
   StockHealthBar: {fileID: 0}
   BruteHealthBar: {fileID: 0}
+  PunchBox: {fileID: 3203697845578965299}
