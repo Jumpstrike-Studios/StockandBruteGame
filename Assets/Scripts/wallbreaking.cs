@@ -1,12 +1,8 @@
 using UnityEngine;
 
-public class BreakableWall : MonoBehaviour
+public class BreakableWall : Actor
 {
-    // attach script to animator component
-    [Header("Wall Settings")]
-    public int maxHealth = 50; // Max health of the wall
-    private int currentHealth;
-
+  
     [Header("Death Effects")]
     public GameObject deathEffect; // Optional: Particle effect on break
     public Animator animator; // Reference to the wall's Animator
@@ -14,17 +10,17 @@ public class BreakableWall : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = maxHealth;
+       Health = new ActorVitals(50);
     }
 
     // apply damage to the wall
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        Debug.Log($"Wall took {damage} damage. Current health: {currentHealth}");
+        Health.Health -= damage;
+        Debug.Log($"Wall took {damage} damage. Current health: {Health.Health}");
 
         // break the wall
-        if (currentHealth <= 0)
+        if (Health.Health <= 0)
         {
             Break();
         }
