@@ -25,6 +25,12 @@ public class BreakableWall : Actor
             Break();
         }
     }
+     void OnTriggerEnter2D(Collider2D col)
+    {
+      if (col.gameObject.CompareTag("Hitbox")){
+           TakeDamage(50);
+        }
+    }
 
     private void Break()
     {
