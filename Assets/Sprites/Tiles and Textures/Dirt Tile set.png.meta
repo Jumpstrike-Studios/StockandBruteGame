@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: a261703320a164f4fba1d5aef03f1a41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5598967230941578184
+    second: Dirt Tile set_0
+  - first:
+      213: -2002755349836492047
+    second: Dirt Tile set_1
+  - first:
+      213: 2648450188308531716
+    second: Dirt Tile set_2
+  - first:
+      213: -5823246230280214364
+    second: Dirt Tile set_3
+  - first:
+      213: 440856373956009778
+    second: Dirt Tile set_4
+  - first:
+      213: -1676781378648504442
+    second: Dirt Tile set_5
+  - first:
+      213: -5928494023905661922
+    second: Dirt Tile set_6
+  - first:
+      213: -1877256784695764910
+    second: Dirt Tile set_7
+  - first:
+      213: 4889876282883949333
+    second: Dirt Tile set_8
+  - first:
+      213: 7246791255150330833
+    second: Dirt Tile set_9
+  - first:
+      213: -4875067765040257180
+    second: Dirt Tile set_10
+  - first:
+      213: -4381541056643326781
+    second: Dirt Tile set_11
+  - first:
+      213: 463957168527865870
+    second: Dirt Tile set_12
+  - first:
+      213: -2976321884416715597
+    second: Dirt Tile set_13
+  - first:
+      213: 1958071779559510172
+    second: Dirt Tile set_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dirt Tile set_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 109
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cbca2d7f87c42b0800000000000000
+      internalID: -5598967230941578184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 109
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f29bf0de98c434e0800000000000000
+      internalID: -2002755349836492047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 109
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a42770a6f21c420800000000000000
+      internalID: 2648450188308531716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 109
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8e38c086caf2fa0800000000000000
+      internalID: -5823246230280214364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 109
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f5d9e498c3e1600800000000000000
+      internalID: 440856373956009778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 92
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6878aa75830eab8e0800000000000000
+      internalID: -1676781378648504442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 92
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ca3148812c9bda0800000000000000
+      internalID: -5928494023905661922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 92
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258540486e4a2f5e0800000000000000
+      internalID: -1877256784695764910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 92
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513c7e452945cd340800000000000000
+      internalID: 4889876282883949333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d384ac5046c19460800000000000000
+      internalID: 7246791255150330833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46761d862b7485cb0800000000000000
+      internalID: -4875067765040257180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc1cf59f93a133c0800000000000000
+      internalID: -4381541056643326781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08791d269e407600800000000000000
+      internalID: 463957168527865870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4de1ee30bf1b6d0800000000000000
+      internalID: -2976321884416715597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt Tile set_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c909c51c8e77c2b10800000000000000
+      internalID: 1958071779559510172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 214b13524c1d01e45a4f5b1a46dd6e91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dirt Tile set_0: -5598967230941578184
+      Dirt Tile set_1: -2002755349836492047
+      Dirt Tile set_10: -4875067765040257180
+      Dirt Tile set_11: -4381541056643326781
+      Dirt Tile set_12: 463957168527865870
+      Dirt Tile set_13: -2976321884416715597
+      Dirt Tile set_14: 1958071779559510172
+      Dirt Tile set_2: 2648450188308531716
+      Dirt Tile set_3: -5823246230280214364
+      Dirt Tile set_4: 440856373956009778
+      Dirt Tile set_5: -1676781378648504442
+      Dirt Tile set_6: -5928494023905661922
+      Dirt Tile set_7: -1877256784695764910
+      Dirt Tile set_8: 4889876282883949333
+      Dirt Tile set_9: 7246791255150330833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Plains Tileset_1
+  m_Name: Dirt Tile set_13
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -8269442781748908663, guid: a0fefe1a401ef6f4986c616434318192, type: 3}
+  m_Sprite: {fileID: -2976321884416715597, guid: a261703320a164f4fba1d5aef03f1a41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
