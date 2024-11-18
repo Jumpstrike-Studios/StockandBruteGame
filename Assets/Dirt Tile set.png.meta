@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dirt Tile set_0: -5598967230941578184
+      Dirt Tile set_1: -2002755349836492047
+      Dirt Tile set_10: -4875067765040257180
+      Dirt Tile set_11: -4381541056643326781
+      Dirt Tile set_12: 463957168527865870
+      Dirt Tile set_13: -2976321884416715597
+      Dirt Tile set_14: 1958071779559510172
+      Dirt Tile set_2: 2648450188308531716
+      Dirt Tile set_3: -5823246230280214364
+      Dirt Tile set_4: 440856373956009778
+      Dirt Tile set_5: -1676781378648504442
+      Dirt Tile set_6: -5928494023905661922
+      Dirt Tile set_7: -1877256784695764910
+      Dirt Tile set_8: 4889876282883949333
+      Dirt Tile set_9: 7246791255150330833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

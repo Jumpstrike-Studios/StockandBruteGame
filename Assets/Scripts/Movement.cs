@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mono.Cecil;
+using Mono.Cecil.Cil;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
+    public GameObject trail_root;
+    private float TrailTimer;
     public float JumpPower = 3.5f;
     private bool doubleJump;
     public GameObject Stock_Sprite;
@@ -28,6 +32,8 @@ public class Actor_Player : Actor
     private Vector2 DashDirection;
 
     private bool HasDashed;
+
+    
 new public void Start()
 {
 base.Start();
@@ -37,6 +43,18 @@ base.Start();
  StockHealth.RemoveOnDeath=false;
  BruteHealth.RemoveOnDeath=false;
 }
+
+public void UpdateTrail(){
+    TrailTimer-=Time.deltaTime;
+    if(TrailTimer < 0){
+       GameObject trail = Instantiate(trail_root,IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().transform.position:Brute_Sprite.GetComponent<SpriteRenderer>().transform.position,transform.rotation);
+        trail.GetComponent<SpriteRenderer>().sprite = IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().sprite:Brute_Sprite.GetComponent<SpriteRenderer>().sprite;
+        trail.GetComponent<SpriteRenderer>().flipX = IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().flipX:Brute_Sprite.GetComponent<SpriteRenderer>().flipX;
+        TrailTimer=0.09f;
+    }
+}
+
+public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<Animator>();}
 
 // Update is called once per frame
 void Update()
@@ -92,37 +110,56 @@ void Update()
             {
             DashDirection = new Vector2(Input.GetKey("a")?-1f:Input.GetKey("d")?1f:0,Input.GetKey("s")?-1f:Input.GetKey("w")?1f:0);
             Stock_Sprite.GetComponent<SpriteRenderer>().flipX = Input.GetKey("a");
-            Stock_Sprite.GetComponent<SpriteRenderer>().flipY = Input.GetKey("s");
+            //Stock_Sprite.GetComponent<SpriteRenderer>().flipY = Input.GetKey("s");
+            if (DashDirection.magnitude==0) DashDirection = Vector2.left*(Stock_Sprite.GetComponent<SpriteRenderer>().flipX?1:-1);
+
             DashTimer = 0.5f;
             HasDashed = true;
             }else if(!IsStock && PunchBoxTimer<=0)
             {
                 if(isGrounded){
-                PunchBoxTimer=0.4f;
+                GetAnimator().SetBool("Attacking",true);
+                PunchBoxTimer=0.8f;
                 PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1),0.202f,0);
                 }else{
                     DashTimer = 1f;
                     PunchBoxTimer=1f;
                     DashDirection = Vector2.down;
-                    Brute_Sprite.GetComponent<SpriteRenderer>().flipY = true;
+                    //Brute_Sprite.GetComponent<SpriteRenderer>().flipY = true;
                     PunchBox.transform.localPosition = new Vector3(0,-1f,0);
                 }
 
             }
 
         }
-        if(PunchBoxTimer>0)PunchBoxTimer-=Time.deltaTime;
-        PunchBox.SetActive(PunchBoxTimer>0);
-        Brute_Sprite.GetComponent<SpriteRenderer>().color = PunchBoxTimer>0?Color.red:Color.white;
+        if(PunchBoxTimer>0){PunchBoxTimer-=Time.deltaTime;
+         rb.velocity =new Vector2(0,rb.velocity.y);
+        PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
+        Brute_Sprite.GetComponent<SpriteRenderer>().color = (PunchBoxTimer>0&&PunchBoxTimer<0.4)?Color.red:Color.white;
         //Silly
         //transform.localScale = Vector2.one+new Vector2(Mathf.Abs(DashDirection.x),Mathf.Abs(DashDirection.y))*DashTimer*2;
         if(DashTimer>0)
         {
+            UpdateTrail();
             DashTimer-=Time.deltaTime;
             rb.velocity = DashDirection*acceleration*math.clamp(DashTimer*4,0f,1f)*1.5f;
+            
+            rb.gravityScale=0;
+            PunchBox.SetActive(PunchBoxTimer>0);
+            Brute_Sprite.GetComponent<SpriteRenderer>().color = (PunchBoxTimer>0)?Color.red:Color.white;
+        }
+        }
+        else if(DashTimer>0)
+        {
+
+            UpdateTrail();
+            DashTimer-=Time.deltaTime;
+            rb.velocity = DashDirection*acceleration*math.clamp(DashTimer*4,0f,1f)*1.5f;
+            
             rb.gravityScale=0;
             
         }else{
+            GetAnimator().SetBool("Attacking",false);
             rb.gravityScale=1;
             Stock_Sprite.GetComponent<SpriteRenderer>().flipY =false;
             Brute_Sprite.GetComponent<SpriteRenderer>().flipY =false;
@@ -145,6 +182,8 @@ void Update()
             accelerationTime-= Time.deltaTime*deceleration;
             Velocity.x -= deceleration * Mathf.Sign(Velocity.x) * Time.deltaTime;
         }
+        GetAnimator().SetInteger("Air State",isGrounded?rb.velocity.y<0?2:0:DashTimer>0?3:rb.velocity.y<0?2:1);
+        GetAnimator().SetBool("Moving", accelerationTime>0);
         accelerationTime = Mathf.Clamp(accelerationTime, 0f,1f);
         Velocity.x = Mathf.Clamp(Velocity.x, -1f, 1f);
 
@@ -159,7 +198,6 @@ void Update()
                 doubleJump = !doubleJump;
                 isGrounded = false;
 
-               
             }
             
         }
@@ -175,7 +213,16 @@ void Update()
         if (collision.gameObject.CompareTag("Ground")){
             doubleJump = false;
             DashTimer = 0;
+            PunchBoxTimer=0;
+            HasDashed=false;
+            
+        }
+        if (collision.gameObject.CompareTag("Wall")){
+            doubleJump = false;
+            DashTimer = 0;
+            PunchBoxTimer=0;
             HasDashed=false;
         }
+        
     }
 }
