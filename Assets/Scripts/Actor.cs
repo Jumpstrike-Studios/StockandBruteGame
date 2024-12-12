@@ -20,7 +20,7 @@ public class Actor : MonoBehaviour
     public ActorVitals(int BaseHealth)
     {
         MaxHealth = BaseHealth;
-        Health = BaseHealth;
+        Health = MaxHealth;
         RemoveOnDeath=true;
     }
     }
@@ -38,7 +38,7 @@ public class Actor : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        Health=new ActorVitals(100);
+
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -52,11 +52,17 @@ public class Actor : MonoBehaviour
     {
 
         if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
+        {isGrounded = true;
+           
         
         }
     }
+
+public void takeDamage(int amount)
+{
+
+}
+
     public void Die()
     {
         if(Health.RemoveOnDeath)
