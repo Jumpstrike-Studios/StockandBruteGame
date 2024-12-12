@@ -22,8 +22,8 @@ public class Actor_Player : Actor
     public GameObject StockHealthBar;
     public GameObject BruteHealthBar;
 
-     public GameObject PunchBox;
-     private float PunchBoxTimer;
+    public GameObject PunchBox;
+    private float PunchBoxTimer;
 
     public ActorVitals StockHealth;
     public ActorVitals BruteHealth;
@@ -217,11 +217,12 @@ void Update()
             HasDashed=false;
             
         }
-        if (collision.gameObject.CompareTag("Wall")){
+        if (collision.gameObject.CompareTag("Wall") && IsStock){
             doubleJump = false;
             DashTimer = 0;
-            PunchBoxTimer=0;
-            HasDashed=false;
+            PunchBoxTimer = 0;
+            HasDashed = false;
+            isGrounded = true;
         }
         
     }
