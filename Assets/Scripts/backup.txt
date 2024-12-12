@@ -9,21 +9,28 @@ using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
+    //Debug Cheats
+    private bool MeatBoyWallCheat=false;
+
     public GameObject trail_root;
     private float TrailTimer;
-    public float JumpPower = 3.5f;
+    public float JumpPower = 4.5f;
     private bool doubleJump;
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
     public float acceleration;
     public float deceleration;
     private bool IsStock=false;
+    
+    private bool[] WallJumpEnabled = new bool[3]{true,false,false};
+    private int LastWallTouched=0;
+    private float WallJumpForce =0;
     float accelerationTime;
     public GameObject StockHealthBar;
     public GameObject BruteHealthBar;
 
-    public GameObject PunchBox;
-    private float PunchBoxTimer;
+     public GameObject PunchBox;
+     private float PunchBoxTimer;
 
     public ActorVitals StockHealth;
     public ActorVitals BruteHealth;
@@ -60,7 +67,7 @@ public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComp
 void Update()
     {
         //Change character sprite
-         if (Input.GetKeyDown("q") && DashTimer<=0 && PunchBoxTimer<=0)
+         if (Input.GetKeyDown("q")&&PunchBoxTimer<=0&&DashTimer<=0)
         {
             if (!IsStock)
             {
@@ -68,7 +75,7 @@ void Update()
                 // Changes sprite to stock
                 Stock_Sprite.SetActive(true); 
                 Brute_Sprite.SetActive(false);
-                
+                WalkSpeed=6f;
                 JumpPower = 7.0f;
                 Health = StockHealth;
                 IsStock = true;
@@ -90,6 +97,7 @@ void Update()
                 Stock_Sprite.SetActive(false);
                 Brute_Sprite.SetActive(true);
                 JumpPower = 4.5f;
+                WalkSpeed=5f;
                 Health = BruteHealth;
                 IsStock = false;
 
@@ -132,10 +140,9 @@ void Update()
             }
 
         }
-        PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
         if(PunchBoxTimer>0){PunchBoxTimer-=Time.deltaTime;
          rb.velocity =new Vector2(0,rb.velocity.y);
-        
+        PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
         Brute_Sprite.GetComponent<SpriteRenderer>().color = (PunchBoxTimer>0&&PunchBoxTimer<0.4)?Color.red:Color.white;
         //Silly
         //transform.localScale = Vector2.one+new Vector2(Mathf.Abs(DashDirection.x),Mathf.Abs(DashDirection.y))*DashTimer*2;
@@ -160,11 +167,12 @@ void Update()
             rb.gravityScale=0;
             
         }else{
-            PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1)*-1f,0.202f,0);
             GetAnimator().SetBool("Attacking",false);
             rb.gravityScale=1;
             Stock_Sprite.GetComponent<SpriteRenderer>().flipY =false;
             Brute_Sprite.GetComponent<SpriteRenderer>().flipY =false;
+         PunchBox.SetActive(PunchBoxTimer>0);
+            Brute_Sprite.GetComponent<SpriteRenderer>().color = (PunchBoxTimer>0)?Color.red:Color.white;
         if (Input.GetKey("d"))
         {
             accelerationTime+= Time.deltaTime*acceleration/3f;
@@ -189,17 +197,54 @@ void Update()
         accelerationTime = Mathf.Clamp(accelerationTime, 0f,1f);
         Velocity.x = Mathf.Clamp(Velocity.x, -1f, 1f);
 
-        rb.velocity = new Vector2(Velocity.x * WalkSpeed*accelerationTime, rb.velocity.y);
+        if(Mathf.Abs(WallJumpForce)>0.0025){
+            WallJumpForce-=MathF.Sign(WallJumpForce)*Time.deltaTime*4;
+            WallJumpForce*=0.93f;
+        }else
+        {
+            WallJumpForce=0;
+        }
+
+        rb.velocity = new Vector2(Velocity.x * WalkSpeed*accelerationTime+WallJumpForce, rb.velocity.y);
         }
         //Jump and double jump mechanic
         if (Input.GetKeyDown("space"))
         {
-            if (isGrounded||(IsStock && doubleJump)) // Checks if player is grounded then if doubleJump is true
-            {
-                rb.velocity = new Vector2(rb.velocity.x,JumpPower);
-                doubleJump = !doubleJump;
-                isGrounded = false;
+             RaycastHit2D hitLeft = Physics2D.Raycast(IsStock?Stock_Sprite.transform.position:Brute_Sprite.transform.position, Vector2.left,0.7f);
+                RaycastHit2D hitRight = Physics2D.Raycast(IsStock?Stock_Sprite.transform.position:Brute_Sprite.transform.position, Vector2.right,0.7f);
+                if (hitLeft) WallJumpEnabled[1]=true;
+                else if (hitRight) WallJumpEnabled[2]=true;
+                else{
+                WallJumpEnabled[0]=false;
+                }
 
+
+            if (isGrounded||(IsStock && doubleJump)||WallJumpEnabled[0]) // Checks if player is grounded then if doubleJump is true
+            {
+                
+                if(WallJumpEnabled[0])
+                {
+                    if(WallJumpEnabled[1]||WallJumpEnabled[2])
+                    {
+                        Debug.Log("WallJump Triggered!");
+                    LastWallTouched = WallJumpEnabled[1]?1:2;
+                    WallJumpEnabled[1]=LastWallTouched!=1;
+                    WallJumpEnabled[2]=LastWallTouched!=2;
+                    WallJumpForce=JumpPower*(LastWallTouched==1?1:-1);
+                    rb.velocity = new Vector2(rb.velocity.x,JumpPower);
+                    }
+                    else
+                    {
+                        WallJumpEnabled[0]=false;
+                        return;
+                        }
+
+                }else{
+                    rb.velocity = new Vector2(rb.velocity.x,JumpPower);
+                    doubleJump = !doubleJump;
+                }
+                isGrounded = false;
+                
             }
             
         }
@@ -211,20 +256,37 @@ void Update()
 
     new public void OnCollisionEnter2D(Collision2D collision)
     {
-        base.OnCollisionEnter2D(collision);
+        //base.OnCollisionEnter2D(collision);
         if (collision.gameObject.CompareTag("Ground")){
+                  
+            if(MeatBoyWallCheat)
+            {
             doubleJump = false;
             DashTimer = 0;
             PunchBoxTimer=0;
             HasDashed=false;
-            
-        }
-        if (collision.gameObject.CompareTag("Wall") && IsStock){
+            isGrounded = true;
+               return; 
+            }
+
+            RaycastHit2D hit = Physics2D.Raycast(IsStock?Stock_Sprite.transform.position:Brute_Sprite.transform.position, Vector2.down,1.1f);
+            if (hit)
+            {
             doubleJump = false;
             DashTimer = 0;
-            PunchBoxTimer = 0;
-            HasDashed = false;
+            PunchBoxTimer=0;
+            HasDashed=false;
+            float distance = Mathf.Abs(hit.point.y - transform.position.y);
+            Debug.Log(distance);
             isGrounded = true;
+            WallJumpEnabled[1]=false;
+            WallJumpEnabled[2]=false;
+            LastWallTouched=0;
+            }
+              RaycastHit2D hitLeft = Physics2D.Raycast(Stock_Sprite.transform.position, Vector2.left,0.7f);
+                    RaycastHit2D hitRight = Physics2D.Raycast(Stock_Sprite.transform.position, Vector2.right,0.7f);
+                        WallJumpEnabled[0]= !isGrounded&&((hitLeft&&LastWallTouched!=1)||(hitRight&&LastWallTouched!=2))&&!isGrounded&&IsStock;
+            
         }
         
     }

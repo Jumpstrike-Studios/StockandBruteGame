@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3205491232683887067}
   - component: {fileID: 1652390964869389104}
   - component: {fileID: 4478190339877738397}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Stock
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -105,7 +105,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4459223816422732248}
   - component: {fileID: 1274572208338376266}
   - component: {fileID: 4333283702466589822}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Brute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -406,7 +406,7 @@ GameObject:
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
