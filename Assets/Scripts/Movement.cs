@@ -35,7 +35,7 @@ public class Actor_Player : Actor
     private bool HasDashed;
 
     private float UIChange;
-
+    private int LastChange;
     
     private Vector2 DashDirection;
 
@@ -61,17 +61,32 @@ public void UpdateTrail(){
 
 public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<Animator>();}
 
+float easeInOutCubic( float x){
+return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
+
 void UpdateUI()
 {
-    Vector3 AnchorPoint = new Vector3(0, 0, 0);
-    float TrigTimer = UIChange * Mathf.PI;
+    Vector3 AnchorPoint = new Vector3(-670, 340, 0);
+    float TrigTimer = (easeInOutCubic(UIChange)-0.25f+LastChange) * Mathf.PI;
     Vector3 FinalPosition(float Offset)
     {
-        return new Vector3(Mathf.Sin(TrigTimer + Offset * Mathf.PI), Mathf.Cos(TrigTimer + Offset * Mathf.PI), 0) + AnchorPoint;
+        return new Vector3(Mathf.Sin(TrigTimer + Offset * Mathf.PI), Mathf.Cos(TrigTimer + Offset * Mathf.PI)*0.5f, 0)*120 + AnchorPoint;
     }
-    StockHealthBar.transform.localPosition = FinalPosition(0);
-    BruteHealthBar.transform.localPosition = FinalPosition(1);
+    float SawTooth = Mathf.Asin(Mathf.Cos((LastChange+UIChange)*Mathf.PI+Mathf.PI))/2+0.5f;
+    StockHealthBar.transform.localPosition = FinalPosition(1);
+    BruteHealthBar.transform.localPosition = FinalPosition(0);
+    StockHealthBar.transform.SetSiblingIndex(SawTooth>0.5?0:1);
+    StockHealthBar.transform.SetSiblingIndex(SawTooth>0.5?1:0);
+    StockHealthBar.transform.localScale = Vector3.Lerp(Vector3.one/2f,Vector3.one,easeInOutCubic(SawTooth));
+    BruteHealthBar.transform.localScale = Vector3.Lerp(Vector3.one,Vector3.one/2f,easeInOutCubic(SawTooth));
+
+    if(UIChange>=1f)
+    {
+        LastChange+=1;
+        UIChange=0;
+    }
 }
+
 // Update is called once per frame
 void Update()
     {
@@ -85,13 +100,15 @@ void Update()
         }
 
         UpdateUI();
-        UIChange=Mathf.Clamp(UIChange-Time.deltaTime*(IsStock?-1f:1f), 0f,1f);
+
+        UIChange=Mathf.Clamp(UIChange+Time.deltaTime*(UIChange>0f?1:0), 0f,1f);
         //Change character sprite
-        if (Input.GetKeyDown("q") && DashTimer<=0 && PunchBoxTimer<=0)
+        if (Input.GetKeyDown("q") && DashTimer<=0 && PunchBoxTimer<=0&&UIChange<=0f)
         {
+            UIChange+=Time.deltaTime;
             if (!IsStock)
             {
-
+                
                 // Changes sprite to stock
                 Stock_Sprite.SetActive(true); 
                 Brute_Sprite.SetActive(false);
