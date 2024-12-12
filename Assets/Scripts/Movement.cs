@@ -33,6 +33,8 @@ public class Actor_Player : Actor
 
     private bool HasDashed;
 
+    private float UIChange;
+
     
 new public void Start()
 {
@@ -56,9 +58,22 @@ public void UpdateTrail(){
 
 public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<Animator>();}
 
+void UpdateUI()
+{
+    Vector3 AnchorPoint = new Vector3(0, 0, 0);
+    float TrigTimer = UIChange * Mathf.PI;
+    Vector3 FinalPosition(float Offset)
+    {
+        return new Vector3(Mathf.Sin(TrigTimer + Offset * Mathf.PI), Mathf.Cos(TrigTimer + Offset * Mathf.PI), 0) + AnchorPoint;
+    }
+    StockHealthBar.transform.localPosition = FinalPosition(0);
+    BruteHealthBar.transform.localPosition = FinalPosition(1);
+}
 // Update is called once per frame
 void Update()
     {
+        UpdateUI();
+        UIChange=Mathf.Clamp(UIChange-Time.deltaTime*(IsStock?-1f:1f), 0f,1f);
         //Change character sprite
          if (Input.GetKeyDown("q") && DashTimer<=0 && PunchBoxTimer<=0)
         {
@@ -73,14 +88,7 @@ void Update()
                 Health = StockHealth;
                 IsStock = true;
 
-                Vector3 oldPosition = StockHealthBar.transform.position;
-
-                StockHealthBar.transform.position = BruteHealthBar.transform.position;
-                StockHealthBar.transform.localScale = StockHealthBar.transform.localScale * 2;
-                BruteHealthBar.transform.localScale = BruteHealthBar.transform.localScale / 2;
-                BruteHealthBar.transform.position = oldPosition;
-
-
+               
 
             }
             else
@@ -93,13 +101,7 @@ void Update()
                 Health = BruteHealth;
                 IsStock = false;
 
-                Vector3 oldPosition = BruteHealthBar.transform.position;
-
-                BruteHealthBar.transform.position = StockHealthBar.transform.position;
-                BruteHealthBar.transform.localScale = BruteHealthBar.transform.localScale * 2;
-                StockHealthBar.transform.localScale = StockHealthBar.transform.localScale / 2;
-                StockHealthBar.transform.position = oldPosition;
-
+                
                
             }
         }
