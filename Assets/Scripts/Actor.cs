@@ -35,11 +35,12 @@ public class Actor : MonoBehaviour
     public float GravityScale=1f;
     protected Vector2 Velocity;
     protected bool isGrounded;
+    public int BaseHealth=300;
     protected Rigidbody2D rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
