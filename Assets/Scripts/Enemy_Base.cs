@@ -4,6 +4,7 @@ using UnityEngine;
 /// </summary>
 public class Enemy_Base : Actor
 {
+    public int BaseHealth = 300;
     public float IFrames;
     public int IFrame_Ticker;
     public new void Start()

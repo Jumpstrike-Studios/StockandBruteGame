@@ -5,6 +5,7 @@ using UnityEngine;
 /// </summary>
 public class Actor : MonoBehaviour
 {
+    
     public struct ActorVitals
     {
         public int MaxHealth;
@@ -30,7 +31,7 @@ public class Actor : MonoBehaviour
     /// </summary>
     public ActorVitals Health;
     public float WalkSpeed = 5f;
-    [Range(0f,1f)]
+
     public float GravityScale=1f;
     protected Vector2 Velocity;
     protected bool isGrounded;

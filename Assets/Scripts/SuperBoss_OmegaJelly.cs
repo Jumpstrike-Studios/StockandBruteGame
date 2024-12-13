@@ -30,6 +30,8 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public float STATE_SPIN_SPEED;
     public float STATE_SPIN_TWIST;
     public float STATE_WOBBLE_TIMER;
+
+    public float STATE_SPIT_TIMER=1;
     public GameObject leftEdge;
     public GameObject rightEdge;
     public GameObject Target;
@@ -40,6 +42,8 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public float timeTillNextState{get{return timeTillNextStateA;}set{timeTillNextStateA = value; timeTillNextStateB=value;}}
     private float timeTillNextStateA;
     private float timeTillNextStateB;
+
+    public GameObject SlimeBallLobbing;
 
     public GameObject trail_root;
     private float TrailTimer;
@@ -86,11 +90,24 @@ float easeInQuad(float x) {
         timeTillNextState = newtime;
 
     }
+    void Spit()
+    {
+        float Range= Mathf.PI/2f*(CHOICE_TARGET_PLAYER()?0f:1f);
+        if(SlimeBallLobbing!=null){
+            GameObject slimeBall = Instantiate(SlimeBallLobbing,transform.position+new Vector3(0,0.4f,0),transform.rotation);
+            if(slimeBall.GetComponent<SlimeBallPhysics>()!=null){
+                slimeBall.GetComponent<SlimeBallPhysics>().Target= new Vector2(Enemy.transform.position.x+Random.Range(-Range,Range),Enemy.transform.position.y);
+                slimeBall.GetComponent<SlimeBallPhysics>().hitTime=1.4f*(Enraged?0.7f:1f);
+            }
+            STATE_SPIT_TIMER=1f*(Enraged?0.7f:1f);
+        }
+    }
 
     public void STATE_SPINNING()
     {
        
         if(step== StateStep.WINDUP){
+            STATE_SPIT_TIMER=1f*(Enraged?0.7f:1f);
             STATE_SPIN_TWIST=1-timeTillNextStateA/timeTillNextStateB;
             STATE_SPIN_TIMER+=STATE_SPIN_TWIST*Time.deltaTime;
             Target.transform.position  = CHOICE_TARGET_PLAYER()?new Vector3(Enemy.transform.position.x,Home.y,Home.z) :Vector3.Lerp(leftEdge.transform.position, rightEdge.transform.position,Random.Range(0f,1f));
@@ -98,6 +115,11 @@ float easeInQuad(float x) {
             gameObject.transform.localScale = new Vector3(1-easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1+easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1)*12f;
             STATE_SPIN_SPEED = (Enraged?1f:0.5f)*(Enemy.transform.position.x>transform.position.x?1f:-1f)*8f;
         }else if (step== StateStep.ACTION){
+
+            STATE_SPIT_TIMER-=Time.deltaTime;
+        if(STATE_SPIT_TIMER<=0) Spit();
+
+
             STATE_SPIN_TIMER+=STATE_SPIN_TWIST*Time.deltaTime;
             STATE_SPIN_SPEED += 8f*Time.deltaTime*(Enemy.transform.position.x>transform.position.x?1f:-1f)*(Enraged?2.1f:1f);
             float cap = 13f;
@@ -105,7 +127,7 @@ float easeInQuad(float x) {
             PreMove = new Vector3(transform.position.x+STATE_SPIN_SPEED*Time.deltaTime,Home.y,Home.z);
             gameObject.transform.localScale = new Vector3(1+0.4f,1-0.8f,1)*12f;
             transform.position = Vector3.Lerp(PreMove,Target.transform.position,0f)-(new Vector3(0,1.3f,0)*0.8f);
-           
+
         }else{
             PreMove = new Vector3(transform.position.x+STATE_SPIN_SPEED*Time.deltaTime,Home.y,Home.z);
             STATE_SPIN_TWIST=timeTillNextStateA/timeTillNextStateB;
@@ -196,7 +218,7 @@ float easeInQuad(float x) {
         int Nextmove = Random.Range(0,1);
         switch(state){
             case State.IDLE:
-            Nextmove = Random.Range(0,1);
+            Nextmove = Random.Range(0,2);
             if(Nextmove==0) CHANGESTATE(State.MOVING,1.4f*(Enraged?0.5f:1f)); 
             else CHANGESTATE(State.SPIN,2f*(Enraged?0.6f:1f)); 
             break;
