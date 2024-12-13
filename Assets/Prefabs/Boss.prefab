@@ -184,11 +184,15 @@ MonoBehaviour:
   Enraged: 0
   Goal: {x: 0, y: 0, z: 0}
   STATE_SPIN_TIMER: 0
+  STATE_SPIN_SPEED: 0
+  STATE_SPIN_TWIST: 0
   STATE_WOBBLE_TIMER: 0
+  STATE_SPIT_TIMER: 1
   leftEdge: {fileID: 6078722489044195744}
   rightEdge: {fileID: 7284236676513786054}
   Target: {fileID: 4922498181098674651}
   Enemy: {fileID: 0}
+  SlimeBallLobbing: {fileID: 413712370990100089, guid: 4121448cc8659ab47ad0d4e37b6cb6fc, type: 3}
   trail_root: {fileID: 8369768378222843611, guid: b439a7a6fcbd645459a47af35f04aea3, type: 3}
   state: 1
   step: 0
