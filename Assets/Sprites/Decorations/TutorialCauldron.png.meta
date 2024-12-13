@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: bd11c9c9a36ed204680598e471eb3293
+guid: d2fcc60d6bd1aab4fad230390affd2e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4009355068965086491
-    second: Untitled_Artwork-2_0
+      213: 3529585957258998333
+    second: TutorialCauldron_0
+  - first:
+      213: 3464974096815348559
+    second: TutorialCauldron_1
+  - first:
+      213: -8684824828119774594
+    second: TutorialCauldron_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -53,7 +59,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-2_0
+      name: TutorialCauldron_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 75
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 3
+        width: 81
+        height: 111
+      alignment: 9
+      pivot: {x: 0.3580247, y: 0.3484495}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b156318513714a730800000000000000
-      internalID: 4009355068965086491
+      spriteID: d3231a24abb9bf030800000000000000
+      internalID: 3529585957258998333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TutorialCauldron_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 4
+        width: 81
+        height: 111
+      alignment: 9
+      pivot: {x: 0.43209878, y: 0.3484495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bdb94359f061030800000000000000
+      internalID: 3464974096815348559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TutorialCauldron_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3
+        width: 81
+        height: 111
+      alignment: 9
+      pivot: {x: 0.50617284, y: 0.34844953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a8d6f35dd497780800000000000000
+      internalID: -8684824828119774594
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b661b3086b1e4334cb528d88cb4f126d
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork-2_0: 4009355068965086491
+      TutorialCauldron_0: 3529585957258998333
+      TutorialCauldron_1: 3464974096815348559
+      TutorialCauldron_2: -8684824828119774594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

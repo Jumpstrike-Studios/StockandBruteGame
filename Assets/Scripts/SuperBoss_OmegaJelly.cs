@@ -196,23 +196,15 @@ float easeInQuad(float x) {
         int Nextmove = Random.Range(0,1);
         switch(state){
             case State.IDLE:
-            Nextmove = Random.Range(0,2);
+            Nextmove = Random.Range(0,1);
             if(Nextmove==0) CHANGESTATE(State.MOVING,1.4f*(Enraged?0.5f:1f)); 
             else CHANGESTATE(State.SPIN,2f*(Enraged?0.6f:1f)); 
             break;
-            case State.MOVING:
-            Nextmove = Random.Range(0,2);
-            if(Nextmove==0) CHANGESTATE(State.IDLE,0.5f); 
-            else CHANGESTATE(State.SPIN,2f*(Enraged?0.6f:1f)); 
-            break;
+            case State.MOVING: CHANGESTATE(State.IDLE,1f*(Enraged?0.5f:1f)); break;
             
             case State.LEAP: timeTillNextState=1.5f; break;
 
-            case State.SPIN: 
-            Nextmove = Random.Range(0,2);
-            if(Nextmove==0) CHANGESTATE(State.IDLE,0.5f); 
-            else CHANGESTATE(State.MOVING,1.4f*(Enraged?0.5f:1f)); 
-            break;
+            case State.SPIN: CHANGESTATE(State.IDLE,1f*(Enraged?0.5f:1f)); break;
 
             case State.BLARF: timeTillNextState=1.5f; break;
 

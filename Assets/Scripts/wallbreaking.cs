@@ -8,7 +8,7 @@ public class BreakableWall : Actor
     public Animator animator; // Reference to the wall's Animator
     public float destroyDelay = 1f; // Delay before the wall is destroyed
 
-    private void Start()
+    public new void Start()
     {
        Health = new ActorVitals(50);
     }

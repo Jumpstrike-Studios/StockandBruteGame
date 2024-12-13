@@ -1,0 +1,1380 @@
+fileFormatVersion: 2
+guid: c5fb9dc41d0aeb84596296886cf06732
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3850872611927989107
+    second: Walk-Jump_0
+  - first:
+      213: -2015325495238577144
+    second: Walk-Jump_1
+  - first:
+      213: -2318377356792298015
+    second: Walk-Jump_2
+  - first:
+      213: -8452710194760458038
+    second: Walk-Jump_3
+  - first:
+      213: 5583961231616363057
+    second: Walk-Jump_4
+  - first:
+      213: -6304971566672560416
+    second: Walk-Jump_5
+  - first:
+      213: 6145314269623616401
+    second: Walk-Jump_6
+  - first:
+      213: -2585274030110443379
+    second: Walk-Jump_7
+  - first:
+      213: -5027029631011880288
+    second: Walk-Jump_8
+  - first:
+      213: -2171024114443459252
+    second: Walk-Jump_9
+  - first:
+      213: 7268282005076157400
+    second: Walk-Jump_10
+  - first:
+      213: -5284817364749984620
+    second: Walk-Jump_11
+  - first:
+      213: -5831451711081512299
+    second: Walk-Jump_12
+  - first:
+      213: 4859912805824373952
+    second: Walk-Jump_13
+  - first:
+      213: -6675365098865890255
+    second: Walk-Jump_14
+  - first:
+      213: 6012660873934919357
+    second: Walk-Jump_15
+  - first:
+      213: -4531925256742814988
+    second: Walk-Jump_16
+  - first:
+      213: -5717488143645068634
+    second: Walk-Jump_17
+  - first:
+      213: -6716105103128120318
+    second: Walk-Jump_18
+  - first:
+      213: -7266689203087987103
+    second: Walk-Jump_19
+  - first:
+      213: 7632369087264247268
+    second: Walk-Jump_20
+  - first:
+      213: -5707099593769580037
+    second: Walk-Jump_21
+  - first:
+      213: -4198401467065174813
+    second: Walk-Jump_22
+  - first:
+      213: -9155292276640478956
+    second: Walk-Jump_23
+  - first:
+      213: -940621089413367719
+    second: Walk-Jump_24
+  - first:
+      213: -7322472132754070980
+    second: Walk-Jump_25
+  - first:
+      213: -8343987191740799269
+    second: Walk-Jump_26
+  - first:
+      213: 703231296881064222
+    second: Walk-Jump_27
+  - first:
+      213: -4092748697822263477
+    second: Walk-Jump_28
+  - first:
+      213: 9095251801379336018
+    second: Walk-Jump_29
+  - first:
+      213: 3406634585400742218
+    second: Walk-Jump_30
+  - first:
+      213: 7104283308599058476
+    second: Walk-Jump_31
+  - first:
+      213: -2394014323024590489
+    second: Walk-Jump_32
+  - first:
+      213: -124965590435231035
+    second: Walk-Jump_33
+  - first:
+      213: -7389578111694748826
+    second: Walk-Jump_34
+  - first:
+      213: -469324223516104990
+    second: Walk-Jump_35
+  - first:
+      213: -7772699604625424010
+    second: Walk-Jump_36
+  - first:
+      213: 5191848014087423544
+    second: Walk-Jump_37
+  - first:
+      213: -8834959768039110555
+    second: Walk-Jump_38
+  - first:
+      213: -3125601863556170551
+    second: Walk-Jump_39
+  - first:
+      213: 4995515972244376736
+    second: Walk-Jump_40
+  - first:
+      213: -4015387397143171663
+    second: Walk-Jump_41
+  - first:
+      213: 8516645274222368761
+    second: Walk-Jump_42
+  - first:
+      213: 794111170579825612
+    second: Walk-Jump_43
+  - first:
+      213: -2168235178293923388
+    second: Walk-Jump_44
+  - first:
+      213: 243439319640025004
+    second: Walk-Jump_45
+  - first:
+      213: 5700511815489091501
+    second: Walk-Jump_46
+  - first:
+      213: 4969444825331552641
+    second: Walk-Jump_47
+  - first:
+      213: -2774627532722552760
+    second: Walk-Jump_48
+  - first:
+      213: 1148130223696476163
+    second: Walk-Jump_49
+  - first:
+      213: 5945196400575912821
+    second: Walk-Jump_50
+  - first:
+      213: 3607229231151022053
+    second: Walk-Jump_51
+  - first:
+      213: -2890062393036700400
+    second: Walk-Jump_52
+  - first:
+      213: -730960974362185450
+    second: Walk-Jump_53
+  - first:
+      213: -4883442623516584598
+    second: Walk-Jump_54
+  - first:
+      213: 7344533114838601289
+    second: Walk-Jump_55
+  - first:
+      213: -878310817254780344
+    second: Walk-Jump_56
+  - first:
+      213: 8875030256552647834
+    second: Walk-Jump_57
+  - first:
+      213: -5212937174037596851
+    second: Walk-Jump_58
+  - first:
+      213: 4027816244191419554
+    second: Walk-Jump_59
+  - first:
+      213: 6621395062679630457
+    second: Walk-Jump_60
+  - first:
+      213: 5231366315332368353
+    second: Walk-Jump_61
+  - first:
+      213: -3487191089844878388
+    second: Walk-Jump_62
+  - first:
+      213: -1331434909346935988
+    second: Walk-Jump_63
+  - first:
+      213: -634418071755091277
+    second: Walk-Jump_64
+  - first:
+      213: 7506079529016693838
+    second: Walk-Jump_65
+  - first:
+      213: -5057225540586595862
+    second: Walk-Jump_66
+  - first:
+      213: -3064798914373412268
+    second: Walk-Jump_67
+  - first:
+      213: 6780946715358878925
+    second: Walk-Jump_68
+  - first:
+      213: 137798307918278124
+    second: Walk-Jump_69
+  - first:
+      213: -9003579963025722652
+    second: Walk-Jump_70
+  - first:
+      213: -504008669548476047
+    second: Walk-Jump_71
+  - first:
+      213: 3998032208273971957
+    second: Walk-Jump_72
+  - first:
+      213: 3614365339799322914
+    second: Walk-Jump_73
+  - first:
+      213: 3433829296321806008
+    second: Walk-Jump_74
+  - first:
+      213: 6551565498218622087
+    second: Walk-Jump_75
+  - first:
+      213: 4273353768157816121
+    second: Walk-Jump_76
+  - first:
+      213: 1427020273552885418
+    second: Walk-Jump_77
+  - first:
+      213: -7904613763979593986
+    second: Walk-Jump_78
+  - first:
+      213: 6924196653706545049
+    second: Walk-Jump_79
+  - first:
+      213: 2834146561168482052
+    second: Walk-Jump_80
+  - first:
+      213: 1546331782770925002
+    second: Walk-Jump_81
+  - first:
+      213: -3150855036129661347
+    second: Walk-Jump_82
+  - first:
+      213: -1289074978162260331
+    second: Walk-Jump_83
+  - first:
+      213: 997582248038573616
+    second: Walk-Jump_84
+  - first:
+      213: 6732858185694415744
+    second: Walk-Jump_85
+  - first:
+      213: 5959359341549599377
+    second: Walk-Jump_86
+  - first:
+      213: -7528652566532676149
+    second: Walk-Jump_87
+  - first:
+      213: 8123927599063884968
+    second: Walk-Jump_88
+  - first:
+      213: -4370119897270382821
+    second: Walk-Jump_89
+  - first:
+      213: 8722011113221083359
+    second: Walk-Jump_90
+  - first:
+      213: -8516123464457154379
+    second: Walk-Jump_91
+  - first:
+      213: -6800496608916703633
+    second: Walk-Jump_92
+  - first:
+      213: 4061553933965858070
+    second: Walk-Jump_93
+  - first:
+      213: 6280402086560070347
+    second: Walk-Jump_94
+  - first:
+      213: 3048935397420297495
+    second: Walk-Jump_95
+  - first:
+      213: 5523162494445980568
+    second: Walk-Jump_96
+  - first:
+      213: -7078880340411736916
+    second: Walk-Jump_97
+  - first:
+      213: 1163879845243706308
+    second: Walk-Jump_98
+  - first:
+      213: -6930417940886427998
+    second: Walk-Jump_99
+  - first:
+      213: 2663284634448071437
+    second: Walk-Jump_100
+  - first:
+      213: 1725057082441795055
+    second: Walk-Jump_101
+  - first:
+      213: 762302962691972428
+    second: Walk-Jump_102
+  - first:
+      213: -2092265508224854971
+    second: Walk-Jump_103
+  - first:
+      213: -405370670751686701
+    second: Walk-Jump_104
+  - first:
+      213: -3338741899955659362
+    second: Walk-Jump_105
+  - first:
+      213: -2716447059057819036
+    second: Walk-Jump_106
+  - first:
+      213: -1280702753944965177
+    second: Walk-Jump_107
+  - first:
+      213: -2356040500104390335
+    second: Walk-Jump_108
+  - first:
+      213: -3874944588776462282
+    second: Walk-Jump_109
+  - first:
+      213: -8878269854738311493
+    second: Walk-Jump_110
+  - first:
+      213: 279470198501981475
+    second: Walk-Jump_111
+  - first:
+      213: -6692747564558750375
+    second: Walk-Jump_112
+  - first:
+      213: 1647955216682596822
+    second: Walk-Jump_113
+  - first:
+      213: -7835192079935480921
+    second: Walk-Jump_114
+  - first:
+      213: -8103077289442633990
+    second: Walk-Jump_115
+  - first:
+      213: -8391958742729034747
+    second: Walk-Jump_116
+  - first:
+      213: -2953822300890787113
+    second: Walk-Jump_117
+  - first:
+      213: 3244307905937225743
+    second: Walk-Jump_118
+  - first:
+      213: -7790468623000192410
+    second: Walk-Jump_119
+  - first:
+      213: 843834375049946431
+    second: Walk-Jump_120
+  - first:
+      213: 6664716452037526507
+    second: Walk-Jump_121
+  - first:
+      213: 8524735331483953284
+    second: Walk-Jump_122
+  - first:
+      213: -7277948069175917457
+    second: Walk-Jump_123
+  - first:
+      213: -6551358040076904323
+    second: Walk-Jump_124
+  - first:
+      213: -6867905947953456179
+    second: Walk-Jump_125
+  - first:
+      213: -7809693282990262262
+    second: Walk-Jump_126
+  - first:
+      213: 5981096893920646896
+    second: Walk-Jump_127
+  - first:
+      213: -4099827427905195339
+    second: Walk-Jump_128
+  - first:
+      213: -5119163751739763681
+    second: Walk-Jump_129
+  - first:
+      213: 1107262438065626504
+    second: Walk-Jump_130
+  - first:
+      213: -7433094570287815496
+    second: Walk-Jump_131
+  - first:
+      213: -5763798033945534621
+    second: Walk-Jump_132
+  - first:
+      213: 1020302792172679068
+    second: Walk-Jump_133
+  - first:
+      213: -3255523579701079266
+    second: Walk-Jump_134
+  - first:
+      213: 8409779954586086043
+    second: Walk-Jump_135
+  - first:
+      213: -7334817120832386295
+    second: Walk-Jump_136
+  - first:
+      213: -6657947171409080912
+    second: Walk-Jump_137
+  - first:
+      213: -749448420908274844
+    second: Walk-Jump_138
+  - first:
+      213: -4584429068400753163
+    second: Walk-Jump_139
+  - first:
+      213: 7494508002312728793
+    second: Walk-Jump_140
+  - first:
+      213: 7038280828982643144
+    second: Walk-Jump_141
+  - first:
+      213: -8559027634064126353
+    second: Walk-Jump_142
+  - first:
+      213: 7105656273414353756
+    second: Walk-Jump_143
+  - first:
+      213: -1318061798394259273
+    second: Walk-Jump_144
+  - first:
+      213: 5287985247590349465
+    second: Walk-Jump_145
+  - first:
+      213: 4246054334880132669
+    second: Walk-Jump_146
+  - first:
+      213: 1883927520796578684
+    second: Walk-Jump_147
+  - first:
+      213: -6950162532016090300
+    second: Walk-Jump_148
+  - first:
+      213: 3333773834938929504
+    second: Walk-Jump_149
+  - first:
+      213: 6507612856690665500
+    second: Walk-Jump_150
+  - first:
+      213: -3065851449863461951
+    second: Walk-Jump_151
+  - first:
+      213: -4398523014351498187
+    second: Walk-Jump_152
+  - first:
+      213: -7024508555294839601
+    second: Walk-Jump_153
+  - first:
+      213: -3729726804797348876
+    second: Walk-Jump_154
+  - first:
+      213: 1195103104662665708
+    second: Walk-Jump_155
+  - first:
+      213: 702359984507249339
+    second: Walk-Jump_156
+  - first:
+      213: 7637004931658483551
+    second: Walk-Jump_157
+  - first:
+      213: -6978770506363571161
+    second: Walk-Jump_158
+  - first:
+      213: -5567513896154842737
+    second: Walk-Jump_159
+  - first:
+      213: -6791429578707478206
+    second: Walk-Jump_160
+  - first:
+      213: -3647607409324130645
+    second: Walk-Jump_161
+  - first:
+      213: -3863641233304795401
+    second: Walk-Jump_162
+  - first:
+      213: -1679298952867922310
+    second: Walk-Jump_163
+  - first:
+      213: 1697227980555439601
+    second: Walk-Jump_164
+  - first:
+      213: 6095458942961810791
+    second: Walk-Jump_165
+  - first:
+      213: 8894482416864363497
+    second: Walk-Jump_166
+  - first:
+      213: 8168269391487564246
+    second: Walk-Jump_167
+  - first:
+      213: -5711414378695607748
+    second: Walk-Jump_168
+  - first:
+      213: 3812941026877289877
+    second: Walk-Jump_169
+  - first:
+      213: -2453930510311953847
+    second: Walk-Jump_170
+  - first:
+      213: 621790596465912639
+    second: Walk-Jump_171
+  - first:
+      213: -4360291308170145629
+    second: Walk-Jump_172
+  - first:
+      213: -3858133999412338056
+    second: Walk-Jump_173
+  - first:
+      213: -1297175046751862469
+    second: Walk-Jump_174
+  - first:
+      213: -4126327405500147525
+    second: Walk-Jump_175
+  - first:
+      213: -3655248718842655451
+    second: Walk-Jump_176
+  - first:
+      213: -3375525901389635058
+    second: Walk-Jump_177
+  - first:
+      213: 2114782032311701470
+    second: Walk-Jump_178
+  - first:
+      213: 6768052997586453152
+    second: Walk-Jump_179
+  - first:
+      213: 7836026801618685910
+    second: Walk-Jump_180
+  - first:
+      213: -1775955239657454164
+    second: Walk-Jump_181
+  - first:
+      213: 7569289687353709833
+    second: Walk-Jump_182
+  - first:
+      213: 5947991022874885442
+    second: Walk-Jump_183
+  - first:
+      213: 3146724651445766848
+    second: Walk-Jump_184
+  - first:
+      213: -812810304430474639
+    second: Walk-Jump_185
+  - first:
+      213: -2776965215219840507
+    second: Walk-Jump_186
+  - first:
+      213: 4089528725840359945
+    second: Walk-Jump_187
+  - first:
+      213: 8922491139957453224
+    second: Walk-Jump_188
+  - first:
+      213: 6176097104671111528
+    second: Walk-Jump_189
+  - first:
+      213: -439602097478470021
+    second: Walk-Jump_190
+  - first:
+      213: 5598543655992241172
+    second: Walk-Jump_191
+  - first:
+      213: -7689452432895083111
+    second: Walk-Jump_192
+  - first:
+      213: -2934267133115857915
+    second: Walk-Jump_193
+  - first:
+      213: 4837362998476421729
+    second: Walk-Jump_194
+  - first:
+      213: -228805489833079965
+    second: Walk-Jump_195
+  - first:
+      213: 840963871961636313
+    second: Walk-Jump_196
+  - first:
+      213: -4725738038595079788
+    second: Walk-Jump_197
+  - first:
+      213: -7447686514709244350
+    second: Walk-Jump_198
+  - first:
+      213: 490441408633549427
+    second: Walk-Jump_199
+  - first:
+      213: 4159047084171130199
+    second: Walk-Jump_200
+  - first:
+      213: -5443672552528163366
+    second: Walk-Jump_201
+  - first:
+      213: -956365093353591104
+    second: Walk-Jump_202
+  - first:
+      213: -4220876324487420686
+    second: Walk-Jump_203
+  - first:
+      213: 9149252788040377233
+    second: Walk-Jump_204
+  - first:
+      213: -6033829601382353496
+    second: Walk-Jump_205
+  - first:
+      213: 3255271199953844904
+    second: Walk-Jump_206
+  - first:
+      213: 3739413946739259047
+    second: Walk-Jump_207
+  - first:
+      213: 3006453645416729987
+    second: Walk-Jump_208
+  - first:
+      213: 665741742243555201
+    second: Walk-Jump_209
+  - first:
+      213: 2030001963847691259
+    second: Walk-Jump_210
+  - first:
+      213: -284663169943838465
+    second: Walk-Jump_211
+  - first:
+      213: -6112549466660714460
+    second: Walk-Jump_212
+  - first:
+      213: 4263670087882476630
+    second: Walk-Jump_213
+  - first:
+      213: -8378914607658419630
+    second: Walk-Jump_214
+  - first:
+      213: 1009129060014295095
+    second: Walk-Jump_215
+  - first:
+      213: -1531051285499561009
+    second: Walk-Jump_216
+  - first:
+      213: -807471076741767921
+    second: Walk-Jump_217
+  - first:
+      213: 60657577893689895
+    second: Walk-Jump_218
+  - first:
+      213: 5957737581569964896
+    second: Walk-Jump_219
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk-Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b9f3ddc3c017530800000000000000
+      internalID: 3850872611927989107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 151
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8043485c3202804e0800000000000000
+      internalID: -2015325495238577144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 151
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e50619c31873dfd0800000000000000
+      internalID: -2318377356792298015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 151
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0eafbbcd0f1ba80800000000000000
+      internalID: -8452710194760458038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_4
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 151
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13acb02b7273e7d40800000000000000
+      internalID: 5583961231616363057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_5
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 150
+        width: 84
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee3b89e3cd3088a0800000000000000
+      internalID: -6304971566672560416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88793c87f24f1cd0800000000000000
+      internalID: -2585274030110443379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 150
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c456acb0219fed1e0800000000000000
+      internalID: -2171024114443459252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_10
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 150
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3adef79ff1ed460800000000000000
+      internalID: 7268282005076157400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_11
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 150
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cd24f5b9e88a6b0800000000000000
+      internalID: -5284817364749984620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592842ca095821fa0800000000000000
+      internalID: -5831451711081512299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 90
+        width: 42
+        height: 35
+      alignment: 9
+      pivot: {x: 1, y: 0.85714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4a88ea2f0e17340800000000000000
+      internalID: 4859912805824373952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_14
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 90
+        width: 42
+        height: 35
+      alignment: 9
+      pivot: {x: 1, y: 0.85714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13cee086fc65c53a0800000000000000
+      internalID: -6675365098865890255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_15
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 90
+        width: 42
+        height: 35
+      alignment: 9
+      pivot: {x: 1, y: 0.85714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6d7c95533417350800000000000000
+      internalID: 6012660873934919357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 90
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa393b7dfd5b11c0800000000000000
+      internalID: -4531925256742814988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 90
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2378e63d667a0b0800000000000000
+      internalID: -5717488143645068634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_18
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 91
+        width: 84
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5084746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2043cddfdf99bc2a0800000000000000
+      internalID: -6716105103128120318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_19
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 91
+        width: 84
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5084746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e26cc9ba8872b90800000000000000
+      internalID: -7266689203087987103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 91
+        width: 84
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5084746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9869f282f4cc0b0800000000000000
+      internalID: -5707099593769580037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_22
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 90
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4f91b1c184cb5c0800000000000000
+      internalID: -4198401467065174813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 90
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41987f36e2ed1f080800000000000000
+      internalID: -9155292276640478956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 12
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95876415a1e32f2f0800000000000000
+      internalID: -940621089413367719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_25
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 14
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c322f71346a516a90800000000000000
+      internalID: -7322472132754070980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 16
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19788d732162c900800000000000000
+      internalID: 703231296881064222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 16
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b478c5f5eb2a337c0800000000000000
+      internalID: -4092748697822263477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk-Jump_30
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 16
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a411f563b1cc64f20800000000000000
+      internalID: 3406634585400742218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 546bed0c13dad374283759c2f9b24be3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Walk-Jump_0: 3850872611927989107
+      Walk-Jump_1: -2015325495238577144
+      Walk-Jump_10: 7268282005076157400
+      Walk-Jump_11: -5284817364749984620
+      Walk-Jump_12: -5831451711081512299
+      Walk-Jump_13: 4859912805824373952
+      Walk-Jump_14: -6675365098865890255
+      Walk-Jump_15: 6012660873934919357
+      Walk-Jump_16: -4531925256742814988
+      Walk-Jump_17: -5717488143645068634
+      Walk-Jump_18: -6716105103128120318
+      Walk-Jump_19: -7266689203087987103
+      Walk-Jump_2: -2318377356792298015
+      Walk-Jump_20: 7632369087264247268
+      Walk-Jump_21: -5707099593769580037
+      Walk-Jump_22: -4198401467065174813
+      Walk-Jump_23: -9155292276640478956
+      Walk-Jump_24: -940621089413367719
+      Walk-Jump_25: -7322472132754070980
+      Walk-Jump_26: -8343987191740799269
+      Walk-Jump_27: 703231296881064222
+      Walk-Jump_28: -4092748697822263477
+      Walk-Jump_29: 9095251801379336018
+      Walk-Jump_3: -8452710194760458038
+      Walk-Jump_30: 3406634585400742218
+      Walk-Jump_4: 5583961231616363057
+      Walk-Jump_5: -6304971566672560416
+      Walk-Jump_6: 6145314269623616401
+      Walk-Jump_7: -2585274030110443379
+      Walk-Jump_8: -5027029631011880288
+      Walk-Jump_9: -2171024114443459252
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
