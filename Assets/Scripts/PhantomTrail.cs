@@ -29,7 +29,7 @@ public class PhantomTrail : MonoBehaviour
             Destroy(gameObject);
         }else
         {
-            gameObject.GetComponent<SpriteRenderer>().color = new Color(1,1,1,LifeTime*StartAlpha);
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r,gameObject.GetComponent<SpriteRenderer>().color.g,gameObject.GetComponent<SpriteRenderer>().color.b,LifeTime*StartAlpha);
         }
  
         LifeTime-=1*Time.deltaTime;
