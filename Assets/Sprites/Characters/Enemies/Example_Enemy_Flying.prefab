@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 7771137739606892383}
   - component: {fileID: 7017165841590262234}
   - component: {fileID: 3102062687961600973}
-  - component: {fileID: 2641257242470534384}
   - component: {fileID: 1024220581443681817}
-  - component: {fileID: 1512022487627367014}
-  m_Layer: 0
+  - component: {fileID: 7136519498686503954}
+  m_Layer: 7
   m_Name: Example_Enemy_Flying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,23 +117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2641257242470534384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537764678422078932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba343e7a9a7b04746a352673c062c0d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  player: {fileID: 8933055174643623107, guid: 41caf1053beed004ea0bbf14af27f0a8, type: 3}
-  moveSpeed: 2
-  attackRange: 1.5
-  detectionRange: 5
 --- !u!95 &1024220581443681817
 Animator:
   serializedVersion: 7
@@ -157,7 +139,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1512022487627367014
+--- !u!114 &7136519498686503954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +148,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7537764678422078932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bc053ace83f174a85b0abec18a497d, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d478d9815879b4da8305763526e0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  WalkSpeed: 5
+  GravityScale: 1
+  IFrames: 0
+  IFrame_Ticker: 0

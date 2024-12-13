@@ -9,6 +9,7 @@ public class Enemy_Base : Actor
     public new void Start()
     {
         base.Start();
+        Health = new ActorVitals(BaseHealth);
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Enemy_Base : Actor
         Debug.Log(damage);
         Health.Health -= damage;
         IFrames=1/60f;
-        IFrame_Ticker=60;
+        IFrame_Ticker=40;
         // break the wall
         if (Health.Health <= 0)
         {

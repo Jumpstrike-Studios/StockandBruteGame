@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: 35211001957448546a88c2b44b799379
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -327723967863859184
+    second: WallbreakAnim_0
+  - first:
+      213: -3179714204690838662
+    second: WallbreakAnim_1
+  - first:
+      213: -1294240811326720620
+    second: WallbreakAnim_2
+  - first:
+      213: 5913881634484856175
+    second: WallbreakAnim_3
+  - first:
+      213: 8316779218548955316
+    second: WallbreakAnim_4
+  - first:
+      213: 5947390890128226984
+    second: WallbreakAnim_5
+  - first:
+      213: -1913171586684444958
+    second: WallbreakAnim_6
+  - first:
+      213: 1877429177198553177
+    second: WallbreakAnim_7
+  - first:
+      213: 2482114857526779007
+    second: WallbreakAnim_8
+  - first:
+      213: -5816594072780232885
+    second: WallbreakAnim_9
+  - first:
+      213: -140991853839550327
+    second: WallbreakAnim_10
+  - first:
+      213: 6362646690006123982
+    second: WallbreakAnim_11
+  - first:
+      213: 484336756467859179
+    second: WallbreakAnim_12
+  - first:
+      213: 9137800838322920919
+    second: WallbreakAnim_13
+  - first:
+      213: 3722549043795709732
+    second: WallbreakAnim_14
+  - first:
+      213: -840378335116302778
+    second: WallbreakAnim_15
+  - first:
+      213: 345881850566773718
+    second: WallbreakAnim_16
+  - first:
+      213: -338284720760975038
+    second: WallbreakAnim_17
+  - first:
+      213: 3876266277256248461
+    second: WallbreakAnim_18
+  - first:
+      213: 5311000347110944198
+    second: WallbreakAnim_19
+  - first:
+      213: 8932106772976254305
+    second: WallbreakAnim_20
+  - first:
+      213: -3271295848410709413
+    second: WallbreakAnim_21
+  - first:
+      213: -6999368437905951294
+    second: WallbreakAnim_22
+  - first:
+      213: 1618313343837563081
+    second: WallbreakAnim_23
+  - first:
+      213: 4349772128728220256
+    second: WallbreakAnim_24
+  - first:
+      213: 756084159794662771
+    second: WallbreakAnim_25
+  - first:
+      213: -7102581279035271606
+    second: WallbreakAnim_26
+  - first:
+      213: 5060905260942027322
+    second: WallbreakAnim_27
+  - first:
+      213: -5280102719403963080
+    second: WallbreakAnim_28
+  - first:
+      213: -4502259205054079792
+    second: WallbreakAnim_29
+  - first:
+      213: -6476224258575219717
+    second: WallbreakAnim_30
+  - first:
+      213: -5115160245607694791
+    second: WallbreakAnim_31
+  - first:
+      213: 1525538060091985546
+    second: WallbreakAnim_32
+  - first:
+      213: 8839573619861190197
+    second: WallbreakAnim_33
+  - first:
+      213: 6046908260532367285
+    second: WallbreakAnim_34
+  - first:
+      213: 931135784251928659
+    second: WallbreakAnim_35
+  - first:
+      213: 2661503739486373944
+    second: WallbreakAnim_36
+  - first:
+      213: 2568986456539909750
+    second: WallbreakAnim_37
+  - first:
+      213: 2765936002294820751
+    second: WallbreakAnim_38
+  - first:
+      213: -8580240901627077604
+    second: WallbreakAnim_39
+  - first:
+      213: -1826532107243226269
+    second: WallbreakAnim_40
+  - first:
+      213: 6157067153982339527
+    second: WallbreakAnim_41
+  - first:
+      213: -8554547795328249212
+    second: WallbreakAnim_42
+  - first:
+      213: -2018099908829807723
+    second: WallbreakAnim_43
+  - first:
+      213: -655069265758041196
+    second: WallbreakAnim_44
+  - first:
+      213: 7445638367575804042
+    second: WallbreakAnim_45
+  - first:
+      213: 2585685986460292653
+    second: WallbreakAnim_46
+  - first:
+      213: 9035735596630978605
+    second: WallbreakAnim_47
+  - first:
+      213: 3251413212868942170
+    second: WallbreakAnim_48
+  - first:
+      213: 9213031359525254242
+    second: WallbreakAnim_49
+  - first:
+      213: 2126771509096984212
+    second: WallbreakAnim_50
+  - first:
+      213: 6062893045689933388
+    second: WallbreakAnim_51
+  - first:
+      213: -7502332807929048013
+    second: WallbreakAnim_52
+  - first:
+      213: 5573047810676066313
+    second: WallbreakAnim_53
+  - first:
+      213: 176638227892710609
+    second: WallbreakAnim_54
+  - first:
+      213: -5448981272833618286
+    second: WallbreakAnim_55
+  - first:
+      213: -6848956213906444542
+    second: WallbreakAnim_56
+  - first:
+      213: 7838674439050132154
+    second: WallbreakAnim_57
+  - first:
+      213: 4682278024373337958
+    second: WallbreakAnim_58
+  - first:
+      213: 8564496945751914876
+    second: WallbreakAnim_59
+  - first:
+      213: 4845581203338513344
+    second: WallbreakAnim_60
+  - first:
+      213: -4529460191082195991
+    second: WallbreakAnim_61
+  - first:
+      213: -6818853196507779483
+    second: WallbreakAnim_62
+  - first:
+      213: -7484060179712805557
+    second: WallbreakAnim_63
+  - first:
+      213: 3168518109059984781
+    second: WallbreakAnim_64
+  - first:
+      213: 7157445456271722332
+    second: WallbreakAnim_65
+  - first:
+      213: -773041769861298148
+    second: WallbreakAnim_66
+  - first:
+      213: -7765387367110453891
+    second: WallbreakAnim_67
+  - first:
+      213: -760995796913508984
+    second: WallbreakAnim_68
+  - first:
+      213: 4131113821205260581
+    second: WallbreakAnim_69
+  - first:
+      213: -4881198784877068593
+    second: WallbreakAnim_70
+  - first:
+      213: 2139884905812182094
+    second: WallbreakAnim_71
+  - first:
+      213: -3138019124389458653
+    second: WallbreakAnim_72
+  - first:
+      213: -8656702582408700774
+    second: WallbreakAnim_73
+  - first:
+      213: 2662414104604815153
+    second: WallbreakAnim_74
+  - first:
+      213: 9004169066133468938
+    second: WallbreakAnim_75
+  - first:
+      213: 8668839235330436145
+    second: WallbreakAnim_76
+  - first:
+      213: 8998839393677671800
+    second: WallbreakAnim_77
+  - first:
+      213: -2655518408781192207
+    second: WallbreakAnim_78
+  - first:
+      213: 5628698288469084284
+    second: WallbreakAnim_79
+  - first:
+      213: -166811018423181232
+    second: WallbreakAnim_80
+  - first:
+      213: 7385067688745772947
+    second: WallbreakAnim_81
+  - first:
+      213: 3962875713506805400
+    second: WallbreakAnim_82
+  - first:
+      213: -8559588536912759642
+    second: WallbreakAnim_83
+  - first:
+      213: -3169019919211929588
+    second: WallbreakAnim_84
+  - first:
+      213: 2553375071712547304
+    second: WallbreakAnim_85
+  - first:
+      213: 5461870763190379309
+    second: WallbreakAnim_86
+  - first:
+      213: -3295922380705641656
+    second: WallbreakAnim_87
+  - first:
+      213: -3842175105857664253
+    second: WallbreakAnim_88
+  - first:
+      213: -1325787818222138806
+    second: WallbreakAnim_89
+  - first:
+      213: 6993409160750566020
+    second: WallbreakAnim_90
+  - first:
+      213: -1058169026173120026
+    second: WallbreakAnim_91
+  - first:
+      213: -5423962312235266326
+    second: WallbreakAnim_92
+  - first:
+      213: 900190539717918851
+    second: WallbreakAnim_93
+  - first:
+      213: 4458373318709626983
+    second: WallbreakAnim_94
+  - first:
+      213: 7877300986168505536
+    second: WallbreakAnim_95
+  - first:
+      213: -3151171671715375822
+    second: WallbreakAnim_96
+  - first:
+      213: -3787663438521173199
+    second: WallbreakAnim_97
+  - first:
+      213: 2772433622694461407
+    second: WallbreakAnim_98
+  - first:
+      213: -2596006230029985269
+    second: WallbreakAnim_99
+  - first:
+      213: -1425048542245335455
+    second: WallbreakAnim_100
+  - first:
+      213: -2522493345525214137
+    second: WallbreakAnim_101
+  - first:
+      213: 4484389952983844478
+    second: WallbreakAnim_102
+  - first:
+      213: -7947043178966557307
+    second: WallbreakAnim_103
+  - first:
+      213: -8845538656474122925
+    second: WallbreakAnim_104
+  - first:
+      213: 3181179175781600788
+    second: WallbreakAnim_105
+  - first:
+      213: -4114605091714160911
+    second: WallbreakAnim_106
+  - first:
+      213: -9007841021576211953
+    second: WallbreakAnim_107
+  - first:
+      213: 4286631026084327678
+    second: WallbreakAnim_108
+  - first:
+      213: 4807831043691052429
+    second: WallbreakAnim_109
+  - first:
+      213: 1703012785555873884
+    second: WallbreakAnim_110
+  - first:
+      213: 8293771174201492758
+    second: WallbreakAnim_111
+  - first:
+      213: -3237197852633467180
+    second: WallbreakAnim_112
+  - first:
+      213: 7815826047914220009
+    second: WallbreakAnim_113
+  - first:
+      213: -1618970681694145995
+    second: WallbreakAnim_114
+  - first:
+      213: -8587084326070723206
+    second: WallbreakAnim_115
+  - first:
+      213: 2965271503937666343
+    second: WallbreakAnim_116
+  - first:
+      213: 7644407763299063012
+    second: WallbreakAnim_117
+  - first:
+      213: -6184883066187505535
+    second: WallbreakAnim_118
+  - first:
+      213: -6787130009133067313
+    second: WallbreakAnim_119
+  - first:
+      213: 6071612520864526590
+    second: WallbreakAnim_120
+  - first:
+      213: 9058855439219307050
+    second: WallbreakAnim_121
+  - first:
+      213: 4064069695334659519
+    second: WallbreakAnim_122
+  - first:
+      213: -2685415237373599869
+    second: WallbreakAnim_123
+  - first:
+      213: 6177483974173889928
+    second: WallbreakAnim_124
+  - first:
+      213: 4478205997579877324
+    second: WallbreakAnim_125
+  - first:
+      213: -4175425223014630527
+    second: WallbreakAnim_126
+  - first:
+      213: 1817895570585991594
+    second: WallbreakAnim_127
+  - first:
+      213: -695105619794480335
+    second: WallbreakAnim_128
+  - first:
+      213: -8104696478881212900
+    second: WallbreakAnim_129
+  - first:
+      213: -259180646166607492
+    second: WallbreakAnim_130
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallbreakAnim_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018d71f99c0b37bf0800000000000000
+      internalID: -327723967863859184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 73
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b832617c26fd3d0800000000000000
+      internalID: -3179714204690838662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 75
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495be0bd6dee90ee0800000000000000
+      internalID: -1294240811326720620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 75
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f652d237304521250800000000000000
+      internalID: 5913881634484856175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 92
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b816f492a22b6370800000000000000
+      internalID: 8316779218548955316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 119
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aabc720180698250800000000000000
+      internalID: 5947390890128226984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 119
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee9d4d049c0375e0800000000000000
+      internalID: -1913171586684444958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_7
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 122
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958afddb3e7fd0a10800000000000000
+      internalID: 1877429177198553177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallbreakAnim_8
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 108
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c5a96ef4e327220800000000000000
+      internalID: 2482114857526779007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9949161a06597c64e9502c9465595a91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WallbreakAnim_0: -327723967863859184
+      WallbreakAnim_1: -3179714204690838662
+      WallbreakAnim_2: -1294240811326720620
+      WallbreakAnim_3: 5913881634484856175
+      WallbreakAnim_4: 8316779218548955316
+      WallbreakAnim_5: 5947390890128226984
+      WallbreakAnim_6: -1913171586684444958
+      WallbreakAnim_7: 1877429177198553177
+      WallbreakAnim_8: 2482114857526779007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
