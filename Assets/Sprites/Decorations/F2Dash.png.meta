@@ -1,0 +1,306 @@
+fileFormatVersion: 2
+guid: 33c40ccb48afb074d92fe2b796c169f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8769182465292883068
+    second: F2Dash_0
+  - first:
+      213: -7099290784649555979
+    second: F2Dash_1
+  - first:
+      213: -1530124617533034627
+    second: F2Dash_2
+  - first:
+      213: 6405345997887880261
+    second: F2Dash_3
+  - first:
+      213: -927471179012740376
+    second: F2Dash_4
+  - first:
+      213: -5529370923487696253
+    second: F2Dash_5
+  - first:
+      213: -7506570175153675455
+    second: F2Dash_6
+  - first:
+      213: -7171712700148099372
+    second: F2Dash_7
+  - first:
+      213: -896449157437374227
+    second: F2Dash_8
+  - first:
+      213: 4496200476743591126
+    second: F2Dash_9
+  - first:
+      213: -928914165213436921
+    second: F2Dash_10
+  - first:
+      213: -8227675478006448250
+    second: F2Dash_11
+  - first:
+      213: -2123809996207079575
+    second: F2Dash_12
+  - first:
+      213: -3150387543193375193
+    second: F2Dash_13
+  - first:
+      213: 3144506593570590705
+    second: F2Dash_14
+  - first:
+      213: -1051430122389068088
+    second: F2Dash_15
+  - first:
+      213: 734651008411753023
+    second: F2Dash_16
+  - first:
+      213: 1529176489753507112
+    second: F2Dash_17
+  - first:
+      213: -3427833125143371896
+    second: F2Dash_18
+  - first:
+      213: 1555755321688223603
+    second: F2Dash_19
+  - first:
+      213: 548565364129797202
+    second: F2Dash_20
+  - first:
+      213: -8587040766566883804
+    second: F2Dash_21
+  - first:
+      213: -371018295253521458
+    second: F2Dash_22
+  - first:
+      213: 8206270757991170663
+    second: F2Dash_23
+  - first:
+      213: 8795879614570791483
+    second: F2Dash_24
+  - first:
+      213: -423951407410345712
+    second: F2Dash_25
+  - first:
+      213: -6784428804673464170
+    second: F2Dash_26
+  - first:
+      213: 3797342334438522089
+    second: F2Dash_27
+  - first:
+      213: 7031744803415156323
+    second: F2Dash_28
+  - first:
+      213: 159430489265281651
+    second: F2Dash_29
+  - first:
+      213: -6327698637654518863
+    second: F2Dash_30
+  - first:
+      213: 1198987001330638643
+    second: F2Dash_31
+  - first:
+      213: 1107784835500425817
+    second: F2Dash_32
+  - first:
+      213: -2818354016874524673
+    second: F2Dash_33
+  - first:
+      213: -5467939978845710030
+    second: F2Dash_34
+  - first:
+      213: -6365692328805611405
+    second: F2Dash_35
+  - first:
+      213: -8429153211689432968
+    second: F2Dash_36
+  - first:
+      213: -5006468187397941091
+    second: F2Dash_37
+  - first:
+      213: 8364518723090691193
+    second: F2Dash_38
+  - first:
+      213: -8236908416352742667
+    second: F2Dash_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: F2Dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 84
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74dd56bdf462b970800000000000000
+      internalID: 8769182465292883068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2Dash_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 82
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff42cf15a04a7d90800000000000000
+      internalID: -7099290784649555979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F2Dash_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 79
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fecdd64c7e3cae0800000000000000
+      internalID: -1530124617533034627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca66a51a8c8493140a02ee69f115cc10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      F2Dash_0: 8769182465292883068
+      F2Dash_1: -7099290784649555979
+      F2Dash_2: -1530124617533034627
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
