@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 1328271923497582880}
   - component: {fileID: 7521662928564463326}
   - component: {fileID: 7243550138529920008}
-  - component: {fileID: 7913572885725387310}
-  - component: {fileID: 4832388134020617721}
-  m_Layer: 0
+  - component: {fileID: 7972644167769650537}
+  m_Layer: 7
   m_Name: Example_Enemy_3_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +116,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &7913572885725387310
+--- !u!114 &7972644167769650537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,24 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5988600870281670632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba343e7a9a7b04746a352673c062c0d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d478d9815879b4da8305763526e0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  player: {fileID: 8933055174643623107, guid: 41caf1053beed004ea0bbf14af27f0a8, type: 3}
-  moveSpeed: 2
-  attackRange: 1.5
-  detectionRange: 5
---- !u!114 &4832388134020617721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5988600870281670632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bc053ace83f174a85b0abec18a497d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
+  WalkSpeed: 5
+  GravityScale: 1
+  IFrames: 0
+  IFrame_Ticker: 0

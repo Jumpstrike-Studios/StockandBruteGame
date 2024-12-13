@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 9acde3e75c3bd084e8e2ca8c1611eb55
+guid: 5c4ead5169f9c464c810ad08a7a3dedb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3620833048556943209
-    second: StockUI_0
+      213: 3529585957258998333
+    second: TutorialCauldron_0
   - first:
-      213: -3831563587616510577
-    second: StockUI_1
+      213: 3464974096815348559
+    second: TutorialCauldron_1
   - first:
-      213: 5885279928760385120
-    second: StockUI_2
-  - first:
-      213: -1820771022010007519
-    second: StockUI_3
+      213: -8684824828119774594
+    second: TutorialCauldron_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,9 +57,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 188
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -109,119 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StockUI_0
+      name: TutorialCauldron_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
+        y: 3
+        width: 81
+        height: 111
+      alignment: 9
+      pivot: {x: 0.3580247, y: 0.3484495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3231a24abb9bf030800000000000000
+      internalID: 3529585957258998333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TutorialCauldron_1
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 4
         width: 81
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 111
+      alignment: 9
+      pivot: {x: 0.43209878, y: 0.3484495}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9673b324978cf3230800000000000000
-      internalID: 3620833048556943209
+      spriteID: f4bdb94359f061030800000000000000
+      internalID: 3464974096815348559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StockUI_1
+      name: TutorialCauldron_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 4
-        width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 194
+        y: 3
+        width: 81
+        height: 111
+      alignment: 9
+      pivot: {x: 0.50617284, y: 0.34844953}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8debc1b73d83dac0800000000000000
-      internalID: -3831563587616510577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StockUI_2
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 4
-        width: 9
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: 2.5, y: 1}
-        - {x: 3.5, y: 1}
-        - {x: 3.5, y: 0}
-        - {x: 4.5, y: 0}
-        - {x: 4.5, y: -7}
-        - {x: 3.5, y: -7}
-        - {x: 3.5, y: -8}
-        - {x: -3.5, y: -8}
-        - {x: -3.5, y: -7}
-        - {x: -4.5, y: -7}
-        - {x: -4.5, y: 0}
-        - {x: -3.5, y: 0}
-        - {x: -2.5, y: 0}
-        - {x: -2.5, y: 5}
-        - {x: -3.5, y: 5}
-        - {x: -3.5, y: 6}
-        - {x: -4.5, y: 6}
-        - {x: -4.5, y: 8}
-        - {x: 4.5, y: 8}
-        - {x: 4.5, y: 6}
-        - {x: 3.5, y: 6}
-        - {x: 3.5, y: 5}
-        - {x: 2.5, y: 5}
-      - - {x: 3.5, y: 6}
-        - {x: 3.5, y: 6}
-        - {x: 4.5, y: 6}
-      - - {x: 1.5, y: 2}
-        - {x: 1.5, y: 2}
-        - {x: 1.5, y: 3}
-        - {x: 1.5, y: 3}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06ebf75e9e6bca150800000000000000
-      internalID: 5885279928760385120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StockUI_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 4
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 120c4cff6625bb6e0800000000000000
-      internalID: -1820771022010007519
+      spriteID: e7a8d6f35dd497780800000000000000
+      internalID: -8684824828119774594
       vertices: []
       indices: 
       edges: []
@@ -230,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 529533d69e2bf3b4d8f5c3284a2db2e4
+    spriteID: b661b3086b1e4334cb528d88cb4f126d
     internalID: 0
     vertices: []
     indices: 
@@ -240,10 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StockUI_0: 3620833048556943209
-      StockUI_1: -3831563587616510577
-      StockUI_2: 5885279928760385120
-      StockUI_3: -1820771022010007519
+      TutorialCauldron_0: 3529585957258998333
+      TutorialCauldron_1: 3464974096815348559
+      TutorialCauldron_2: -8684824828119774594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

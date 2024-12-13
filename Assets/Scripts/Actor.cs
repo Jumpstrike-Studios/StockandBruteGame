@@ -5,6 +5,7 @@ using UnityEngine;
 /// </summary>
 public class Actor : MonoBehaviour
 {
+    public int BaseHealth = 300;
     public struct ActorVitals
     {
         public int MaxHealth;
@@ -67,7 +68,7 @@ public void takeDamage(int amount)
     {
         if(Health.RemoveOnDeath)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }

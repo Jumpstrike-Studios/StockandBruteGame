@@ -9,6 +9,7 @@ public class Enemy_Base : Actor
     public new void Start()
     {
         base.Start();
+        Health = new ActorVitals(BaseHealth);
     }
 
     // Update is called once per frame

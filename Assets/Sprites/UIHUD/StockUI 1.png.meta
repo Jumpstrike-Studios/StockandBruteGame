@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b70e17bdaf0c2f345becf101f70b7297
+guid: 703a5d10b7fa85c429b147997c983ded
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3739957133524300147
-    second: Untitled_Artwork-1_0
+      213: -7115003295940382254
+    second: StockUI 1_0
+  - first:
+      213: 2795534411120232812
+    second: StockUI 1_1
+  - first:
+      213: -8601233679163853703
+    second: StockUI 1_2
+  - first:
+      213: 7921000854516827847
+    second: StockUI 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 188
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-1_0
+      name: StockUI 1_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 53
-        height: 128
+        x: 9
+        y: 4
+        width: 81
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8e881d5dc0091cc0800000000000000
-      internalID: -3739957133524300147
+      spriteID: 2d17db1033e624d90800000000000000
+      internalID: -7115003295940382254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StockUI 1_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 4
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69c33c4cbbbbc620800000000000000
+      internalID: 2795534411120232812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StockUI 1_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 4
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974ff434a8742a880800000000000000
+      internalID: -8601233679163853703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StockUI 1_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 4
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c68a075f4c0ded60800000000000000
+      internalID: 7921000854516827847
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 17b66299a7c42ca45ac9f47089b12610
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork-1_0: -3739957133524300147
+      StockUI 1_0: -7115003295940382254
+      StockUI 1_1: 2795534411120232812
+      StockUI 1_2: -8601233679163853703
+      StockUI 1_3: 7921000854516827847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
