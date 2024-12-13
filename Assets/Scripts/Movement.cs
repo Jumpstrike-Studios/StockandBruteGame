@@ -9,6 +9,10 @@ using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
+
+
+
+
     public GameObject trail_root;
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
@@ -31,7 +35,7 @@ public class Actor_Player : Actor
     private float PunchBoxTimer;
 
     private bool doubleJump;
-    private bool IsStock=false;
+    public bool IsStock=false;
     private bool HasDashed;
 
     private float UIChange;
@@ -39,7 +43,42 @@ public class Actor_Player : Actor
     
     private Vector2 DashDirection;
 
-new public void Start()
+
+    public float IFrames;
+    public int IFrame_Ticker;
+    public void UpdateDamage()
+    {
+        if (this.IFrames > 0)
+            IFrames -= Time.deltaTime;
+        if (IFrames <= 0 && IFrame_Ticker >= 0)
+        {
+            IFrame_Ticker--;
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log(damage);
+        Debug.Log("Player has taken damage");
+        Health.Health -= damage;
+        IFrames = 1 / 60f;
+        IFrame_Ticker = 40;
+        // break the wall
+        if (Health.Health <= 0)
+        {
+            Die();
+        }
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 0)
+        {
+            TakeDamage(100);
+        }
+    }
+
+    new public void Start()
 {
 base.Start();
  StockHealth = new ActorVitals(200);
@@ -90,6 +129,8 @@ void UpdateUI()
 // Update is called once per frame
 void Update()
     {
+
+        UpdateDamage();
         float dt = Time.deltaTime;
         curDashCooldown -= dt;
 
