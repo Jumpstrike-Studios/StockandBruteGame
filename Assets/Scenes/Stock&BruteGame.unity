@@ -31945,11 +31945,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7771137739606892383, guid: 8488804989452ad46a6e727e71c2ca59, type: 3}
   m_PrefabInstance: {fileID: 771544096506698399}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1936579621 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6092761194494269492, guid: 8488804989452ad46a6e727e71c2ca59, type: 3}
-  m_PrefabInstance: {fileID: 771544096506698399}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1936579622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31962,7 +31957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecee52eb31e13bd418198662a4cd2b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDamageCollider: {fileID: 1936579621}
+  enemyDamageCollider: {fileID: 0}
   Stock: {fileID: 0}
   Brute: {fileID: 0}
   player: {fileID: 1535498223}

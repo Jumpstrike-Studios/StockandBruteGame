@@ -5,7 +5,6 @@ using UnityEngine;
 /// </summary>
 public class Actor : MonoBehaviour
 {
-    public int BaseHealth = 300;
     public struct ActorVitals
     {
         public int MaxHealth;
