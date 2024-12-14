@@ -13,7 +13,7 @@ public class SlimeBallPhysics : Projectile_Base
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GravityScale = 5f;
+        GravityScale = 10f;
         // Calculates the exact velocity at which the slimeball needs to move in order to hit the player
         Velocity = new Vector2((Target.x - transform.position.x) / hitTime,
             (Target.y - transform.position.y + 0.5f * GravityScale * hitTime * hitTime) / hitTime);

@@ -12,4 +12,11 @@ public class Projectile_Base : Actor
         Destroy(gameObject);
         }
     }
+    public void OnTriggerEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+        Destroy(gameObject);
+        }
+    }
 }

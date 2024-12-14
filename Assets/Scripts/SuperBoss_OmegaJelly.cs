@@ -1,4 +1,5 @@
 using System;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -99,6 +100,10 @@ float easeInQuad(float x) {
                 slimeBall.GetComponent<SlimeBallPhysics>().Target= new Vector2(Enemy.transform.position.x+Random.Range(-Range,Range),Enemy.transform.position.y);
                 slimeBall.GetComponent<SlimeBallPhysics>().hitTime=1.4f*(Enraged?0.7f:1f);
             }
+            if(slimeBall.GetComponent<Whisp_Wheel>()!=null){
+                slimeBall.GetComponent<Whisp_Wheel>().WalkSpeed=3f;
+                slimeBall.GetComponent<Whisp_Wheel>().FireAngle = Random.Range(-Mathf.PI,Mathf.PI);
+            }
             STATE_SPIT_TIMER=1f*(Enraged?0.7f:1f);
         }
     }
@@ -112,7 +117,7 @@ float easeInQuad(float x) {
             STATE_SPIN_TIMER+=STATE_SPIN_TWIST*Time.deltaTime;
             Target.transform.position  = CHOICE_TARGET_PLAYER()?new Vector3(Enemy.transform.position.x,Home.y,Home.z) :Vector3.Lerp(leftEdge.transform.position, rightEdge.transform.position,Random.Range(0f,1f));
             PreMove = new Vector3(transform.position.x,Home.y,Home.z);
-            gameObject.transform.localScale = new Vector3(1-easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1+easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1)*12f;
+            gameObject.transform.localScale = new Vector3(1-easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1+easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.4f,1)*12f;
             STATE_SPIN_SPEED = (Enraged?1f:0.5f)*(Enemy.transform.position.x>transform.position.x?1f:-1f)*8f;
         }else if (step== StateStep.ACTION){
 
@@ -143,7 +148,7 @@ float easeInQuad(float x) {
         if(step== StateStep.WINDUP){
             Target.transform.position  = CHOICE_TARGET_PLAYER()?new Vector3(Enemy.transform.position.x,Home.y,Home.z) :Vector3.Lerp(leftEdge.transform.position, rightEdge.transform.position,Random.Range(0f,1f));
             PreMove = new Vector3(transform.position.x,Home.y,Home.z);
-            gameObject.transform.localScale = new Vector3(1-easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1+easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1)*12f;
+            gameObject.transform.localScale = new Vector3(1-easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.8f,1+easeInQuad(1-timeTillNextStateA/timeTillNextStateB)*0.4f,1)*12f;
             GetComponent<SpriteRenderer>().flipX = Enemy.transform.position.x>transform.position.x;
         }else if (step== StateStep.ACTION){
             GetComponent<SpriteRenderer>().flipX = Target.transform.position.x>transform.position.x;
