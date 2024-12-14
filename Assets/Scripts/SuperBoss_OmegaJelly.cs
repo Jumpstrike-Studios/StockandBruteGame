@@ -37,6 +37,10 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public GameObject rightEdge;
     public GameObject Target;
     public GameObject Enemy;
+
+    public GameObject Level;
+
+    public GameObject Theme;
     private Vector3 Home;
     private Vector3 PreMove;
     public float NextStateIn{get{return timeTillNextState;}}
@@ -74,7 +78,7 @@ float easeInQuad(float x) {
         public new void Start()
     {
         base.Start();
-        state = State.IDLE;
+
         step= StateStep.WINDUP;
         timeTillNextState = 1f;
         Home= transform.position;
@@ -256,6 +260,17 @@ float easeInQuad(float x) {
     public new void Update()
     {
         base.Update();
+        if(State.ASLEEP == state){
+            if(Vector3.Distance(transform.position,Enemy.transform.position)<14f){
+                CHANGESTATE(State.IDLE,1f);
+                Debug.Log("BOSS WAKES UPS");
+                Level.GetComponent<AudioSource>().Stop();
+                Theme.GetComponent<AudioSource>().Play();
+            }
+            return;
+
+        }
+        Theme.GetComponent<AudioSource>().pitch = Enraged?1.1f:1f;
         gameObject.transform.localScale = new Vector3(12f+Mathf.Sin(STATE_WOBBLE_TIMER*Mathf.PI)*0.3f,12f-Mathf.Sin(STATE_WOBBLE_TIMER*Mathf.PI+0.1f)*0.4f,12f);
         
         if (state == State.IDLE) STATE_IDLE(); else if(STATE_WOBBLE_TIMER>0f) STATE_WOBBLE_TIMER-=Time.deltaTime;
