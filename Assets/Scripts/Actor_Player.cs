@@ -185,7 +185,7 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
         }
 
         //Fight or Flight
-        if (Input.GetKey("f"))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (IsStock && !HasDashed && DashTimer <= 0)
             {
@@ -198,8 +198,9 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
                 HasDashed = true;
                 curDashCooldown = absDashCooldown;
             }
-            else if(!IsStock && PunchBoxTimer<=0)
-            {
+        }
+        if (Input.GetKeyDown(KeyCode.F) && !IsStock && PunchBoxTimer <= 0)
+        {
                 if(Is_OnGround)
                 {
                     GetAnimator().SetBool("Attacking",true);
@@ -213,7 +214,6 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
                     //Brute_Sprite.GetComponent<SpriteRenderer>().flipY = true;
                     PunchBox.transform.localPosition = new Vector3(0,-1f,0);
                 }
-            }
         }
 
         PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
