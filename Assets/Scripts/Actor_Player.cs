@@ -4,16 +4,13 @@ using System.Collections.Generic;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
-
-
-
-
-    public GameObject trail_root;
+   
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
     public GameObject StockHealthBar;
@@ -27,14 +24,19 @@ public class Actor_Player : Actor
     public float acceleration;
     public float deceleration;
     public float JumpPower = 3.5f;
-    
+
+
     private float accelerationTime;
     private float curDashCooldown = 0;
     private float DashTimer;
     private float TrailTimer;
     private float PunchBoxTimer;
 
-    private bool doubleJump;
+    public bool Can_DoubleJump;
+    private bool Can_ExtraJump {get{return IsStock && 
+    (CollisionState== Collision_State.Airborne || CollisionState== Collision_State.AgainstWall) 
+    && (Can_DoubleJump || Is_EligibleForWallAction); }}
+
     public bool IsStock=false;
     private bool HasDashed;
 
@@ -86,12 +88,13 @@ base.Start();
  Health = BruteHealth;
  StockHealth.RemoveOnDeath=false;
  BruteHealth.RemoveOnDeath=false;
+ OnStateChange += OnStateChange_Player;
 }
 
 public void UpdateTrail(){
     TrailTimer-=Time.deltaTime;
     if(TrailTimer < 0){
-       GameObject trail = Instantiate(trail_root,IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().transform.position:Brute_Sprite.GetComponent<SpriteRenderer>().transform.position,transform.rotation);
+       GameObject trail = Instantiate(AfterImage,IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().transform.position:Brute_Sprite.GetComponent<SpriteRenderer>().transform.position,transform.rotation);
         trail.GetComponent<SpriteRenderer>().sprite = IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().sprite:Brute_Sprite.GetComponent<SpriteRenderer>().sprite;
         trail.GetComponent<SpriteRenderer>().flipX = IsStock?Stock_Sprite.GetComponent<SpriteRenderer>().flipX:Brute_Sprite.GetComponent<SpriteRenderer>().flipX;
         TrailTimer=0.09f;
@@ -103,7 +106,12 @@ public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComp
 float easeInOutCubic( float x){
 return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
 
-void UpdateUI()
+
+
+
+
+
+    void UpdateUI()
 {
     Vector3 AnchorPoint = new Vector3(-670, 340, 0);
     float TrigTimer = (easeInOutCubic(UIChange)-0.25f+LastChange) * Mathf.PI;
@@ -127,14 +135,14 @@ void UpdateUI()
 }
 
 // Update is called once per frame
-void Update()
+    new void Update()
     {
-
+        base.Update();
         UpdateDamage();
         float dt = Time.deltaTime;
         curDashCooldown -= dt;
 
-        if (HasDashed && curDashCooldown < 0 && isGrounded)
+        if (HasDashed && curDashCooldown < 0 && Is_OnGround)
         {
             HasDashed = false;
             DashTimer = 0;
@@ -192,7 +200,7 @@ void Update()
             }
             else if(!IsStock && PunchBoxTimer<=0)
             {
-                if(isGrounded)
+                if(Is_OnGround)
                 {
                     GetAnimator().SetBool("Attacking",true);
                     PunchBoxTimer=0.8f;
@@ -264,7 +272,7 @@ void Update()
                 Velocity.x -= deceleration * Mathf.Sign(Velocity.x) * Time.deltaTime;
             }
 
-            GetAnimator().SetInteger("Air State",isGrounded?rb.velocity.y<0?2:0:DashTimer>0?3:rb.velocity.y<0?2:1);
+            GetAnimator().SetInteger("Air State",Is_OnGround?rb.velocity.y<0?2:0:DashTimer>0?3:rb.velocity.y<0?2:1);
             GetAnimator().SetBool("Moving", accelerationTime>0);
             accelerationTime = Mathf.Clamp(accelerationTime, 0f,1f);
             Velocity.x = Mathf.Clamp(Velocity.x, -1f, 1f);
@@ -273,11 +281,14 @@ void Update()
         //Jump and double jump mechanic
         if (Input.GetKeyDown("space"))
         {
-            if (isGrounded || (IsStock && doubleJump)) // Checks if player is grounded then if doubleJump is true
+            if (Is_OnGround || Can_ExtraJump) // Checks if player is grounded then if doubleJump is true
             {
-                rb.velocity = new Vector2(rb.velocity.x,JumpPower);
-                doubleJump = !doubleJump;
-                isGrounded = false;
+                if(Can_ExtraJump && Is_EligibleForWallAction){ My_PreviousWall = Is_OnWhatWall;
+                Velocity.x = (int)Is_OnWhatWall;
+                Can_DoubleJump =true;
+                }else
+                if(Can_ExtraJump && Can_DoubleJump) Can_DoubleJump =false;
+                rb.velocity = new Vector2(Velocity.x * WalkSpeed*accelerationTime,JumpPower);
             }
         }
         if (Input.GetKeyUp("space") && rb.velocity.y > 0f) // If space is let go mid-jump, upwards velocity halved for smaller jump
@@ -286,26 +297,21 @@ void Update()
         }
     }
 
-    new public void OnCollisionEnter2D(Collision2D collision)
-    {
-        base.OnCollisionEnter2D(collision);
-        if (collision.gameObject.CompareTag("Ground")){
-            doubleJump = false;
-            DashTimer = 0;
+    public void OnStateChange_Player(Collision_State From, Collision_State To){
+        //Left the ground in some manor, either by jumping or walking off a
+        Debug.Log(From.ToString()+">"+To.ToString());
+        if(From == Collision_State.OnGround && To == Collision_State.Airborne){
+            Can_DoubleJump =true;
+        }
+        if(From == Collision_State.Airborne){
+            DashTimer=0;
             PunchBoxTimer=0;
-            HasDashed=false;
+            rb.velocity =new Vector2(0,rb.velocity.y);
+            Brute_Sprite.GetComponent<SpriteRenderer>().color =Color.white;
+            PunchBox.SetActive(false);
+            }
         }
-        if (collision.gameObject.CompareTag("Wall") && IsStock){
-            doubleJump = false;
-            DashTimer = 0;
-            PunchBoxTimer = 0;
-            HasDashed = false;
-            isGrounded = true;
-        }
+        
     }
+    
 
-    public void OnCollisionExit2D(Collision2D collision)
-    {
-        isGrounded = false;
-    }
-}

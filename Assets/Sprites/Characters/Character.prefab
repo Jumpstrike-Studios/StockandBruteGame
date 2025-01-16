@@ -561,19 +561,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e561627ad4dba2469bf32bc5e1e701e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
   WalkSpeed: 5
+  AfterImage: {fileID: 8369768378222843611, guid: b439a7a6fcbd645459a47af35f04aea3, type: 3}
   GravityScale: 1
+  OnGround: 0
+  OnWall: 0
+  OnCeiling: 0
+  EligibleForWallAction: 0
+  OnWhatWall: 0
+  PreviousWall: 0
+  C_State: 0
+  Previous: 0
   BaseHealth: 300
-  trail_root: {fileID: 0}
   Stock_Sprite: {fileID: 690743812169153357}
   Brute_Sprite: {fileID: 1501699447696072883}
   StockHealthBar: {fileID: 0}
   BruteHealthBar: {fileID: 0}
   PunchBox: {fileID: 3203697845578965299}
+  BruteHealth:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
+  StockHealth:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
   absDashCooldown: 0.5
   acceleration: 8
   deceleration: 16
   JumpPower: 3.5
+  Can_DoubleJump: 0
   IsStock: 0
   IFrames: 0
   IFrame_Ticker: 0
