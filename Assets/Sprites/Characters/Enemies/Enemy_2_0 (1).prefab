@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8483046828789520003}
   - component: {fileID: 3615603043886272991}
   m_Layer: 7
-  m_Name: Example_Enemy_2_0 (1)
+  m_Name: Enemy_2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d478d9815879b4da8305763526e0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
   WalkSpeed: 5
+  AfterImage: {fileID: 0}
   GravityScale: 1
+  OnGround: 0
+  OnWall: 0
+  OnCeiling: 0
+  EligibleForWallAction: 0
+  OnWhatWall: 0
+  PreviousWall: 0
+  C_State: 0
+  Previous: 0
+  BaseHealth: 300
+  BaseHealth: 300
   IFrames: 0
   IFrame_Ticker: 0
