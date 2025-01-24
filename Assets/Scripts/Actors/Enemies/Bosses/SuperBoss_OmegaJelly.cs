@@ -84,7 +84,6 @@ float easeInQuad(float x) {
         step= StateStep.WINDUP;
         timeTillNextState = 1f;
         Home= transform.position;
-        public var IsDead = false;
     }
 
     bool CHOICE_TARGET_PLAYER()
