@@ -78793,6 +78793,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4333283702466589822, guid: 41caf1053beed004ea0bbf14af27f0a8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 50a80da667fcf334eacd3aab8b2159cd, type: 2}
     - target: {fileID: 4459223816422732248, guid: 41caf1053beed004ea0bbf14af27f0a8, type: 3}
       propertyPath: m_SortingOrder
       value: 2
