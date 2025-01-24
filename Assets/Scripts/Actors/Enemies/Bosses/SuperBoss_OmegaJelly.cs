@@ -9,7 +9,8 @@ using Random=UnityEngine.Random;
 /// </summary>
 public class SuperBoss_OmegaJelly : Boss_Base
 {
-    public enum State{
+    public enum State
+    {
         ASLEEP,
         IDLE,
         MOVING,
@@ -21,7 +22,8 @@ public class SuperBoss_OmegaJelly : Boss_Base
         OUCH,
         ARG,
     }
-    public enum StateStep{
+    public enum StateStep
+    {
         WINDUP,
         ACTION,
         COOLDOWN
@@ -32,7 +34,7 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public float STATE_SPIN_TWIST;
     public float STATE_WOBBLE_TIMER;
 
-    public float STATE_SPIT_TIMER=1;
+    public float STATE_SPIT_TIMER = 1;
     public GameObject leftEdge;
     public GameObject rightEdge;
     public GameObject Target;
@@ -43,8 +45,24 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public GameObject Theme;
     private Vector3 Home;
     private Vector3 PreMove;
-    public float NextStateIn{get{return timeTillNextState;}}
-    public float timeTillNextState{get{return timeTillNextStateA;}set{timeTillNextStateA = value; timeTillNextStateB=value;}}
+    public float NextStateIn
+    {
+        get
+        {
+            turn timeTillNextState;
+        }
+    }
+    public float timeTillNextState
+    {
+        get
+        {
+            return timeTillNextStateA;
+        }
+        set
+        {
+            timeTillNextStateA = value; timeTillNextStateB = value;
+        }
+    }
     private float timeTillNextStateA;
     private float timeTillNextStateB;
 
@@ -53,39 +71,39 @@ public class SuperBoss_OmegaJelly : Boss_Base
     public GameObject trail_root;
     private float TrailTimer;
 
-    float easeOutQuad(float x) {
-    return 1 - (1 - x) * (1 - x);
+    float easeOutQuad(float x)
+    {
+        return 1 - (1 - x) * (1 - x);
     }
-float easeInQuad(float x) {
-    return x*x;
+    float easeInQuad(float x)
+    {
+        return x * x;
     }
-    public void UpdateTrail(){
-    TrailTimer-=Time.deltaTime;
-    if(TrailTimer < 0){
-       GameObject trail = Instantiate(trail_root,transform.position,transform.rotation);
-        trail.transform.localScale = transform.localScale;
-        trail.GetComponent<SpriteRenderer>().sprite =GetComponent<SpriteRenderer>().sprite;
-        trail.GetComponent<SpriteRenderer>().flipX = GetComponent<SpriteRenderer>().flipX;
-        trail.GetComponent<SpriteRenderer>().color = GetComponent<SpriteRenderer>().color;
-        TrailTimer=0.09f;
+    public void UpdateTrail()
+    {
+        TrailTimer -= Time.deltaTime;
+        if (TrailTimer < 0)
+        {
+            GameObject trail = Instantiate(trail_root, transform.position, transform.rotation);
+            trail.transform.localScale = transform.localScale;
+            trail.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+            trail.GetComponent<SpriteRenderer>().flipX = GetComponent<SpriteRenderer>().flipX;
+            trail.GetComponent<SpriteRenderer>().color = GetComponent<SpriteRenderer>().color;
+            TrailTimer = 0.09f;
+        }
     }
-}
-
-
-
 
     public State state;
     public StateStep step;
-
-        public new void Start()
+    public new void Start()
     {
         base.Start();
 
-        step= StateStep.WINDUP;
+        step = StateStep.WINDUP;
         timeTillNextState = 1f;
-        Home= transform.position;
-        public var IsDead = false;
+        Home = transform.position;
     }
+        public var IsDead = false;
 
     bool CHOICE_TARGET_PLAYER()
     {
