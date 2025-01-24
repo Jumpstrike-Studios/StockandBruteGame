@@ -72,6 +72,8 @@ float easeInQuad(float x) {
 }
 
 
+
+
     public State state;
     public StateStep step;
 
@@ -82,6 +84,7 @@ float easeInQuad(float x) {
         step= StateStep.WINDUP;
         timeTillNextState = 1f;
         Home= transform.position;
+        public var IsDead = false;
     }
 
     bool CHOICE_TARGET_PLAYER()

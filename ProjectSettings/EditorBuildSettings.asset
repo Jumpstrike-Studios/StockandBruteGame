@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stock&BruteGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level 2 Test Scene.unity
+    guid: ae2246c950c188a429b73da6f8a10f35
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
