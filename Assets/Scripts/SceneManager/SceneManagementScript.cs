@@ -9,9 +9,13 @@ public class SceneManagementScript : MonoBehaviour
 
     void Start()
     {
-        
+        Actor_Player.OnGameOver += G;
     }
 
+    private void G(bool rly)
+    {
+    Debug.Log("Player has died. F.");
+    }
 
    void Update()
    {

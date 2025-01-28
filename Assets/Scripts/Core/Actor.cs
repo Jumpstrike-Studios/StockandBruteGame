@@ -148,6 +148,8 @@ public class Actor : MonoBehaviour
     public int BaseHealth = 300;
 
     protected Rigidbody2D rb;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
@@ -159,7 +161,7 @@ public class Actor : MonoBehaviour
     public static event StateChange_Dele OnStateChange;
 
     // Update is called once per frame
-    public void Update()
+    public virtual void Update()
     {
     
     }
@@ -197,7 +199,7 @@ public class Actor : MonoBehaviour
             }
         }
         Is_OnCeiling &= !Is_OnGround;
-        Is_OnWall &= !Is_OnGround && !Is_OnCeiling; // shorthanded for " x = x && y; "
+        Is_OnWall &= !Is_OnCeiling; // shorthanded for " x = x && y; "
         
         /*Prioritize Ground > Ceiling > Wall > Air
         * If touching both wall and ceiling, ceiling.
@@ -205,31 +207,29 @@ public class Actor : MonoBehaviour
         * etc
         */
         
-
         if (!Is_OnWall){
             OnWhatWall = TouchWall.None;
-            if(Is_OnGround){//the player is on the ground
-            PreviousWall = TouchWall.None;
-            CollisionState = Collision_State.OnGround;
-            }else{ //the player is in the air
-            if(Is_OnCeiling) CollisionState = Collision_State.BelowCeiling;
-            else CollisionState = Collision_State.Airborne;
-            }
             EligibleForWallAction = false;
         }else{
         EligibleForWallAction = PreviousWall ==0||PreviousWall!=OnWhatWall;
         CollisionState = Collision_State.AgainstWall;
         }
-        
+        if(Is_OnGround){//the player is on the ground
+            EligibleForWallAction = false;
+            PreviousWall = TouchWall.None;
+            CollisionState = Collision_State.OnGround;
+        }else{ //the player is in the air
+            if(Is_OnCeiling) CollisionState = Collision_State.BelowCeiling;
+            else CollisionState = Collision_State.Airborne;
+        }
+       
     }
 
-public void takeDamage(int amount)
-{
-
-}
+    public virtual void takeDamage(int amount){}
 
     public void Die()
     {
+        
         if(Health.RemoveOnDeath)
         {
             Destroy(gameObject);

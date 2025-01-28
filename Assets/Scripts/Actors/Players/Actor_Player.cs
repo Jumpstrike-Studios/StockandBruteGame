@@ -10,7 +10,8 @@ using UnityEngine.UIElements;
 
 public class Actor_Player : Actor
 {
-   
+    public bool IsStock = false;
+    public bool IsBrute => !IsStock;
     public GameObject Stock_Sprite;
     public GameObject Brute_Sprite;
     public GameObject StockHealthBar;
@@ -19,35 +20,71 @@ public class Actor_Player : Actor
 
     public ActorVitals BruteHealth;
     public ActorVitals StockHealth;
+    private Vector2 tempVelocity;
+    public Vector2 LocalVelocity { get{
+        
+        if (Math.Abs(tempVelocity.x)-Time.deltaTime*WalkSpeed>=0f)tempVelocity.x-=Time.deltaTime*WalkSpeed*Math.Sign(tempVelocity.x);
+        else tempVelocity.x=0f;
+        if (Math.Abs(tempVelocity.y)-Time.deltaTime*WalkSpeed>=0f)tempVelocity.y-=Time.deltaTime*WalkSpeed*Math.Sign(tempVelocity.y);
+        else tempVelocity.y=0f;
+        tempVelocity.x = math.clamp(tempVelocity.x,-WalkSpeed*3f,WalkSpeed*3f);
+        tempVelocity.y = math.clamp(tempVelocity.y,-WalkSpeed*3f,WalkSpeed*3f);
+        return Velocity*Vector2.right*WalkSpeed*accelerationTime+Vector2.up*rb.velocity.y+tempVelocity;
+    }}
 
-    public float absDashCooldown = 0.5f;
     public float acceleration;
     public float deceleration;
-    public float JumpPower = 3.5f;
-
-
-    private float accelerationTime;
-    private float curDashCooldown = 0;
-    private float DashTimer;
-    private float TrailTimer;
-    private float PunchBoxTimer;
-
-    public bool Can_DoubleJump;
-    private bool Can_ExtraJump {get{return IsStock && 
-    (CollisionState== Collision_State.Airborne || CollisionState== Collision_State.AgainstWall) 
-    && (Can_DoubleJump || Is_EligibleForWallAction); }}
-
-    public bool IsStock=false;
-    private bool HasDashed;
-
-    private float UIChange;
-    private int LastChange;
-    
-    private Vector2 DashDirection;
-
+    public float accelerationTime;
 
     public float IFrames;
     public int IFrame_Ticker;
+     private float TrailTimer;
+
+    //stock's abilities
+    private bool DashEnabled; 
+    private Vector2 DashDirection;
+    private float DashPower;
+    private float DashPowerVelocity;
+
+    private bool DashActive;
+    private bool DashUsedInAir;
+    private float DashCooldown = 0;
+
+    public bool Can_DoubleJump;
+    bool Can_ExtraJump => IsStock && 
+    (CollisionState== Collision_State.Airborne || CollisionState== Collision_State.AgainstWall) 
+    && (Can_DoubleJump || Is_EligibleForWallAction);
+
+
+    //Brute's abilities
+    private float SlamForgiveness=0.1f;
+    bool SlamEnabled => IsBrute && !PunchEnabled
+    && Velocity.y <= SlamForgiveness;
+
+    public float JumpPower = 3.5f;
+    
+    bool PunchEnabled => IsBrute && Is_OnGround;
+
+    private bool PunchActive;
+    private bool SlamActive;
+    private bool SlamOrPunchActive => SlamActive || PunchActive;
+    private float PunchTimer;
+    private float PunchCooldown=0;
+
+    private float Anim_death_time = 0;
+   //duo
+
+   bool CanSwap => !SlamOrPunchActive && !DashActive && UIChange == 0f;
+    //ui
+
+    private float UIChange;
+    private int LastChange;
+
+    //events
+     public delegate void GameOver(bool ActuallyOver=false);
+    public static event GameOver? OnGameOver;
+
+    
     public void UpdateDamage()
     {
         if (this.IFrames > 0)
@@ -58,7 +95,7 @@ public class Actor_Player : Actor
         }
     }
 
-    public void TakeDamage(int damage)
+    public override void takeDamage(int damage)
     {
         Debug.Log(damage);
         Debug.Log("Player has taken damage");
@@ -68,15 +105,16 @@ public class Actor_Player : Actor
         // break the wall
         if (Health.Health <= 0)
         {
+            OnGameOver?.Invoke(true);
             Die();
         }
     }
+
     void OnTriggerEnter2D(Collider2D col)
     {
-
         if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 0)
         {
-            TakeDamage(100);
+            takeDamage(100);
         }
     }
 
@@ -85,6 +123,7 @@ public class Actor_Player : Actor
 base.Start();
  StockHealth = new ActorVitals(200);
  BruteHealth = new ActorVitals(500);
+
  Health = BruteHealth;
  StockHealth.RemoveOnDeath=false;
  BruteHealth.RemoveOnDeath=false;
@@ -105,11 +144,6 @@ public Animator GetAnimator(){return (IsStock?Stock_Sprite:Brute_Sprite).GetComp
 
 float easeInOutCubic( float x){
 return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
-
-
-
-
-
 
     void UpdateUI()
 {
@@ -134,60 +168,57 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
     }
 }
 
-// Update is called once per frame
-    new void Update()
-    {
-        base.Update();
-        UpdateDamage();
-        float dt = Time.deltaTime;
-        curDashCooldown -= dt;
 
-        if (HasDashed && curDashCooldown < 0 && Is_OnGround)
+
+KeyCode Stock_Dash = KeyCode.LeftShift;
+KeyCode Brute_Punch = KeyCode.F;
+KeyCode Duo_Swap = KeyCode.Q;
+KeyCode Duo_Up = KeyCode.W;
+KeyCode Duo_Down = KeyCode.S;
+KeyCode Duo_Left = KeyCode.A;
+KeyCode Duo_Right = KeyCode.D;
+
+
+//feels bad man
+void Update_Brute()
+{
+    /*if (Input.GetKeyDown(KeyCode.F) && PunchCooldown <= 0 && !SlamOrPunchActive)
+        {
+                if(SlamEnabled)
+                {
+                   SlamActive=true;
+                    PunchBox.transform.localPosition = new Vector3(0,-1f,0);
+
+                }
+                else if(PunchEnabled){
+                    GetAnimator().SetBool("Attacking",true);
+                    SlamActive=true;
+                     PunchTimer=0.8f;
+                    PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1),0.202f,0);
+                   
+                }
+        }
+ */
+
+    BruteHealth = Health;
+}
+
+//Special Child...
+void Update_Stock()
+{
+    if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+        tempVelocity = Vector2.up;
+    }
+
+      /*  if ( if)
         {
             HasDashed = false;
             DashTimer = 0;
         }
-
-        UpdateUI();
-
-        UIChange=Mathf.Clamp(UIChange+Time.deltaTime*(UIChange>0f?1:0), 0f,1f);
-        //Change character sprite
-        if (Input.GetKeyDown("q") && DashTimer<=0 && PunchBoxTimer<=0&&UIChange<=0f)
-        {
-            UIChange+=Time.deltaTime;
-            if (!IsStock)
-            {
-                
-                // Changes sprite to stock
-                Stock_Sprite.SetActive(true); 
-                Brute_Sprite.SetActive(false);
-                
-                JumpPower = 7.0f;
-                Health = StockHealth;
-                IsStock = true;
-
-               
-
-            }
-            else
-            {
-
-                // Changes sprite to brute
-                Stock_Sprite.SetActive(false);
-                Brute_Sprite.SetActive(true);
-                JumpPower = 4.5f;
-                Health = BruteHealth;
-                IsStock = false;
-
-                
-               
-            }
-        }
-
-        //Fight or Flight
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if (IsStock && !HasDashed && DashTimer <= 0)
+            if (!HasDashed && DashTimer <= 0)
             {
 
                 DashDirection = new Vector2(Input.GetKey("a")?-1f:Input.GetKey("d")?1f:0,Input.GetKey("s")?-1f:Input.GetKey("w")?1f:0);
@@ -198,25 +229,49 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
                 HasDashed = true;
                 curDashCooldown = absDashCooldown;
             }
-        }
-        if (Input.GetKeyDown(KeyCode.F) && !IsStock && PunchBoxTimer <= 0)
-        {
-                if(Is_OnGround)
-                {
-                    GetAnimator().SetBool("Attacking",true);
-                    PunchBoxTimer=0.8f;
-                    PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1),0.202f,0);
-                }
-                else{
-                    DashTimer = 1f;
-                    PunchBoxTimer=1f;
-                    DashDirection = Vector2.down;
-                    //Brute_Sprite.GetComponent<SpriteRenderer>().flipY = true;
-                    PunchBox.transform.localPosition = new Vector3(0,-1f,0);
-                }
-        }
+        }*/
+    StockHealth = Health;
+}
 
-        PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
+
+// Update is called once per frame
+    new void Update()
+    {
+         if(Input.GetKey(KeyCode.P) && IFrame_Ticker<=0){
+            takeDamage(100);
+        }
+        base.Update();
+        UpdateDamage();
+        UpdateUI();
+        //Change character sprite
+        if (Input.GetKeyDown(Duo_Swap) &&CanSwap)
+        {
+            UIChange+=Time.deltaTime;
+            if (!IsStock)
+            {  
+                // Changes sprite to stock
+                Stock_Sprite.SetActive(true); 
+                Brute_Sprite.SetActive(false);
+                JumpPower = 7.0f;
+                Health = StockHealth;
+                IsStock = true;
+
+            }
+            else
+            {
+                // Changes sprite to brute
+                Stock_Sprite.SetActive(false);
+                Brute_Sprite.SetActive(true);
+                JumpPower = 4.5f;
+                Health = BruteHealth;
+                IsStock = false; 
+            }
+        }
+       
+        UIChange=Mathf.Clamp(UIChange+Time.deltaTime*(UIChange>0f?1:0), 0f,1f);
+        if(IsStock) Update_Stock(); else Update_Brute();
+        //Fight or Flight
+       /* PunchBox.SetActive(PunchBoxTimer>0&&PunchBoxTimer<0.4);
         
         if(PunchBoxTimer>0)
         {
@@ -243,48 +298,44 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
             rb.gravityScale=0;
         }
         else
-        {
+        {*/
             PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1)*-1f,0.202f,0);
             GetAnimator().SetBool("Attacking",false);
             rb.gravityScale=1;
             Stock_Sprite.GetComponent<SpriteRenderer>().flipY =false;
             Brute_Sprite.GetComponent<SpriteRenderer>().flipY =false;
 
-            if (Input.GetKey("d"))
+            if (Input.GetKey(Duo_Left) ^ Input.GetKey(Duo_Right)) //This is and XOR if statement
             {
                 accelerationTime+= Time.deltaTime*acceleration/3f;
-                Velocity.x += acceleration * Time.deltaTime+accelerationTime/5;
-                Stock_Sprite.GetComponent<SpriteRenderer>().flipX = false;
-                Brute_Sprite.GetComponent<SpriteRenderer>().flipX = false;
+                Velocity.x += acceleration * Time.deltaTime+accelerationTime/5*(Input.GetKey(Duo_Left)?-1f:1f);
+                Stock_Sprite.GetComponent<SpriteRenderer>().flipX = Input.GetKey(Duo_Left);
+                Brute_Sprite.GetComponent<SpriteRenderer>().flipX = Input.GetKey(Duo_Left);
             }
-
-            if (Input.GetKey("a"))
-            {
-                accelerationTime+= Time.deltaTime*acceleration/3f;
-                Velocity.x -= acceleration * Time.deltaTime+accelerationTime/5;
-                Stock_Sprite.GetComponent<SpriteRenderer>().flipX = true;
-                Brute_Sprite.GetComponent<SpriteRenderer>().flipX = true;
-            }
-            
-            if (!(Input.GetKey("a")||Input.GetKey("d"))||(Input.GetKey("a")&&Input.GetKey("d"))) 
+            else
             {
                 accelerationTime-= Time.deltaTime*deceleration;
                 Velocity.x -= deceleration * Mathf.Sign(Velocity.x) * Time.deltaTime;
             }
-
-            GetAnimator().SetInteger("Air State",Is_OnGround?rb.velocity.y<0?2:0:DashTimer>0?3:rb.velocity.y<0?2:1);
+       
+            GetAnimator().SetInteger("Air State",Is_OnGround?rb.velocity.y<0?2:0:DashPower>0?3:rb.velocity.y<0?2:1);
             GetAnimator().SetBool("Moving", accelerationTime>0);
+
             accelerationTime = Mathf.Clamp(accelerationTime, 0f,1f);
+
             Velocity.x = Mathf.Clamp(Velocity.x, -1f, 1f);
-            rb.velocity = new Vector2(Velocity.x * WalkSpeed*accelerationTime, rb.velocity.y);
-        }
+
+            Vector2 V = LocalVelocity;
+            rb.velocity =  V;
+        //}
         //Jump and double jump mechanic
         if (Input.GetKeyDown("space"))
         {
             if (Is_OnGround || Can_ExtraJump) // Checks if player is grounded then if doubleJump is true
             {
+
                 if(Can_ExtraJump && Is_EligibleForWallAction){ My_PreviousWall = Is_OnWhatWall;
-                Velocity.x = (int)Is_OnWhatWall;
+                tempVelocity.x = (int)Is_OnWhatWall*JumpPower;
                 Can_DoubleJump =true;
                 }else
                 if(Can_ExtraJump && Can_DoubleJump) Can_DoubleJump =false;
@@ -293,10 +344,16 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
         }
         if (Input.GetKeyUp("space") && rb.velocity.y > 0f) // If space is let go mid-jump, upwards velocity halved for smaller jump
         {
+
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+         (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color = new Color(
+        GetComponent<SpriteRenderer>().color.r,
+         GetComponent<SpriteRenderer>().color.g,
+         GetComponent<SpriteRenderer>().color.b,
+         IFrame_Ticker%2==1?0.8f:1f);
     }
-
+    
     public void OnStateChange_Player(Collision_State From, Collision_State To){
         //Left the ground in some manor, either by jumping or walking off a
         Debug.Log(From.ToString()+">"+To.ToString());
@@ -304,8 +361,8 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
             Can_DoubleJump =true;
         }
         if(From == Collision_State.Airborne){
-            DashTimer=0;
-            PunchBoxTimer=0;
+            
+
             rb.velocity =new Vector2(0,rb.velocity.y);
             Brute_Sprite.GetComponent<SpriteRenderer>().color =Color.white;
             PunchBox.SetActive(false);
