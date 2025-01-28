@@ -308,7 +308,7 @@ void Update_Stock()
             if (Input.GetKey(Duo_Left) ^ Input.GetKey(Duo_Right)) //This is and XOR if statement
             {
                 accelerationTime+= Time.deltaTime*acceleration/3f;
-                Velocity.x += acceleration * Time.deltaTime+accelerationTime/5*(Input.GetKey(Duo_Left)?-1f:1f);
+                Velocity.x += (acceleration * Time.deltaTime + accelerationTime / 5) * (Input.GetKey(Duo_Left) ? -1f : 1f);
                 Stock_Sprite.GetComponent<SpriteRenderer>().flipX = Input.GetKey(Duo_Left);
                 Brute_Sprite.GetComponent<SpriteRenderer>().flipX = Input.GetKey(Duo_Left);
             }
