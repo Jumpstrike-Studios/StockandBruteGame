@@ -35,8 +35,6 @@ public class Enemy_Base : Actor
 
     public override void takeDamage(int damage)
     {
-
-        Debug.Log(damage);
         Health.Health -= damage;
         IFrames=1/60f;
         IFrame_Ticker=40;
@@ -45,7 +43,6 @@ public class Enemy_Base : Actor
         {
            Die();
         }
-    
     }
     /// <summary>
     /// The wait timer for the next part of a state

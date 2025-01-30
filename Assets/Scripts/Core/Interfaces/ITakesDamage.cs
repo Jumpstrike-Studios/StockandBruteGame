@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// For actors that can be hurt and die
 /// </summary>
-public interface IAliveActor
+public interface ITakesDamage
 {
    public struct ActorVitals
     {
@@ -30,6 +30,8 @@ public interface IAliveActor
         RemoveOnDeath=true;
         Invincible = MaxHealth<0;
     }
+
+    
     }
 
 }

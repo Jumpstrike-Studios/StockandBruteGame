@@ -282,5 +282,5 @@ float easeInQuad(float x) {
         UpdateStep();
     }
 
-
+  
 }

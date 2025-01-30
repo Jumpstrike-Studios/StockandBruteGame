@@ -348,9 +348,9 @@ void Update_Stock()
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
          (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color = new Color(
-        GetComponent<SpriteRenderer>().color.r,
-         GetComponent<SpriteRenderer>().color.g,
-         GetComponent<SpriteRenderer>().color.b,
+        (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.r,
+         (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.g,
+         (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.b,
          IFrame_Ticker%2==1?0.8f:1f);
     }
     
