@@ -8,6 +8,7 @@ TagManager:
   - Hitbox
   - Wall
   - Enemy
+  - Spike
   layers:
   - Default
   - TransparentFX
