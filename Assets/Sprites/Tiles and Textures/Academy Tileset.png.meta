@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 977dbd8d3e8f2674aa40a29cf8d8ef1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3478489117167230307
+    second: Academy Tileset_0
+  - first:
+      213: 8125644861197920492
+    second: Academy Tileset_1
+  - first:
+      213: 8627449950483702167
+    second: Academy Tileset_2
+  - first:
+      213: -2039472158765109376
+    second: Academy Tileset_3
+  - first:
+      213: -5287762460001360246
+    second: Academy Tileset_4
+  - first:
+      213: 2187928962205303053
+    second: Academy Tileset_5
+  - first:
+      213: -3753300445267892578
+    second: Academy Tileset_6
+  - first:
+      213: -7800459718879419585
+    second: Academy Tileset_7
+  - first:
+      213: 3939432360602158631
+    second: Academy Tileset_8
+  - first:
+      213: 677283093014528916
+    second: Academy Tileset_9
+  - first:
+      213: -3820155634983116213
+    second: Academy Tileset_10
+  - first:
+      213: 2292126407319977755
+    second: Academy Tileset_11
+  - first:
+      213: 7045363059586012748
+    second: Academy Tileset_12
+  - first:
+      213: 5736731194847647162
+    second: Academy Tileset_13
+  - first:
+      213: 6679096805112333842
+    second: Academy Tileset_14
+  - first:
+      213: 3876002027024320513
+    second: Academy Tileset_15
+  - first:
+      213: 2689350351037711822
+    second: Academy Tileset_16
+  - first:
+      213: -73661977618523254
+    second: Academy Tileset_17
+  - first:
+      213: 7535834619077834703
+    second: Academy Tileset_18
+  - first:
+      213: 5895481110475790010
+    second: Academy Tileset_19
+  - first:
+      213: -8160787807144597735
+    second: Academy Tileset_20
+  - first:
+      213: -9118801314203488446
+    second: Academy Tileset_21
+  - first:
+      213: -1569180972224182867
+    second: Academy Tileset_22
+  - first:
+      213: 5811346012604229933
+    second: Academy Tileset_23
+  - first:
+      213: -1431799473829121330
+    second: Academy Tileset_24
+  - first:
+      213: 3794174196706859693
+    second: Academy Tileset_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Academy Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d90d71c63164030800000000000000
+      internalID: 3478489117167230307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce82ea223f614c070800000000000000
+      internalID: 8125644861197920492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791ea00150cdab770800000000000000
+      internalID: 8627449950483702167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fa18f80e652b3e0800000000000000
+      internalID: -2039472158765109376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8629f2fe081e96b0800000000000000
+      internalID: -5287762460001360246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01490a8cc51d5e10800000000000000
+      internalID: 2187928962205303053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 77
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96ed70812999ebc0800000000000000
+      internalID: -3753300445267892578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33e27bd6333fb390800000000000000
+      internalID: -7800459718879419585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 85
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726ce562cdcaba630800000000000000
+      internalID: 3939432360602158631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493428b7261366900800000000000000
+      internalID: 677283093014528916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 85
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42ef16a0b41cfac0800000000000000
+      internalID: -3820155634983116213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 85
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f7990c2d44fcf10800000000000000
+      internalID: 2292126407319977755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c469840ff5826c160800000000000000
+      internalID: 7045363059586012748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5dbc090a6fc9f40800000000000000
+      internalID: 5736731194847647162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216ca29282be0bc50800000000000000
+      internalID: 6679096805112333842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1088a71ce435ac530800000000000000
+      internalID: 3876002027024320513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 68
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5cc2e35ed725520800000000000000
+      internalID: 2689350351037711822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b589652dc4afef0800000000000000
+      internalID: -73661977618523254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7b934d8a9a49860800000000000000
+      internalID: 7535834619077834703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab65fe995d4f0d150800000000000000
+      internalID: 5895481110475790010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917aec32abe0fbe80800000000000000
+      internalID: -8160787807144597735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f2989a482837180800000000000000
+      internalID: -9118801314203488446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5864a3836293ae0800000000000000
+      internalID: -1569180972224182867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29682c986c06a050800000000000000
+      internalID: 5811346012604229933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2f2dce6f9312ce0800000000000000
+      internalID: -1431799473829121330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Academy Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa5aaa545d97a430800000000000000
+      internalID: 3794174196706859693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fe89b6fb2f51f50499801285a9f85e95
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Academy Tileset_0: 3478489117167230307
+      Academy Tileset_1: 8125644861197920492
+      Academy Tileset_10: -3820155634983116213
+      Academy Tileset_11: 2292126407319977755
+      Academy Tileset_12: 7045363059586012748
+      Academy Tileset_13: 5736731194847647162
+      Academy Tileset_14: 6679096805112333842
+      Academy Tileset_15: 3876002027024320513
+      Academy Tileset_16: 2689350351037711822
+      Academy Tileset_17: -73661977618523254
+      Academy Tileset_18: 7535834619077834703
+      Academy Tileset_19: 5895481110475790010
+      Academy Tileset_2: 8627449950483702167
+      Academy Tileset_20: -8160787807144597735
+      Academy Tileset_21: -9118801314203488446
+      Academy Tileset_22: -1569180972224182867
+      Academy Tileset_23: 5811346012604229933
+      Academy Tileset_24: -1431799473829121330
+      Academy Tileset_25: 3794174196706859693
+      Academy Tileset_3: -2039472158765109376
+      Academy Tileset_4: -5287762460001360246
+      Academy Tileset_5: 2187928962205303053
+      Academy Tileset_6: -3753300445267892578
+      Academy Tileset_7: -7800459718879419585
+      Academy Tileset_8: 3939432360602158631
+      Academy Tileset_9: 677283093014528916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
