@@ -28,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7537764678422078932}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 131.1, y: -1.25, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -151,7 +151,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d478d9815879b4da8305763526e0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
   WalkSpeed: 5
+  AfterImage: {fileID: 0}
   GravityScale: 1
+  OnGround: 0
+  OnWall: 0
+  OnCeiling: 0
+  EligibleForWallAction: 0
+  OnWhatWall: 0
+  PreviousWall: 0
+  C_State: 0
+  Previous: 0
+  BaseHealth: 300
   IFrames: 0
   IFrame_Ticker: 0
