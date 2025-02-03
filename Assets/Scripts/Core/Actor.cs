@@ -142,7 +142,7 @@ public class Actor : MonoBehaviour
     [ReadOnly]
     [SerializeField]
     [Tooltip("The prior state of collision for the actor")]
-    private Collision_State Previous;
+    protected Collision_State Previous;
 
 
     public int BaseHealth = 300;
