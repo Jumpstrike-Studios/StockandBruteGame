@@ -17,8 +17,6 @@ public class Actor_Player : Actor
     public GameObject StockHealthBar;
     public GameObject BruteHealthBar;
     public GameObject PunchBox;
-    public GameObject Pause;
-    public GameObject GameOverScreen;
 
     public ActorVitals BruteHealth;
     public ActorVitals StockHealth;
@@ -86,6 +84,7 @@ public class Actor_Player : Actor
     private float PunchTimer;
     private float PunchCooldown=0;
 
+    public bool Duo_Dead => StockHealth.Health == 0 || BruteHealth.Health==0;
     private float Anim_death_time = 0;
    //duo
 
@@ -116,19 +115,24 @@ public class Actor_Player : Actor
         Debug.Log("Player has taken damage");
         Health.Health -= damage;
         IFrames = 1 / 60f;
-        IFrame_Ticker = 40;
+        IFrame_Ticker = 100;
         // break the wall
         if (Health.Health <= 0)
         {
-            OnGameOver?.Invoke(true);
+            
             Die();
-            GameOverScreen.SetActive(true);
+           
         }
     }
+    public override void Die()
+    {
+        
+    }
+
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 0)
+        if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 0 && !Duo_Dead)
         {
             takeDamage(100);
         }
@@ -139,10 +143,11 @@ public class Actor_Player : Actor
 base.Start();
  StockHealth = new ActorVitals(200);
  BruteHealth = new ActorVitals(500);
-
- Health = BruteHealth;
  StockHealth.RemoveOnDeath=false;
  BruteHealth.RemoveOnDeath=false;
+
+ Health = BruteHealth;
+
  OnStateChange += OnStateChange_Player;
 }
 
@@ -184,6 +189,42 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
     }
 }
 
+Vector3 DeathPosition;
+float Anim_death_Shake;
+bool Anim_death_fling;
+void UpdateDeath()
+{
+    if(Anim_death_time>3f){ 
+        OnGameOver?.Invoke(true);
+        GetComponent<Actor_Player>().enabled = false;
+    }
+    if(Anim_death_time == 0f) DeathPosition = transform.position;
+
+    Anim_death_time += Time.deltaTime;
+Stock_Sprite.GetComponent<Collider2D>().enabled = false;
+            Brute_Sprite.GetComponent<Collider2D>().enabled = false;
+    if(Anim_death_time<1f){
+    if (Mathf.Floor(Anim_death_time/0.1f) != Anim_death_Shake){
+        transform.position = DeathPosition + new Vector3(Random.Range(-1f,1f)*0.2f,Random.Range(-1f,1f)*0.1f,0);
+        float r = Random.Range(-5f,5f)*12f;
+    Stock_Sprite.transform.rotation =Quaternion.Euler(0,0,r);
+    Brute_Sprite.transform.rotation =Quaternion.Euler(0,0,r);
+    }
+    Anim_death_Shake = Mathf.Floor(Anim_death_time/0.1f);
+    rb.velocity=Vector2.zero;
+    }else{
+        
+        if (!Anim_death_fling){
+            Stock_Sprite.transform.rotation =Quaternion.Euler(0,0,0);
+            Brute_Sprite.transform.rotation =Quaternion.Euler(0,0,0);
+            transform.position = DeathPosition;
+            float fling = Vector2.Angle(transform.position,transform.position+new Vector3(Random.Range(-1f,1f),1f,0f));
+            rb.velocity = new Vector2(Mathf.Sin(fling)*2f,Mathf.Cos(fling)*2f)*5f;
+            Anim_death_fling = true;
+        } 
+    }
+    Anim_death_Shake = Mathf.Floor(Anim_death_time/0.1f);
+}
 
 
 KeyCode Stock_Dash = KeyCode.LeftShift;
@@ -272,12 +313,19 @@ void Update_Stock()
 // Update is called once per frame
     new void Update()
     {
+        if(Duo_Dead){
+            UpdateDeath();
+            return;
+        }
+
+
          if(Input.GetKey(KeyCode.P) && IFrame_Ticker<=0){
             takeDamage(100);
         }
         base.Update();
         UpdateDamage();
         UpdateUI();
+        
         //Change character sprite
         if (Input.GetKeyDown(Duo_Swap) &&CanSwap)
         {
@@ -301,10 +349,7 @@ void Update_Stock()
                 Health = BruteHealth;
                 IsStock = false; 
             }
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                Pause.SetActive(true);
-            }
+          
         }
        
         UIChange=Mathf.Clamp(UIChange+Time.deltaTime*(UIChange>0f?1:0), 0f,1f);
@@ -393,7 +438,7 @@ void Update_Stock()
         (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.r,
          (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.g,
          (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.b,
-         IFrame_Ticker%2==1?0.8f:1f);
+         Mathf.Floor(IFrame_Ticker/2f)%2==1?0.8f:1f);
     }
     
     public void OnStateChange_Player(Collision_State From, Collision_State To){

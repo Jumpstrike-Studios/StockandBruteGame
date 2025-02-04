@@ -227,7 +227,7 @@ public class Actor : MonoBehaviour
 
     public virtual void takeDamage(int amount){}
 
-    public void Die()
+    public virtual void Die()
     {
         
         if(Health.RemoveOnDeath)
