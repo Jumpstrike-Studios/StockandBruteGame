@@ -3485,6 +3485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1535498223}
+  GameoverHud: {fileID: 1182392313}
   cameraSpeed: 3
   cameraPadding: 1
   cameraMargin: 0
@@ -83448,6 +83449,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420028}
     - target: {fileID: 3432590510117645484, guid: 081d1f119b4435a42845be54e8c45e5b, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 3530446934571052018, guid: 081d1f119b4435a42845be54e8c45e5b, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420028}
