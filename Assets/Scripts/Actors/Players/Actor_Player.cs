@@ -17,6 +17,8 @@ public class Actor_Player : Actor
     public GameObject StockHealthBar;
     public GameObject BruteHealthBar;
     public GameObject PunchBox;
+    public GameObject Pause;
+    public GameObject GameOverScreen;
 
     public ActorVitals BruteHealth;
     public ActorVitals StockHealth;
@@ -120,6 +122,7 @@ public class Actor_Player : Actor
         {
             OnGameOver?.Invoke(true);
             Die();
+            GameOverScreen.SetActive(true);
         }
     }
 
@@ -297,6 +300,10 @@ void Update_Stock()
                 JumpPower = 4.5f;
                 Health = BruteHealth;
                 IsStock = false; 
+            }
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Pause.SetActive(true);
             }
         }
        
