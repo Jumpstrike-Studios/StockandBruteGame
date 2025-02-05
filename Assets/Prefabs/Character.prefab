@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.564, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2572161372895919832}
   m_Father: {fileID: 8933055174643623107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3205491232683887067
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -8671053111089360267, guid: 7e2d522b690ee1c418241fa0d5d1b934, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5006,6 +5007,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &1074373898235997013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2572161372895919832}
+  m_Layer: 0
+  m_Name: attackpointstock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2572161372895919832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074373898235997013}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8323051142125525142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501699447696072883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,7 +5070,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8431516559713181167}
   m_Father: {fileID: 8933055174643623107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4459223816422732248
@@ -5084,7 +5117,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3974698071940226745, guid: 0cd7e088e3c4ded4f840b3d2f9b47a46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5210,6 +5243,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.84, y: 2.07}
   m_EdgeRadius: 0
+--- !u!1 &1896266464100731829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8431516559713181167}
+  m_Layer: 0
+  m_Name: attackpointbrute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8431516559713181167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896266464100731829}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 142419928266627948}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3203697845578965299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5316,7 +5380,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1, y: 2.06, z: 0}
-  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 142419928266627948}
@@ -5380,26 +5444,17 @@ MonoBehaviour:
   C_State: 0
   Previous: 0
   BaseHealth: 300
+  rb: {fileID: 6147575798296283851}
   IsStock: 0
   Stock_Sprite: {fileID: 690743812169153357}
   Brute_Sprite: {fileID: 1501699447696072883}
   StockHealthBar: {fileID: 0}
   BruteHealthBar: {fileID: 0}
   PunchBox: {fileID: 3203697845578965299}
-  BruteHealth:
-    MaxHealth: 0
-    Health: 0
-    Invincible: 0
-    RemoveOnDeath: 0
-  StockHealth:
-    MaxHealth: 0
-    Health: 0
-    Invincible: 0
-    RemoveOnDeath: 0
   acceleration: 8
   deceleration: 16
   accelerationTime: 0
   IFrames: 0
   IFrame_Ticker: 0
   Can_DoubleJump: 0
-  JumpPower: 3.5
+  JumpPower: 4.75
