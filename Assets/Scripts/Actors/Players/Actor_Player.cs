@@ -1,13 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Mono.Cecil;
-using Mono.Cecil.Cil;
 using Unity.Mathematics;
 using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Random=UnityEngine.Random;
 public class Actor_Player : Actor
 {
