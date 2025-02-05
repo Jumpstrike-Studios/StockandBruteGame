@@ -5,6 +5,7 @@ using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Random=UnityEngine.Random;
@@ -18,8 +19,8 @@ public class Actor_Player : Actor
     public GameObject BruteHealthBar;
     public GameObject PunchBox;
 
-    public ActorVitals BruteHealth;
-    public ActorVitals StockHealth;
+    public static ActorVitals BruteHealth;
+    public static ActorVitals StockHealth;
     private Vector2 tempVelocity;
     //TODO: it should be the order of base > dash > slam 
     public Vector2 LocalVelocity { get{
@@ -132,6 +133,10 @@ public class Actor_Player : Actor
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 8 && IFrame_Ticker >0 &&  !Duo_Dead)
+        {
+        IFrame_Ticker=10;
+        }
         if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 0 && !Duo_Dead)
         {
             takeDamage(100);
@@ -141,7 +146,7 @@ public class Actor_Player : Actor
     new public void Start()
 {
 base.Start();
- StockHealth = new ActorVitals(200);
+ StockHealth = new ActorVitals(300);
  BruteHealth = new ActorVitals(500);
  StockHealth.RemoveOnDeath=false;
  BruteHealth.RemoveOnDeath=false;
@@ -181,6 +186,35 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
     StockHealthBar.transform.SetSiblingIndex(SawTooth>0.5?1:0);
     StockHealthBar.transform.localScale = Vector3.Lerp(Vector3.one/2f,Vector3.one,easeInOutCubic(SawTooth));
     BruteHealthBar.transform.localScale = Vector3.Lerp(Vector3.one,Vector3.one/2f,easeInOutCubic(SawTooth));
+
+    for (int i = 0; i < StockHealthBar.transform.GetChild(0).transform.GetChild(0).childCount; i++)
+    {
+     GameObject HealthBip = StockHealthBar.transform.GetChild(0).transform.GetChild(0).GetChild(i).gameObject;
+        HealthBip.SetActive(i<Math.Ceiling(StockHealth.Health/100f));
+       
+        switch(Math.Ceiling(StockHealth.Health/100f)){
+            default:
+            case 3:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State1);break;
+            case 2:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State2);break;
+            case 1:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State3);break;
+        }
+    }
+    for (int i = 0; i < BruteHealthBar.transform.GetChild(0).transform.GetChild(0).childCount; i++)
+    {
+         GameObject HealthBip = BruteHealthBar.transform.GetChild(0).transform.GetChild(0).GetChild(i).gameObject;
+        HealthBip.SetActive(i<Math.Ceiling(BruteHealth.Health/100f));
+         switch(Math.Ceiling(BruteHealth.Health/100f)){
+            default:
+            case 5:
+            case 4:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State1);break;
+            case 3:
+            case 2:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State2);break;
+            case 1:  HealthBip.GetComponent<Healthbit>().Change(HealthBip.GetComponent<Healthbit>().State3);break;
+        }
+    }
+    
+
+
 
     if(UIChange>=1f)
     {
@@ -243,32 +277,54 @@ KeyCode Duo_Right = KeyCode.D;
 //feels bad man
 void Update_Brute()
 {
-    /*if (Input.GetKeyDown(KeyCode.F) && PunchCooldown <= 0 && !SlamOrPunchActive)
+    PunchTimer-=Time.deltaTime;
+        if (Input.GetKeyDown(Brute_Punch)) 
         {
-                if(SlamEnabled)
-                {
-                   SlamActive=true;
-                    PunchBox.transform.localPosition = new Vector3(0,-1f,0);
-
-                }
-                else if(PunchEnabled){
-                    GetAnimator().SetBool("Attacking",true);
-                    SlamActive=true;
-                     PunchTimer=0.8f;
-                    PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1),0.202f,0);
-                   
-                }
+       if(SlamEnabled){
+        DashDirection = Vector2.down;
+       }
+       // DashPower = 190f;
+        
+        PunchTimer = 4f; 
         }
- */
-
-    BruteHealth = Health;
+        if(!SlamActive && PunchTimer>=0f)
+        {
+            SlamActive = true;
+            OutofDashState.VelocityOutside = Velocity;
+            OutofDashState.AccelerationTime = accelerationTime;
+            Debug.Log("Slam Started");
+     
+            //Stock_Sprite.GetComponent<ParticleSystem>().Play();
+        }
+        else if(SlamActive && PunchTimer<=0f)
+        {
+            Debug.Log("Slam Ended");
+            SlamActive = false;
+           
+            //Stock_Sprite.GetComponent<ParticleSystem>().Stop();
+        }else if(PunchTimer>0f && SlamActive){
+            UpdateTrail();
+            PunchBox.transform.localPosition = Vector3.down*Brute_Sprite.GetComponent<BoxCollider2D>().size.y/2f;
+        }
+        if(SlamActive && CollisionState == Collision_State.OnGround)
+        {
+        Debug.Log("Slam Abrupted");
+        PunchTimer=0;
+        rb.velocity = new Vector2(Velocity.x,JumpPower/5f);
+        }
+        PunchBox.SetActive(PunchTimer>0f);
+        PunchTimer-=Time.deltaTime*(SlamActive?0f:1f);
+        
+        OutofDashState.VelocityInside = DashDirection  * 6.9f * 4f; //* Mathf.Pow(1f-(DashPower-182)/8f,1.2f);
+        rb.gravityScale = !SlamActive?1f:0f;
+        BruteHealth = Health;
 }
 
 //Special Child...
 void Update_Stock()
 {
         DashPower-=Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.F) && DashEnabled) 
+        if (Input.GetKeyDown(Stock_Dash) && DashEnabled) 
         {
         DashUsedInAir = CollisionState == Collision_State.Airborne||CollisionState == Collision_State.BelowCeiling;
         DashDirection = new Vector2(Input.GetKey(Duo_Left)?-1f:Input.GetKey(Duo_Right)?1f:0,Input.GetKey(Duo_Down)?-1f:Input.GetKey(Duo_Up)?1f:0);
@@ -304,6 +360,7 @@ void Update_Stock()
         DashPower=0f;
         DashCooldown=0.1f;
         DashUsedInAir=false;
+
         }
         
         DashCooldown-=Time.deltaTime*(DashUsedInAir?0f:1f);
@@ -317,6 +374,7 @@ void Update_Stock()
 // Update is called once per frame
     new void Update()
     {
+        UpdateUI();
         if(Duo_Dead){
             UpdateDeath();
             return;
@@ -328,7 +386,7 @@ void Update_Stock()
         }
         base.Update();
         UpdateDamage();
-        UpdateUI();
+        
         
         //Change character sprite
         if (Input.GetKeyDown(Duo_Swap) &&CanSwap)
@@ -349,7 +407,7 @@ void Update_Stock()
                 // Changes sprite to brute
                 Stock_Sprite.SetActive(false);
                 Brute_Sprite.SetActive(true);
-                JumpPower = 4.5f;
+                JumpPower = 5.25f;
                 Health = BruteHealth;
                 IsStock = false; 
             }
@@ -387,7 +445,7 @@ void Update_Stock()
         }
         else
         {*/
-            PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1)*-1f,0.202f,0);
+            //PunchBox.transform.localPosition = new Vector3(1.026f*(Brute_Sprite.GetComponent<SpriteRenderer>().flipX?-1:1)*-1f,0.202f,0);
             GetAnimator().SetBool("Attacking",false);
           
             Stock_Sprite.GetComponent<SpriteRenderer>().flipY =false;
@@ -437,7 +495,8 @@ void Update_Stock()
 
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
-         if (DashActive)rb.velocity = OutofDashState.VelocityInside;
+         if (DashActive || SlamActive) rb.velocity = OutofDashState.VelocityInside;
+
          (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color = new Color(
         (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.r,
          (IsStock?Stock_Sprite:Brute_Sprite).GetComponent<SpriteRenderer>().color.g,

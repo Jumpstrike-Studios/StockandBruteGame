@@ -13,7 +13,7 @@ public class GAMEOVERbacktomain : MonoBehaviour
     public void Reload()
     {
 
-        Game_Manager.instance.RequestReload(SceneManager.GetActiveScene().path);
+        Game_Manager.instance.RequestReload("Scenes/Stock&BruteGame");
         GameOverScreen.SetActive(false);
     }
 
