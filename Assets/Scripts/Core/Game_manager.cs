@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -62,7 +63,42 @@ using UnityEngine.SceneManagement;
         {
             yield return null;
         }
+    
     }
+
+    public void RequestReload(string level){
+                StartCoroutine(ReloadAsyncScene(level));
+
+        }
+
+        IEnumerator ReloadAsyncScene(string level)
+    {
+        if(!SceneManager.GetSceneByPath(level).isLoaded)
+        {
+            AsyncOperation asyncload = SceneManager.LoadSceneAsync(level);
+
+            while (!asyncload.isDone)
+         {
+            yield return null;
+            }
+        
+            yield return null;
+        }
+        AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(level);
+
+        while (!asyncUnload.isDone)
+        {
+        AsyncOperation asyncload = SceneManager.LoadSceneAsync(level);
+
+        while (!asyncload.isDone)
+        {
+            yield return null;
+        }
+        
+        }
+    }
+
+
 
     private void G(bool rly)
     {

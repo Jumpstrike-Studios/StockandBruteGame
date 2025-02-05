@@ -147,14 +147,13 @@ public class Actor : MonoBehaviour
 
     public int BaseHealth = 300;
 
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
         
-        rb = GetComponent<Rigidbody2D>();
     }
 
     public delegate void StateChange_Dele(Collision_State From, Collision_State To);
@@ -163,7 +162,7 @@ public class Actor : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-    
+    if(rb is null) Destroy(gameObject);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

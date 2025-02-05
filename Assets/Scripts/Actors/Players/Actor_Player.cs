@@ -453,8 +453,9 @@ void Update_Stock()
            
 
         }
-        if(From == Collision_State.Airborne){
-            rb.velocity =new Vector2(0,rb.velocity.y);
+        if(From == Collision_State.Airborne && !rb.IsDestroyed()){
+            
+            rb.velocity = new(0,rb.velocity.y);
             Brute_Sprite.GetComponent<SpriteRenderer>().color =Color.white;
             PunchBox.SetActive(false);
             

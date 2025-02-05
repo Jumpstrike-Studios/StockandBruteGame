@@ -193,6 +193,7 @@ MonoBehaviour:
   C_State: 0
   Previous: 0
   BaseHealth: 300
+  rb: {fileID: 2838730366366614964}
   IFrames: 0
   IFrame_Ticker: 0
 --- !u!61 &3090880261605409671

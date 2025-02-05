@@ -176,13 +176,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfecb88ae382e1c4995540f9acbc4005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health:
+    MaxHealth: 0
+    Health: 0
+    Invincible: 0
+    RemoveOnDeath: 0
   WalkSpeed: 5
+  AfterImage: {fileID: 0}
   GravityScale: 1
+  OnGround: 0
+  OnWall: 0
+  OnCeiling: 0
+  EligibleForWallAction: 0
+  OnWhatWall: 0
+  PreviousWall: 0
+  C_State: 0
+  Previous: 0
   BaseHealth: 300
-  BaseHealth: 300
+  rb: {fileID: 1598474671597169590}
   IFrames: 0
   IFrame_Ticker: 0
   Enraged: 0
+  levelpath: 
   Goal: {x: 0, y: 0, z: 0}
   STATE_SPIN_TIMER: 0
   STATE_SPIN_SPEED: 0
@@ -193,6 +208,8 @@ MonoBehaviour:
   rightEdge: {fileID: 7284236676513786054}
   Target: {fileID: 4922498181098674651}
   Enemy: {fileID: 0}
+  Level: {fileID: 0}
+  Theme: {fileID: 0}
   SlimeBallLobbing: {fileID: 413712370990100089, guid: 4121448cc8659ab47ad0d4e37b6cb6fc, type: 3}
   trail_root: {fileID: 8369768378222843611, guid: b439a7a6fcbd645459a47af35f04aea3, type: 3}
   state: 1
