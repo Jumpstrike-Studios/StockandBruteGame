@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Camera_movement : MonoBehaviour
@@ -22,7 +23,7 @@ public class Camera_movement : MonoBehaviour
     }
     public void Show(bool real)
     {
-        
+        if (GameoverHud.IsDestroyed())return;
         GameoverHud.SetActive(true);
     }
     // Update is called once per frame

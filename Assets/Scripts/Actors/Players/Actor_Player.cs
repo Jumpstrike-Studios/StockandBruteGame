@@ -192,17 +192,18 @@ return x < 0.5 ? 4 * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 3) / 2;}
 Vector3 DeathPosition;
 float Anim_death_Shake;
 bool Anim_death_fling;
+bool Anim_death_fling_done;
 void UpdateDeath()
 {
-    if(Anim_death_time>3f){ 
+    if(Anim_death_time>1.8f && !Anim_death_fling_done){ 
         OnGameOver?.Invoke(true);
-        GetComponent<Actor_Player>().enabled = false;
+        Anim_death_fling_done = true;
     }
     if(Anim_death_time == 0f) DeathPosition = transform.position;
 
     Anim_death_time += Time.deltaTime;
-Stock_Sprite.GetComponent<Collider2D>().enabled = false;
-            Brute_Sprite.GetComponent<Collider2D>().enabled = false;
+    Stock_Sprite.GetComponent<Collider2D>().enabled = false;
+        Brute_Sprite.GetComponent<Collider2D>().enabled = false;
     if(Anim_death_time<1f){
     if (Mathf.Floor(Anim_death_time/0.1f) != Anim_death_Shake){
         transform.position = DeathPosition + new Vector3(Random.Range(-1f,1f)*0.2f,Random.Range(-1f,1f)*0.1f,0);
@@ -217,11 +218,14 @@ Stock_Sprite.GetComponent<Collider2D>().enabled = false;
         if (!Anim_death_fling){
             Stock_Sprite.transform.rotation =Quaternion.Euler(0,0,0);
             Brute_Sprite.transform.rotation =Quaternion.Euler(0,0,0);
-            transform.position = DeathPosition;
-            float fling = Vector2.Angle(transform.position,transform.position+new Vector3(Random.Range(-1f,1f),1f,0f));
-            rb.velocity = new Vector2(Mathf.Sin(fling)*2f,Mathf.Cos(fling)*2f)*5f;
+            
+            float fling = Vector2.Angle(DeathPosition,transform.position+new Vector3(0.6f,1f,0f));
+            
+            rb.velocity = new Vector2(Mathf.Cos(fling)*2f,Mathf.Sin(fling)*2f)*5f;
             Anim_death_fling = true;
         } 
+        Stock_Sprite.transform.rotation =Quaternion.Euler(0,0,Anim_death_time-1f*30f);
+        Brute_Sprite.transform.rotation =Quaternion.Euler(0,0,Anim_death_time-1f*30f);
     }
     Anim_death_Shake = Mathf.Floor(Anim_death_time/0.1f);
 }
