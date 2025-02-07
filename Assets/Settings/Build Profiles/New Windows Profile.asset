@@ -20,6 +20,10 @@ MonoBehaviour:
   m_Scenes:
   - m_enabled: 1
     m_path: Assets/Scenes/MainMenu.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Stock&BruteGame.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Level 2 Test Scene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
