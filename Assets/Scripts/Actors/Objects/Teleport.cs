@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    public CapsuleCollider2D capcol;
-
+    public CircleCollider2D circle;
     public GameObject player;
     public Actor_Player actor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
