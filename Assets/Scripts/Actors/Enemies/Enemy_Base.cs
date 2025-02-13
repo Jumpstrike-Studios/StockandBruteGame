@@ -43,14 +43,16 @@ public class Enemy_Base : Actor
     
     public override void Die()
     {
+        if(enemyBehavior is not null) StopCoroutine(enemyBehavior);
         base.Die();
-        StopCoroutine(enemyBehavior);
+        
     }
 
      void OnTriggerEnter2D(Collider2D col)
     {
-
-      if (col.gameObject.CompareTag("Hitbox")&&IFrame_Ticker<=10){
+         Debug.Log("?");
+        if (col.gameObject.CompareTag("Hitbox")&&IFrame_Ticker<=10){
+            Debug.Log("?!");
            takeDamage(IFrame_Ticker<=0?100:10);
         }
     }

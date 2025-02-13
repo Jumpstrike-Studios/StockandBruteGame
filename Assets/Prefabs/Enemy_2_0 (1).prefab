@@ -192,10 +192,11 @@ MonoBehaviour:
   PreviousWall: 0
   C_State: 0
   Previous: 0
-  BaseHealth: 300
+  BaseHealth: 100
   rb: {fileID: 2838730366366614964}
   IFrames: 0
   IFrame_Ticker: 0
+  HasAi: 1
 --- !u!61 &3090880261605409671
 BoxCollider2D:
   m_ObjectHideFlags: 0

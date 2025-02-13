@@ -10,7 +10,7 @@ public class Enemy_Test : Enemy_Base
     new public void Start()
     {
     base.Start();
-    Health  = new ActorVitals(500);
+    Health  = new ActorVitals(100);
     enemyBehavior = AI();
     StartCoroutine(enemyBehavior);
     }

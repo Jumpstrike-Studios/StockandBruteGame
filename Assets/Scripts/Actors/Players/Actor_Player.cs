@@ -89,6 +89,9 @@ public class Actor_Player : Actor
     private float UIChange;
     private int LastChange;
 
+
+    private bool Action_Intang;//Makes the duo invulnerable during certain actions, like punching or dashing
+
     //events
      public delegate void GameOver(bool ActuallyOver=false);
     public static event GameOver? OnGameOver;
@@ -127,6 +130,7 @@ public class Actor_Player : Actor
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if(Action_Intang) return;
         if (col.gameObject.CompareTag("Enemy") && IFrame_Ticker <= 8 && IFrame_Ticker >0 &&  !Duo_Dead)
         {
         IFrame_Ticker=10;
@@ -299,6 +303,7 @@ void Update_Brute()
         }else if(PunchTimer>0f && SlamActive){
             UpdateTrail();
             PunchBox.transform.localPosition = Vector3.down*Brute_Sprite.GetComponent<BoxCollider2D>().size.y/2f;
+            
         }
         if(SlamActive && CollisionState == Collision_State.OnGround)
         {
@@ -306,6 +311,7 @@ void Update_Brute()
         PunchTimer=0;
         rb.velocity = new Vector2(Velocity.x,JumpPower/5f);
         }
+        Action_Intang = PunchTimer>0f;
         PunchBox.SetActive(PunchTimer>0f);
         PunchTimer-=Time.deltaTime*(SlamActive?0f:1f);
         
@@ -356,7 +362,7 @@ void Update_Stock()
         DashUsedInAir=false;
 
         }
-        
+        Action_Intang = DashCooldown>0f;
         DashCooldown-=Time.deltaTime*(DashUsedInAir?0f:1f);
         
         OutofDashState.VelocityInside = DashDirection * WalkSpeed * 1.5f; //* Mathf.Pow(1f-(DashPower-182)/8f,1.2f);
