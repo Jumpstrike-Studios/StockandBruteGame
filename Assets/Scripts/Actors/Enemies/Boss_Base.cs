@@ -26,8 +26,9 @@ public class Boss_Base : Enemy_Base
         GetComponent<SpriteRenderer>().color = new Color(GetComponent<SpriteRenderer>().color.r,GetComponent<SpriteRenderer>().color.g,GetComponent<SpriteRenderer>().color.b,IFrame_Ticker%2==1?0.8f:1f);
     }
     public new void Die(){
+        Game_Manager.instance.RequestReload(levelpath);
         base.Die();
-        On_PrepNextLevel?.Invoke(levelpath);
+        
     }
 
 }
