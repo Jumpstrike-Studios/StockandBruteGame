@@ -5,6 +5,7 @@ public class Paralax : MonoBehaviour
     public GameObject cam;
     private float length, spriteStartPos;
     public float paralax;
+  
 
     // Start is called once before the first execution of Update
     void Start()
@@ -15,7 +16,8 @@ public class Paralax : MonoBehaviour
     {
        float moving = (cam.transform.position.x * paralax);
        transform.position = new Vector3(spriteStartPos + moving, transform.position.y, transform.position.z);
-        float temp = cam.transform.position.x * (1 - paralax);
+        float temp = cam.transform.position.x * (1 + paralax);
       
+
     }
 }
